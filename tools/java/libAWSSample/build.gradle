@@ -1,0 +1,129 @@
+plugins {
+    id "java"
+    id "jacoco"
+    id "application"
+    id "maven-publish"
+    id "java-library"
+    id "signing"
+
+}
+
+def nexusUrl = System.getenv("NEXUS_URL") ?: "https://nexus-tools.swacorp.com"
+def repo = System.getenv("REPO") ?: "ci"
+if (repo == "prod") repo = "releases"
+
+jar {
+    archiveBaseName = 'awssample'
+    archiveVersion = "1.0.0"
+}
+
+repositories {
+    maven { url "$nexusUrl/repository/public" }
+    maven { url "$nexusUrl/repository/thirdparty" }
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.idmunit:idmunit:2.1.56"
+    testImplementation 'software.amazon.awssdk:secretsmanager'
+
+    testImplementation group: 'org.slf4j', name: 'slf4j-reload4j', version: '2.0.9'
+
+    implementation platform('software.amazon.awssdk:bom:2.20.158')
+    implementation 'software.amazon.awssdk:secretsmanager'
+    implementation 'org.slf4j:slf4j-api:2.0.9'
+
+}
+
+testing {
+    suites {
+        // Configure the built-in test suite
+        test {
+            // Use JUnit Jupiter test framework
+            useJUnitJupiter('5.8.2')
+        }
+    }
+}
+
+jacoco {
+    toolVersion = "0.8.10"
+}
+
+test {
+    finalizedBy jacocoTestReport // report is always generated after tests run
+}
+
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml.required = true
+    }
+}
+
+task dependencyReportFile(type: DependencyReportTask) {
+    outputFile = file('dependencies.txt')
+}
+
+task updateVersion(type: Exec) {
+    workingDir '.'
+    commandLine './update_version.sh'
+}
+
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
+tasks.withType(PublishToMavenRepository).configureEach {
+    onlyIf {
+        ((System.getProperty("snapshot") == "true" && repo == "ci") ||
+                ((System.getProperty("snapshot") == "true" && repo == "dev")) ||
+                System.getProperty("snapshot") != "true")
+    }
+    doFirst {
+        logger.lifecycle("* Publishing *  [${publication.groupId}:${publication.artifactId}:${publication.version}] to ${repository.url}/\n")
+    }
+    doLast {
+        logger.lifecycle("* Published *  [${publication.groupId}:${publication.artifactId}:${publication.version}] to ${repository.url}/\n")
+    }
+}
+
+/*
+I don't need to publish this . . just a base for the lib-AWS library
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'com.swa.idmunit.connector'
+            artifactId = 'awssample'
+            version = "1.0.0"
+            from components.java
+            pom {
+                name = 'AWS Sample'
+                description = 'Libraries to extend IDMUnit'
+                url = 'https://gitlab-tools.swacorp.com/csiam/idm/idmunit/swa-scim-connector'
+                scm {
+                    connection = 'scm:git:gitlab-ssh.apex-tools.prod0.prod.aws.swacorp.com:csiam/idm/idmunit/swa-scim-connector.git'
+                    developerConnection = 'scm:git:gitlab-ssh.apex-tools.prod0.prod.aws.swacorp.com:csiam/idm/idmunit/swa-scim-connector.git'
+                    url = 'https://gitlab-tools.swacorp.com/csiam/idm/idmunit/swa-scim-connector'
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            url = uri("$nexusUrl/repository/$repo")
+            credentials {
+                username = System.getProperty("nexusUser")
+                password = System.getProperty("nexusPassword")
+            }
+        }
+    }
+}
+*/
+
+javadoc {
+    if (JavaVersion.current().isJava9Compatible()) {
+        options.addBooleanOption('html5', true)
+    }
+}
+

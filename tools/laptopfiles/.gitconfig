@@ -1,0 +1,72 @@
+[user]
+	name = Aaron Kynaston (Contractor)
+	email = Aaron.Kynaston@wnco.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAdJyLLTxjBHfiEs+aQTJDwHqk7dahH2ELJDUWx6Bl+8
+[alias]
+	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+	s = !git status -s --branch && git stash list
+	si = !git status -s --branch --ignored && git stash list
+	hardclean = !git reflog expire --expire=now --expire-unreachable=now --all && git gc --prune=now --aggressive
+	mh = lg master..HEAD --name-status
+	fff = !git fetch --depth=10 && git hardclean
+	diffr = diff --word-diff-regex=.
+	ni = !git add . && git reset && git s
+	ba = branch -avv
+	r = remote -v    
+	j = !clear && git show-ref && git branch -avv && git lg -5 && git s
+
+[diff]
+	tool = winmerge
+    wsErrorHighlight = all
+[merge]
+	tool = winmerge
+	ff = only
+[difftool "winmerge"]
+	cmd = /c/Program\\ Files\\/Winmerge/WinMergeU.exe -u -e $LOCAL $REMOTE
+[mergetool "winmerge"]
+	cmd = /c/Program\\ Files\\/Winmerge/WinMergeU.exe -u -e $LOCAL $REMOTE
+[difftool]
+	prompt = true
+[mergetool]
+	prompt = true
+	keepBackup = true
+[core]
+	autocrlf = true
+	compression = 9
+	editor = 'C:\\Program Files\\Notepad++\\Notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+	preloadindex = true
+	fscache = true
+	whitespace = trailing-space,blank-at-eof,space-before-tab,cr-at-eol
+[rerere]
+	enabled = true
+[http]
+	postbuffer = 524288000
+	sslBackend = schannel
+	sslVerify = true
+[pull]
+	ff = only
+[url "https://stash1-tools.swacorp.com/scm/csiam/"]
+	insteadOf = swa:
+[url "https://stash1-tools.swacorp.com/scm/~x266698/"]
+	insteadOf = me:
+[url "https://akynaston@git.trivir.com/scm/swa/"]
+	insteadOf = trivir:
+[url "git@gitlab-ssh.apex-tools.prod0.prod.aws.swacorp.com:csiam/idm/"]
+	insteadOf = gitlab:
+[url "git@gitlab-ssh.apex-tools.prod0.prod.aws.swacorp.com:x266698/"]
+	insteadOf = gitlabavk:
+[credential]
+	helper = manager
+[credential "https://git.trivir.com"]
+	provider = bitbucket
+[gc]
+	auto = 256
+[credential "https://gitlab-tools.swacorp.com"]
+	provider = generic
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = C:\\Users\\x266698\\AppData\\Local\\1Password\\app\\8\\op-ssh-sign.exe
+    allowedSignersFile = C:\\Users\\x266698\\.ssh\\allowed_signers
+[commit]
+	gpgsign = true

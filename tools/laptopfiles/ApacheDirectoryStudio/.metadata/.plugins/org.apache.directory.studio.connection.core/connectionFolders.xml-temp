@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<connectionFolders>
+  <connectionFolder id="0" name="">
+    <connections>
+      <connection id="ffedde5d-1b57-4874-b2a5-74c0974c22c8"/>
+    </connections>
+    <subFolders>
+      <subFolder id="684c1c38-4156-4455-8adf-c8cc12c12942"/>
+      <subFolder id="116892e6-6f9c-409a-85a7-737194add6bf"/>
+      <subFolder id="a4d285b3-5308-4b22-b84f-f7253ad0d46e"/>
+      <subFolder id="bc2b4331-fb88-4cde-94b5-f495a2d47709"/>
+      <subFolder id="9536411d-393d-4531-b8dd-e4c32d15f45c"/>
+      <subFolder id="1e3c3250-fcf5-4de7-8916-8c30eb74e6da"/>
+    </subFolders>
+  </connectionFolder>
+  <connectionFolder id="a4d285b3-5308-4b22-b84f-f7253ad0d46e" name="ALPHA">
+    <connections>
+      <connection id="52b67910-fdc2-49d7-aff6-c9904ed3527c"/>
+      <connection id="f29f72ed-e3bf-4b89-8984-237d5557197d"/>
+      <connection id="1251b043-966f-4b26-a78f-b26b8cd395d6"/>
+      <connection id="06e54b94-263f-4db4-b0ce-d5afba648ce7"/>
+      <connection id="3ecea153-156c-474a-bb36-6beedb9c6f86"/>
+      <connection id="11cbc464-5dda-4a94-829e-84b3c0609db1"/>
+      <connection id="3fe6b39b-5b5b-493c-9247-2cdb55533df7"/>
+      <connection id="2a16dbaa-2bcb-456d-8c58-e8741e07f931"/>
+      <connection id="ba8d1219-be4f-4525-9526-d81c2e903d61"/>
+      <connection id="32c8476a-40bd-48ba-9d4f-990b19d8ee63"/>
+      <connection id="d54eb581-3731-4975-ad17-e1d60e6f962c"/>
+      <connection id="8185cd13-666b-47f3-9ba0-7aae70dd6598"/>
+    </connections>
+    <subFolders/>
+  </connectionFolder>
+  <connectionFolder id="b286b8e2-5f98-45ac-a3aa-f90bcd54e909" name="AD">
+    <connections>
+      <connection id="b3befe00-cded-4d5d-a701-4c1112075116"/>
+      <connection id="af666f54-271e-4df2-a497-0fc6eb2a3e6f"/>
+    </connections>
+    <subFolders/>
+  </connectionFolder>
+  <connectionFolder id="bc2b4331-fb88-4cde-94b5-f495a2d47709" name="ITEST">
+    <connections>
+      <connection id="240b683d-8376-460b-ad5d-246269dc3d9f"/>
+      <connection id="f4603443-04fe-4e21-99ad-07f3f3846502"/>
+    </connections>
+    <subFolders/>
+  </connectionFolder>
+  <connectionFolder id="c3e3028b-d10e-4e6c-b07c-78105ef5bf37" name="LDAP">
+    <connections>
+      <connection id="4ef71ac7-087b-49e2-b17a-a2017226f257"/>
+    </connections>
+    <subFolders/>
+  </connectionFolder>
+  <connectionFolder id="34c99d85-2374-4c62-95fc-ec5c4decc044" name="DEVACCESS">
+    <connections>
+      <connection id="8a1aa4e2-b315-4738-9d6b-540081ab36a5"/>
+    </connections>
+    <subFolders/>
+  </connectionFolder>
+  <connectionFolder id="9536411d-393d-4531-b8dd-e4c32d15f45c" name="MA">
+    <connections>
+      <connection id="39e33653-4b49-465b-b973-dcabc38857ab"/>
+      <connection id="8bf4b3c6-f12f-4837-a998-e3758d1e1f24"/>
+      <connection id="45f64d4b-8d55-45c4-8200-3a784db36e59"/>
+      <connection id="5d23f422-3c42-463c-9440-76b6b6086413"/>
+    </connections>
+    <subFolders/>
+  </connectionFolder>
+  <connectionFolder id="116892e6-6f9c-409a-85a7-737194add6bf" name="zPROD">
+    <connections>
+      <connection id="987463fb-26f2-4ae9-bc33-88dd50c62b2e"/>
+      <connection id="e67b72b0-1d23-45ec-a9e6-8e0945517d60"/>
+      <connection id="f4f2b1ea-7815-4bf1-9547-385fee6a1afc"/>
+      <connection id="6fccc87b-b0a8-42b4-bc65-45fd87c1dc04"/>
+      <connection id="d7c613aa-673a-4148-9e72-ae0fce18921c"/>
+      <connection id="d238a4e9-d82c-4e73-9c4b-80e0ce5b10e7"/>
+      <connection id="37636eea-8f7f-41aa-9d39-78f152c793ee"/>
+      <connection id="0c8741eb-a37b-4482-9d50-9727c8f23093"/>
+      <connection id="cb70683e-a1a2-4872-a631-dd1addfe589d"/>
+      <connection id="6658629d-98db-4c51-bdc4-2b7a476f8287"/>
+      <connection id="c87aca1f-4ae5-473c-9087-eb516bc79c7d"/>
+      <connection id="6afc3dba-7a49-4005-8c1a-a41f2d9bfb25"/>
+      <connection id="1464ddff-2f0e-497e-b8f7-afd4c72f8a37"/>
+      <connection id="614a1c0e-5b8c-4139-82b0-7655480101cd"/>
+      <connection id="be77efad-77f0-40f7-9441-1b5b4d3408e8"/>
+      <connection id="917a2ce5-6efb-4fa4-be02-db07b861af9e"/>
+      <connection id="c8ab3b25-1da3-4163-8a0e-01d4a3a9bc59"/>
+      <connection id="5c7e4e18-28cb-42ac-9152-f1812bca184a"/>
+      <connection id="f0f67ca5-3b29-4769-afed-c789391d2aec"/>
+      <connection id="4dce063b-f349-4bdc-a6c0-6820bbf7f41e"/>
+      <connection id="1935f21a-56c1-4206-9d14-50141a6125d1"/>
+      <connection id="e1b48bee-8b8b-4119-ba57-e98c968f9b5f"/>
+      <connection id="d310a3ff-0223-48cf-ae1e-ec8d5ff9a01b"/>
+      <connection id="b5acef3f-0b83-4cdb-9a02-7f5d54ca1290"/>
+      <connection id="10627fb3-c97c-4ebb-b96e-c9e12ac838a1"/>
+      <connection id="4c0b7d52-bc1b-4b65-b1a1-f4aa92c65853"/>
+      <connection id="52605213-adde-4238-bb93-2f7abd1c8209"/>
+      <connection id="cab04921-da81-40fc-924a-8cdfcd3ea307"/>
+      <connection id="5aa8e36f-cb7c-4eda-be95-224e8b490d4c"/>
+    </connections>
+    <subFolders/>
+  </connectionFolder>
+  <connectionFolder id="684c1c38-4156-4455-8adf-c8cc12c12942" name="QA">
+    <connections>
+      <connection id="4cdcbb74-c19b-4960-91af-bce9361de6e6"/>
+      <connection id="1c969f0c-e517-4fbe-8bd6-3729b51e50ad"/>
+      <connection id="7b0f8259-da6a-4f81-a5a6-d0a992b121db"/>
+      <connection id="329527b8-7310-46cc-84c9-ce77e3c85a2e"/>
+      <connection id="cf1054e3-d3f6-4bb3-a115-3f85f11fa0af"/>
+      <connection id="408758b6-351c-4091-b164-82186f062593"/>
+      <connection id="824fbab4-26be-4f38-aeef-35cd18c9d457"/>
+      <connection id="405ea764-3632-4fd7-81c7-1ace9f457d4c"/>
+      <connection id="553dc7c1-a69c-4541-9b8c-a42332eb15af"/>
+      <connection id="593297e7-0092-47c1-84d2-88603449d174"/>
+      <connection id="0c2d88eb-c781-4731-8d46-cc40c8a7623f"/>
+      <connection id="c42dcc90-4fd2-4568-8ff9-e0668a6f6500"/>
+      <connection id="78dd8a60-22ed-4305-a086-6c65208f87ec"/>
+      <connection id="099a4bdb-9d1a-4746-9530-54f02dab8825"/>
+      <connection id="da23e996-5756-4499-ac4b-3157f71b00bf"/>
+      <connection id="478d10a0-09c3-42fd-a5ab-1ac889c9a9d0"/>
+      <connection id="9b19df77-6582-4879-adb9-c731767bdff9"/>
+      <connection id="99a62e5e-74d6-4320-b17b-cb9ff73be242"/>
+    </connections>
+    <subFolders>
+      <subFolder id="c3e3028b-d10e-4e6c-b07c-78105ef5bf37"/>
+      <subFolder id="14459b93-abc2-49a5-80fd-50cf598f4066"/>
+      <subFolder id="b286b8e2-5f98-45ac-a3aa-f90bcd54e909"/>
+    </subFolders>
+  </connectionFolder>
+  <connectionFolder id="1e3c3250-fcf5-4de7-8916-8c30eb74e6da" name="DEV">
+    <connections>
+      <connection id="826a1020-e289-416d-ad72-048ecea703c4"/>
+      <connection id="3500f79b-4786-452d-8492-23cb44ce39d2"/>
+      <connection id="98780a28-b6a8-482b-9cd3-330fd3cc78d4"/>
+      <connection id="d96a3940-c696-4217-9346-0cc0dff8feec"/>
+      <connection id="e2dbfa76-6982-4dd0-9a51-b4a078ee97fa"/>
+      <connection id="8fff5c07-af00-46be-9cfb-5ee89ad2f7ae"/>
+      <connection id="5da3603e-404f-4c99-938d-d2b18cba83d6"/>
+      <connection id="7a5c214d-4674-4970-b7a0-66aa89cabb43"/>
+      <connection id="84ace881-b5b1-4aa9-8fd2-31921244d249"/>
+      <connection id="df3f3513-385c-4536-bf45-c50e4e327ae7"/>
+      <connection id="59f3dfe9-a51b-44bc-8bb8-544d283c5044"/>
+      <connection id="70b3df5f-b470-46ab-b174-4f8710ed7c3d"/>
+      <connection id="ee644ab8-f95b-40c6-854b-841710178ff3"/>
+      <connection id="6d144206-7037-4797-8273-3f5aea02b916"/>
+      <connection id="2697617a-9d52-4a02-a70f-06167837e1c1"/>
+      <connection id="4deb5052-716e-44ed-a20d-dc06cbed16ef"/>
+      <connection id="2c5d44b7-4027-4cbb-8ad3-62561bcff073"/>
+      <connection id="062acd3f-944e-43f2-b3ec-d897cea20e03"/>
+      <connection id="6c704f02-609b-4832-aec4-0d7d2dd66dfd"/>
+      <connection id="8c031b0a-bf7b-41db-93a9-1d97eaa743ce"/>
+      <connection id="bed9e851-a427-4298-9c94-7711885120b1"/>
+      <connection id="1163d3dc-2840-41d6-b5ac-2284698a162e"/>
+    </connections>
+    <subFolders>
+      <subFolder id="34c99d85-2374-4c62-95fc-ec5c4decc044"/>
+    </subFolders>
+  </connectionFolder>
+  <connectionFolder id="14459b93-abc2-49a5-80fd-50cf598f4066" name="ACCESS">
+    <connections>
+      <connection id="8bbd7abb-e988-4fec-b4de-6654825dc483"/>
+      <connection id="3bf4e5ae-9d4e-4fa7-888a-cee66db1b3bf"/>
+    </connections>
+    <subFolders/>
+  </connectionFolder>
+  <connectionFolder id="78ec6aaf-8da6-495e-8278-f7592238f481" name="TRN">
+    <connections>
+      <connection id="1fd00b4b-6140-47c0-9947-3969ff71b613"/>
+      <connection id="359c74ed-41c2-4de0-ba7e-22ab9056a358"/>
+      <connection id="d7dc15fa-5e41-474b-91d8-c119388b4881"/>
+    </connections>
+    <subFolders>
+      <subFolder id="78ec6aaf-8da6-495e-8278-f7592238f481"/>
+    </subFolders>
+  </connectionFolder>
+</connectionFolders>

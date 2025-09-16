@@ -1,0 +1,196 @@
+****EE team update items****
+ - Notification: we have a workaround for a gitlab problem with using the driver repo for EE folks.
+   - short term: we have to reach out to the maintainers to fix the master branch rule.
+   - long term: sounds like they're owrking on a fix that would help set our rule properly.
+ - Build standards: latest is 2.6.5, don't forget to update!
+  You can check your current version by using this method, or just looking for 'standardsVersion' in your build.gradle file:
+  C:\work\IDtoAvioBook>grep standardsVersion build.gradle | head -1
+    standardsVersion = "2.6.5"
+
+---------------------------------------==Trivir==---------------------------------------:
+(curl connector)
+(git training)
+(IGA training)
+
+Sep 16
+Apptio target process documetnation  is complete.
+ - driver is code complete too.
+ - Working on the intial migratoin tool, an code revies with the team and ops.
+ - then the QA deploy
+
+ - The Aviobook driver had a deploy fix to do, so I'll be doing that as well.
+
+
+
+
+
+
+---------------------------------------==EE==---------------------------------------:
+DAILY STANDUP: ONLY MONDAY/WEDNESDAY/FRIDAY!
+
+Sep 15
+
+I have a question and two items to cover.
+
+1 - I'd like to chat with you and Dhivya - it sounds like we're tryhing to help with conersion to sailpoint. Assuming this is the case - Gokul and I have some ideas, I"d like to decide how and where we want to store it.
+
+2 - NIrosha and I talked about work she can do over the next to weeks; we may want a quick syncup between the three of us as needed.
+   -
+
+3 - ON Apptiotargetprocess driver:
+   - 90% competed ewith the documentation
+   - I hve one more deprovisioning use case to complete.
+   - Then I can create the CRs' and deploy both appto drivers to QA to be ready for testing with Mike.
+
+
+
+
+I've completed the update user functionality, and maybe
+
+
+
+
+LONG STANDING:
+Ben and Dhivya - sent a list of the next major items to complete; I have sotires for all items that need them; but I don't know how to show priority in Jira.
+
+1 - IDtoEmployeeSvc: CSEE-4228: Waiting on them to respond to UAT schedule questions (then Prod deploy).
+2 - IDtoAutocrib: LAS going live soon; haven't received access to the LAS endpoint yet.
+3 - OPS KT sessions (next Thursday, CSEE-5029, CSEE-5038), for Aviobook & EmployeeSvc.
+4 - IDtoDocunet: Plan and schedule OPS KT session for Docunet to push all users (may try to combine in meeting above).
+5 - IDtoApptio: Driver shell creation, CSEE-4986, and CSEE-4993 are next, deadline July 21 for phase 1
+6 - IDtoAviobook: Research payload fix options, CSEE-5039
+7 - IDtoAviobook: Add the unarchiving feature on rehire, CSEE-5033
+
+
+=================================
+PREVIOUS:
+   - Back to documenting the credential rotation. The problem with this work is that we don't really do it for any drivers right now, so I'll need to find a pattern and document it.
+     - IDtoMiro
+     - IDtoAvioBook
+     - IDtoDocunet
+     - IDtoBrowserStack
+     - IDtoSprinkler
+dfs
+
+11/1/2024 3:19:4dfs1 PM
+Lower priorities:
+   - MCL: If sync event, and passport expiired, send again if swaMCLPassportExpirationReported is blank!
+   - IDtoAvioBook - email null pointer exception is an XDStoJSON issue!
+
+Tv lower priorites:
+ - catch up on L&L https://mail.google.com/chat/u/0/#chat/space/AAAAmVjN910
+ - Box 2 stuff - obsidian://open?vault=obsidian&file=SWA%2FBOX2%2FaaaMAIN%20LIST
+   - Find out why IdMunit spreadsheets columns keep changing.
+     - change name of lib-driverrevision in library . . .
+  3/18/2024 9:40:45 AM
+   - Learn jenkins!
+   - Find a way talk about Git that someone can becom comfortable with normal day to day activites.
+   - Recall on car
+  (-) Check on PR for DTF2: https://git.trivir.com/projects/IDMUNIT/repos/dtf-connector/pull-requests/3/overview
+
+=========================================================================================================
+=========================================================================================================
+=========================================================================================================
+=========================================================================================================
+=========================================================================================================
+=========================================================================================================
+Handy folder share: net use J: \\psvmnas13\CyberSecurity
+
+Rotation - may be Matt or Brady
+4/1/2025 8:30:38 AM
+
+Dylan
+Taylor
+Anders - 7/29/2025 8:31:05 AM
+Robert
+
+new
+Sean Sanberg
+josh
+Nolan
+Ray
+Sam
+Aaron Miwa
+Jake
+Mike
+Jack
+Sean Koo
+Bron
+Murphy
+Patrick Monkelbna
+Patrick HOldernes
+aaron
+
+
+
+
+
+
+
+
+ON HOLD:
+Autocrib:
+hold - Update the role permissions spreadsheet to have capital C
+HOLD - Provide 78 role combindations to Akilan for myaccess
+hold - Update app team: if new dbid location, or role additions/modifications; both MyAccess and the IDM driver will likely need to be scheduled, and updated as we can.
+hold - swaAutocribRoles - clear out single value, move to multi; keep jack/rob updated.
+HOLD - payload:      "customField1": "TPA - AutoCrib-AMTSUPP",
+HOLD - change name to 'Airport code'                    <col-def name="swaLocation" type="nocase"/>
+
+
+12/10/2024 3:02:16 PM
+Added this monitor a while back to check docunet file count.
+
+monitor [x266698@w11pcledirpi010 ufm]$ crontab -l
+#every morning at 12 midnight, send count of total files to aaron until we can get a real monitoring solution
+* * * * *  ls -rlth /opt/IDMFeeds/IDtoDocunet/ufm | wc -l | mail -s docunet-file-count aaron.kynaston@wnco.com
+
+.
+
+3/28/2025 4:09:22 PM
+current open crs:
+
+Change Requests table. Currently in read mode.
+Number	Change Type	State	Short Description	Environment	Change Owning Group	Change Owner	Planned Start Date	Planned End Date	Parent Change	Updated
+		CHG0458918	Standard	Scheduled	CSEE-4543 IDtoAvioBook: Update entitlement policies affected by the re-org	Production	CS-EE	Aaron Kynaston	03-31 14:00	03-31 17:00	(empty)	03-28 10:14
+		CHG0458555	Standard	Scheduled	CSEE-4542 Deploy EntitlementServiceRoleMgmtDriver for department code changes to support recent SWA re-org	Production	CS-EE	Aaron Kynaston	03-31 14:00	03-31 17:00	(empty)	03-28 10:20
+		CHG0458910	Standard	Planning	CSEE-4543 IDtoAvioBook: Update entitlement policies affected by the re-org	QA	CS-EE	Aaron Kynaston	03-28 08:00	03-29 17:00	(empty)	03-27 13:28
+		CHG0454614	Standard	Planning	CSEE-4233 Deploy IDtoAviobook driver in Prod	Production	CS-EE	Aaron Kynaston	03-26 12:00	03-26 15:00	(empty)	03-28 08:54
+		CHG0457932	Standard	Planning	CSEE-4432 Deploy IDtoAviobook driver in QA: Deploy IDtoAviobookPrelive driver only.	QA	CS-EE	Aaron Kynaston	03-24 10:30	03-25 17:00	(empty)	03-28 09:09
+Actions on selected rows
+Actions on selected rows...
+1
+Showing rows 1 to 5 of 5 to 5 of 5
+
+
+
+
+7/31/2025 6:06:30 PM
+old:
+Guys,
+
+Here's the status of things for the IDtoApptio project from my side:
+
+IDtoApptio:
+   - Gokul KT:
+      1 - Just barely started. Gokul has been made aware of this transfer while I'm out from July 11 to the 25th.
+      2 - My goal before I leave is to complete the documentation, and a good portion of the swaApptioRoles parsing in the driver if possible.
+      3 - We should talk a bit today.
+
+   - MyAccess:
+      1 - API collection will likely not be possible as the API can't return the auth token in a response body, unless we choose to go the JSP route, which sounds like it should only be used as a last option. Instead, UFM file transfers will be necessary.
+      2 - UFM transfers: I believe we have everything we need . . Ashleigh and team will likely need to build a tool to produce both the initial roles definiton file, and the regular User-> roles file.
+
+   - swaApptioRoles attribute format: Need to work on this; likely with Mike and Chandu. I'll send a suggested pattern to them today (July 3)
+
+   - Initial migration tool: I can build 90% of this, but not the actual LDIF data, as we don't have the swaApptioRoles attribute defined yet; will start this ASAP.
+
+
+
+   - Open questions we have at this point: I'll check in with Ashleigh shortly to confirm.
+      1 - Confirm a correctly provisioned Targetprocess User requires three things: Frontdoor object, 'Targetprocess User' role, and a PDOS created TargetProcess account.
+        Status: Waiting on response form Ashleigh (7/3/2025 8:58:05 AM)
+      2 - Do we have a spot to store the EID in an API accessible field in Apptio?
+        Status: Waiting on response form Ashleigh (7/3/2025 8:58:05 AM)
+
+--Aaron

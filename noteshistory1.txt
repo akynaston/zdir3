@@ -1,0 +1,2470 @@
+<nds dtdversion="4.0" ndsversion="8.x">
+  <source>
+    <product edition="Advanced" version="4.8.6.0000">DirXML</product>
+    <contact>NetIQ Corporation</contact>
+  </source>
+  <input>
+    <driver-operation-data class-name="Employee" command="add" event-id="w11dcledirai004#20250114202411#10#1:5bb5792b-db44-4024-9f72-2b79b55b44db" src-dn="\SWACO_IDALPHA\SWA-IDALPHA\Users\e100000">
+      <request>
+        <url-token/>
+        <header/>
+        <value>{"firstName":"Mecca4","dep":"263106","lastName":"Thomas5","employeeNo":"100000","badge":"100000"}</value>
+      </request>
+    </driver-operation-data>
+  </input>
+</nds>
+
+
+fix this - require attrs . .!
+<nds dtdversion="4.0" ndsversion="8.x">
+  <source>
+    <product edition="Advanced" version="4.8.6.0000">DirXML</product>
+    <contact>NetIQ Corporation</contact>
+  </source>
+  <input>
+    <driver-operation-data class-name="Employee" command="add" event-id="w11dcledirai004#20250116162321#1#2:be6562af-89d6-418c-a900-af6265bed689" src-dn="\SWACO_IDALPHA\SWA-IDALPHA\ServiceAccounts\p99870145">
+      <request>
+        <url-token association=""/>
+        <header/>
+        <value>{"firstName":"Test","lastName":"lastname"}</value>
+      </request>
+    </driver-operation-data>
+  </input>
+</nds>
+
+
+
+10/30/2024 2:31:04 PM - reset
+
+
+POints updates:
+https://southwest.atlassian.net/browse/CSEE-4231 - leaving at 3 points . .there are quite a few roles to get in . .
+https://southwest.atlassian.net/browse/CSEE-4232 - changed from 3 to 1 point; just a every day deploy
+https://southwest.atlassian.net/browse/CSEE-4233 - changed from 3 to 1 point; just a every day deploy
+
+
+
+Place holders for the driver and docs. Ideally, when you are done transfering information; these two places store everything we need:
+
+https://southwest.atlassian.net/wiki/spaces/CYSEC/pages/419594271/IDtoAutocrib
+https://southwest.gitlab-dedicated.com/csiam/idm/idtoautocrib
+
+
+UFM: https://southwest.atlassian.net/wiki/spaces/APIGW/pages/101253646/UFM+-+Client+Log+Explanation
+
+
+
+
+IDtoDocunet
+MR - fixes an association removal bug among other minor fixes:
+https://southwest.gitlab-dedicated.com/csiam/idm/idtodocunet/-/merge_requests/24
+
+CHG0443332 - QA
+https://southwest.service-now.com/nav_to.do?uri=change_request.do?sys_id=2acb51b097c3da58c506bd6de053af19%26sysparm_view=Standard
+
+CHG0443335 - Prod
+https://southwest.service-now.com/nav_to.do?uri=change_request.do?sys_id=f68f51389707da58c506bd6de053af9b%26sysparm_view=Standard
+
+
+
+IDtoDocunetTests > org.idmunit.IdMUnitTestCase.testFileArchiveJob[20] FAILED
+    org.idmunit.IdMUnitException: Expected file '1736450073112.tmp' or '1736450073112.csv' to be the oldest file but 'userDocunet_header.csv' was the oldest. Please note that this may be caused by having an incorrect <output-file-ext> setting in your idmunit-config.xml. Please confirm it is correct.
+        at app//com.trivir.idmunit.connector.DtfAggregator.readNewData(DtfAggregator.java:127)
+        at app//com.trivir.idmunit.connector.DtfAggregator.getInputStream(DtfAggregator.java:67)
+        at app//com.trivir.idmunit.connector.DTF2Connector.updateCachedRows(DTF2Connector.java:321)
+        at app//com.trivir.idmunit.connector.DTF2Connector.opValidate(DTF2Connector.java:266)
+        at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+        at java.base@17.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:569)
+        at app//org.idmunit.connector.AbstractConnector.execute(AbstractConnector.java:87)
+
+
+
+
+Farhan,
+
+Hey dude! FYI: Here is the story that needs to move in to this sprint. Thx for managing the storm as always :-)
+
+AutoCrib | IDM - Map swaLocation -> dbid
+https://southwest.atlassian.net/browse/CSEE-4280
+
+
+Here are the stories that should move out.  Please note that there is not a due date on these: only continued pain until we can help classify errors, and properly report on them for Logini Sivalogan and Jeff Wilton, the app owners.
+
+IDtoEmployeeSvc | IDM | Create error response manager
+https://southwest.atlassian.net/browse/CSEE-4228
+
+
+IDtoEmployeeSvc | IDM | Create error response manager - QA Deploy
+https://southwest.atlassian.net/browse/CSEE-4229
+
+
+
+
+
+
+/opt/idmfiles/scripts/delete_old_archive_files.sh /opt/IDMFeeds/IDtoDocunet/archive/ 120
+
+
+New MRs: issues found during QA deploy:
+Needs 2:
+
+IDtoEmployeeCarePicture: fixed QA username, and fix casing issue in build.
+https://southwest.gitlab-dedicated.com/csiam/idm/IDtoEmployeeCarePicture/-/merge_requests/16
+
+IDtoEmployeeCarePicture: fixed QA username, and upate test JSON files from most recent update.
+https://southwest.gitlab-dedicated.com/csiam/idm/IDtoEmployeeSvc/-/merge_requests/33
+
+
+
+
+
+
+
+\SWACO_IDSAT\swa-idsat\services\DirXML\Driver Set AEv1\IDtoEmployeeSvc - actual vairable
+\SWACO_IDSAT\swa-idsat\Services\DirXML\Driver Set AEv1\IDtoEmployeeSvc - varaible
+
+idm.employeesvc@wnco.com.fc3swa
+Southwest@2025bYMtVgwJs7SvHXWa0qJJrSYW0
+
+cn=IDtoEmployeeCarePicture,cn=Driver Set AEv1,ou=DirXML,ou=services,o=swa-idsat#4#
+
+
+
+
+
+
+#dn: here
+SWA-ID\r\nchangetype: modify\r\nadd: DirXML-Associations\r\nDirXML-Associations: cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=services,o=SWA-ID#4#
+
+
+
+
+1/31/2025 10:38:24 AM
+today:
+done - docunet: why ???? in additional role col? no concerns on myside - he's asking the wrong field, and Role Quals isn't popuatled yet.
+done - arvin miro question - people coming in without driver: needs role nad driver to match to have driver work on them.
+
+
+
+End of day status:  I feel pretty good with my progress. I think I can put autocrib on hold for tomorrow, Feb 6.
+
+Expectations for tomorrow: I fully expect to work on BAES most if not all of the day. I will probably be home all day again; so I likely couldn't deploy, as I've got car trouble, and our other car may not be an option. . .will have to see.
+
+
+Details:
+ - I have completed less than I thought on Autocrib; but all that I can. The app team had another major misunderstanding with requirements!! I don't think I should document any further, or update code any further until we have plans on how to proceed . .so it's a reasonable stopping place. On the SWA standup tomorrow, I'll simply mention that I've just about done all I can on autocrib and that we have a meeting (also tomorrow) to talk through the concerns brought up.
+[02/20/25 17:04:20.469]:IDtoSprinkler ST:        : Received response document from subscriber
+
+
+"federationId":"e98765114317
+cn=e98765114317,ou=Users,o=swa-idsat
+cn=IDtoSprinkler,cn=Driver Set AEv1,ou=DirXML,ou=services,o=swa-idsat#1#1855552
+
+
+
+
+
+
+CSEE-4261, CSEE-4262, CSEE-4263
+
+
+
+Logini, the r73695 user fell into the category that we are going to be working on a fix on the EmployeeServicesRoleMgmt driver. This driver will properly ensure that retirees always have the proper role.  Right now, there are 12,514 retirees in eDirectory, and 11,331 of them are in this same state: they still have the old role 'EmployeeSvc_Retiree', when they should have the new role style of 'EmployeeSvc_Retiree|||00E2E000002RP3oUAG|||00e2E000001IUCiQAO'. I will fix them when I get to this fix.  Do you see a need to fix the 11K users sooner than later? There are 11,331 retirees that have the old role format, and we should discuss when/iff to fix them.
+
+
+
+
+
+2/19/2025 10:32:18 AM
+IDtoSprinkler
+   done - Baseline locally
+   pipeline: https://southwest.gitlab-dedicated.com/csiam/idm/idtosprinkler/-/pipelines/11609828
+   done - Submit MR -  https://southwest.gitlab-dedicated.com/csiam/idm/idtosprinkler/-/merge_requests/23
+   - Update AC: possible new role:partnerrole model . .
+   - CR paperwork
+
+IDtoAutocrib
+   - finish AC: git ready for walkthrough
+   - write up timeline & items needed
+   - MyAccess: wiating on blockers
+   - ensure I have a release ready to go
+   - MR
+   - CR
+
+
+
+4Four99@24Four99@2
+4Four99@24Four99@2
+987PurpleOrange987@1123
+
+
+
+
+
+Role Name	adjust	console	forceReferenceBin	issue	kitIssue	locate	maintain	physical	return	stock	supervisor
+Autocrib-AMT	FALSE	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE
+Autocrib-AMTSUPP	TRUE	FALSE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE
+Autocrib-AT	FALSE	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE
+Autocrib-QC	FALSE	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE
+Autocrib-MS	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	TRUE	FALSE
+Autocrib-MSSUP	TRUE	FALSE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE
+
+
+ Arg Value: "[{ "id":"e8566003641","qualifications": [
+    {
+      "id": "fltops_pilot"
+    }
+  ]}]".
+[02/13/25 13:18:22.063]:IDtoAvioBook ST:
+DirXML Log Event -------------------
+     Driver:   \DEV_SWACO_ID\swaiddev\Services\DirXML\Driver Set AEv1\IDtoAvioBook
+     Channel:  Subscriber
+     Object:   \DEV_SWACO_ID\swaiddev\Users\e8566003641
+     Status:   Error
+     Message:  Invoked Rest Endpoint
+Return code : HTTP/1.1 400 Bad Request
+[02/13/25 13:18:22.065]:IDtoAvioBook ST:    Evaluating sele
+
+
+Arg Value: "[
+    {
+        "id":"e8566005882",
+  "qualifications": [
+    {
+      "id": "avio_qual_b737"
+    },
+    {
+      "id": "avio_qual_b737_700"
+    },
+    {
+      "id": "avio_qual_b737_800"
+    },
+    {
+      "id": "avio_qual_b737_max7"
+    },
+    {
+      "id": "avio_qual_b737_max8"
+    }
+  ]
+}
+]".
+[02/13/25 13:04:42.835]:IDtoAvioBook ST:
+DirXML Log Event -------------------
+     Driver:   \DEV_SWACO_ID\swaiddev\Services\DirXML\Driver Set AEv1\IDtoAvioBook
+     Channel:  Subscriber
+     Object:   \DEV_SWACO_ID\swaiddev\Users\e8566005882
+     Status:   Error
+     Message:  Invoked Rest Endpoint
+Return code : HTTP/1.1 204 No Content
+
+
+
+
+
+CSCE-dg
+Cybersecuritn enterprinse enablement team
+
+mainResult.read("$.items[?(@.id=='avio_qual_b737')].users[?(@.id == '8566004598')]")
+
+
+mainResult.read("$.items[?(@.id=='avio_qual_b737')]")
+
+mainResult.read("$.items[?(@.id=='avio_qual_b737f')]")
+
+
+https://southwest.gitlab-dedicated.com/csiam/idm/templates/IDMDriverTemplateRepo/-/merge_requests/155
+  - Minor build example fixes.
+
+https://southwest.gitlab-dedicated.com/csiam/idm/IDtoEmployeeCarePicture/-/merge_requests/16
+  - Has some environment config fixes.
+
+https://southwest.gitlab-dedicated.com/csiam/idm/IDtoEmployeeSvc/-/merge_requests/33/diffs
+  - Has a text fix that to help a test pass better.
+
+
+
+$.items[?@.id=="avio_qual_b737f"].users[?@.id == "e63197"]
+
+
+
+
+$.items.users[?@.id == "avio_qual_b737"]
+
+
+
+2/11/2025 4:54:05 PM
+When back: finish passing autocrib tests locally, then re-run in piepline
+- finsih buld in aviobook
+
+
+
+
+CHG0449886 - CSEE-4137 Deploy IDtoAutocrib driver in QA
+
+
+
+
+
+Grishma, I'm working on the design for the initial migration for locations that that have already gone live. The initial step will require that I can populate the correct role on users in Houston (10690) and Atlanta (10632) . .and I think you mentioned there was one more, Las Vegas (10786)? Is that correct? Can I get the corresponding roles that you have set for these users in these environments?
+
+As of now, I have the following counts of users:
+
+ATL: 3343
+HOU: 5011
+LAS: 5471
+
+If you are able to send a separate list for each location, such as the following; that would allow me to push them through the driver. Assuming the roles already map to the correct permissions that are in use, we'll have minimal to zero impact but we'll be able to get the driver where it needs to be.
+
+Atlanta:
+e123456: AMT
+e987653: AMTSUPP
+e999887: AT
+e888899: AT
+
+Huston:
+e122334: AT
+e112235: QC
+
+and so on . .
+
+
+AMT
+AMTSUPP
+AT
+QC
+MS
+MSSUP
+
+
+
+
+
+
+These are the possible values for the 'FUNCTION' field:
+GROUND_HANDLER,
+DISPATCHER,
+PILOT,
+UNKNOWN,
+ADMINISTRATOR,
+CABIN_CREW,
+MAINTENANCE_CREW
+
+
+
+CORRECT ROLE|||adjust:false|||console:false|||forceReferenceBin:false|||issue:false|||kitIssue:false|||locate:false|||maintain:false|||physical:false|||return:false|||stock:false|||supervisor:false
+
+
+
+
+
+\
+
+10636-9888324252
+10636-9888324252
+
+
+Role Name	adjust	console	forceReferenceBin	issue	kitIssue	locate	maintain	physical	return	stock	supervisor
+AMT	FALSE	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE
+AMTSUPP	TRUE	FALSE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE
+AT	FALSE	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE
+QC	FALSE	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE
+MS	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	TRUE	FALSE
+MSSUP	TRUE	FALSE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE
+
+
+
+
+
+I think I'll ust take what you give me, remove the role name, then convert it to JSON . . would this be an option?
+
+Step 1 - remove and store the role name: Question: should we store this in customField1? I know it's just a string, but they do have a spot for it in the GUI . . .
+Step 2 - Convert the rest to the JSON payload; so ordre shouldn't mater.
+
+
+AMT|||adjust:false|||console:false|||forceReferenceBin:false|||issue:true|||kitIssue:false|||locate:true|||maintain:false|||physical:false|||return:true|||stock:false|||supervisor:false
+
+
+
+Mike,
+
+
+Hola sir - jsut FYI:
+AMT|||adjust:false|||console:false|||forceReferenceBin:false|||issue:true|||kitIssue:false|||locate:true|||maintain:false|||physical:false|||return:true|||stock:false|||supervisor:false|||
+
+
+Inventory|||adjust:true|||console:true|||forceReferenceBin:true|||issue:true|||kitissue:true|||locate:true|||maintain:true|||physical:true|||return:true|||stock:true|||supervisor:true
+
+
+{
+    "adjust": true,
+    "console": true,
+    "forceReferenceBin": true,
+    "issue": true,
+    "kitissue": true,
+    "locate": true,
+    "maintain": true,
+    "physical": true,
+    "return": true,
+    "stock": true,
+    "supervisor": true
+}
+
+
+
+
+
+2/10/2025 11:12:22 AM
+11 fields autocrib
+adjust
+console
+forceReferenceBin
+issue
+kitissue
+locate
+maintain
+physical
+return
+stock
+supervisor
+
+adjust,console,forceReferenceBin,issue,kitissue,locate,maintain,physical,return,stock,supervisor
+
+
+booleans from users:
+https://api.autocrib.net/v1/Employee?fields=employeeNo,active,adjust,console,forceReferenceBin,issue,kitissue,locate,maintain,physical,return,stock,supervisor
+
+
+2/10/2025 10:27:12 AM
+EE/IGA meeting
+- did Kahoot game!
+Turn Program
+ - major cool feedback
+ - Profit sharing -mch 14th
+ - PSA - black history month - feb 26
+ - Conference - in Dallas - WESYS - mid april 2
+   - some inperson/virtual tickets.
+ - service now & leanix . . PO's may be interested . .
+ - PTO changes
+ -
+
+
+
+
+
+
+
+
+2/6/2025 4:55:36 PM
+Work left to do on Autocrib:
+COMPLETE - 1 - Discussion regarding permissions:Requires App team & API team discussion: permissions granted now under 'profiles', departments DO NOT assign permissions, profiles do. Profiles however are NOT supported by the API.
+2 - Review all open stories in next sprint, like 'sync' support, and other items to button up in the driver.
+  Story review is done; here is the order how I am proceeding:
+
+   - CSEE-4316, done, in ready for final as of 2/6/2025 3:15:45 PM.
+   - next sprint, CSEE-2025.1.2:
+    - CSEE-4315 - swaLocatoin change - this story is completed; will close next sprint (or we can move and close this sprint if desired).
+done    - CSEE-4133 - sync user: This I"ll do next (2/6/2025 4:55:01 PM)
+done    - CSEE-4134 - Delete/restore: mostly done . .thinking about 'restores' though . .
+    - CSEE-4137 - QA deploy: May need to move this in light of the new stories:
+    NEW STORIES:
+done    - CSEE-4334 - dev permissions: parse and use payload.
+done    - CSEE-4335 - user changes role: changing already existing set of rights.
+done    - CSEE-4336 - Role's permission changes . .this is big, and we may want to have it be part of phase 2.
+    - CSEE-4337 - Design Initial migration
+    NOTE: This story will happen immediately after the production deploy.
+    - CSEE-4338 - Execute Production Initial Migration
+   (Except where noted, stories after sprint 2025.1.2 have not been included)
+(moved to story ) 3 - Define initialmigration: Need to come up with plan for existing locations (Huston/Atlanta), and plan for entirely new locations.
+(moved to story) 4 - Update AC with latest requirements,andinitial migration plan
+(moved to story) 5 - Map whatever role designation we have from Myaccess through the driver.
+(moved elswhere)6 - Fix Gitlab rights to enable me to merge my branches to master.
+7 - Create QA CR, Deploy to QA
+8 - Create Prod CR, deploy to prod.
+9 - Execute initial migration for onsite locations (need to match up existing users, without negatively affectingrights.
+10- Execute iniital migration for any new locations (May not have any, as we'll only onboard users as they request through myacess.
+
+
+
+Items for Mike:
+ - I would benefit for having the role name in eDirectory, and storying it somewhere in Autocrib.
+    - Initial migration benefit:
+       - This would let us report back to you which roles have already been assigned.
+       - Also I could migrate one role at a time to minimize impact on existing users.
+    - This would help us with role permission updates and knowing whcih role caused the booleans to be set.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://api.autocrib.net/v1/Employee?fields=employeeno&employeeNo=988*
+
+Autocrib:
+nice to have: don't produce doc for empty payload
+<nds dtdversion="4.0" ndsversion="8.x">
+  <source>
+    <product edition="Advanced" version="4.8.6.0000">DirXML</product>
+    <contact>NetIQ Corporation</contact>
+  </source>
+  <input>
+    <modify cached-time="20250205211331.099Z" class-name="User" event-id="w11dcledirai004#20250205211331#1#1:b41e56f2-1723-4dbd-9aeb-f
+2561eb42317" qualified-src-dn="O=SWA-IDALPHA\OU=Users\CN=e84583" src-dn="\SWACO_IDALPHA\SWA-IDALPHA\Users\e84583" src-entry-id="177552
+" timestamp="0#0">
+      <association state="associated">10636-84583</association>
+      <modify-attr attr-name="Login Disabled">
+        <remove-value>
+          <value timestamp="1738790005#80" type="state">false</value>
+        </remove-value>
+      </modify-attr>
+      <operation-data DRIVER_REVISION="1.0.0-CSEE-4131-x266698" dbid="10636" objectType="employee" swaUniqueID="84583"/>
+    </modify>
+  </input>
+</nds>
+
+empty payload example:
+
+<nds dtdversion="4.0" ndsversion="8.x">
+  <source>
+    <product edition="Advanced" version="4.8.6.0000">DirXML</product>
+    <contact>NetIQ Corporation</contact>
+  </source>
+  <input>
+    <driver-operation-data class-name="Employee" command="modify" event-id="w11dcledirai004#20250205233531#1#1:d970a509-7259-4cc0-9503
+-09a570d95972" src-dn="\SWACO_IDALPHA\SWA-IDALPHA\Users\e93589">
+      <request>
+        <url-token association="93589"/>
+        <header dbid="10636"/>
+        <value>{}</value>
+      </request>
+    </driver-operation-data>
+  </input>
+</nds>
+
+
+
+
+vacation responder
+https://trivir.atlassian.net/wiki/spaces/EMP/pages/177012832/Flexible+Time+Off+FTO
+
+Autocrib
+
+go live
+ - Huston, Atlanta, Vegas (feb 10), and one other . .(24th) have already gone live: need to sync up with existing accounts.
+ - for htese,we'll need to make srue we match properl
+
+
+
+
+Admin
+AMT Mechanic
+AMT Supervisor Report Access
+Appearance group
+Inspector / Quality Control
+Inventory
+
+
+LOGIN FOR EMPLOYEE -
+
+A user just inputs their EID (without the e) and if it is the first time logging in it asks them to set up a 4 digit numeric pin. Once the 4 digit pin is setup the authentication in the future is eid and 4 digit pin.
+
+
+
+CHG0443050 - QA IDtoEmployeeSvc - Point to FC3.
+Deploy/Update ----  IDM Driver IDtoEmployeeSvc update to point to FC3.
+https://southwest.service-now.com/nav_to.do?uri=change_request.do?sys_id=e7b9b35c93879210c752b7847aba1053%26sysparm_view=standard
+
+CHG0443037 - QA IDtoEmployeeCarePicture - Point to FC3.
+Deploy/Update ----  IDM Driver IDtoEmployeeCarePicture update to point QA to FC3. https://southwest.service-now.com/nav_to.do?uri=change_request.do?sys_id=4f24bf1cc3475a101ba1de9d2b0131e7%26sysparm_view=Standard
+
+CHG0443055 - QA EmployeeServicesRoleMgmt driver - update roles to FC3.
+Deploy/Update ----  IDM Driver EmployeeServicesRoleMgmt driver update to point QA to FC3
+https://southwest.service-now.com/nav_to.do?uri=change_request.do?sys_id=332b3b9093c79210c752b7847aba10a4%26sysparm_view=Standard
+
+
+
+Needs 1 - https://southwest.gitlab-dedicated.com/csiam/idm/IDtoEmployeeSvc/-/merge_requests/32
+Needs 1 - https://southwest.gitlab-dedicated.com/csiam/idm/EmployeeServicesRoleMgmtDriver/-/merge_requests/32
+Needs 1 - https://southwest.gitlab-dedicated.com/csiam/idm/IDtoEmployeeCarePicture/-/merge_requests/15
+
+
+C:\work\IDtoEmployeeCarePicture>type version.txt
+1.4.1-CSEE-4258-x266698
+C:\work\IDtoEmployeeCarePicture>type ..\IDtoEmployeeSvc\version.txt
+12.5.8-CSEE-4259-x266698
+C:\work\IDtoEmployeeCarePicture>type ..\EmployeeServicesRoleMgmtDriver\version.txt
+10.8.1-CSEE-4259-x266698
+C:\work\IDtoEmployeeCarePicture>
+
+com.swa.idmunit.connector:swa-idmunit-rest-connector:2.2.0
+
+****MAIN TODO****
+ - EMPUAT1 move back - for 3 empsvc drivers.
+ - sprinkler new role.
+1/3/2025 9:47:31 AM - Yatin's comment about swaxid logic . .
+
+REMINDER - IDtoEmployeeSvc: REMINDER: using eid-invalid@wnco.com email sfrom now on.
+REMIDER: Avaya - Joe taking this; but help where possible.
+TODAY
+1/16/2025 9:19:39 AM
+ - baes - Drop VPN vm, no longer used!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SWA
+ - IDtoAutocrib:
+      - started IDtoautocrib review; had first of two revewi meetings today.
+   - no progress on the Qa testing for the driver,  myAccess folks found that some reconfiguration is required, they're working on that now.
+ - IDtoSprinkler:Deployed the latest to production; sot he main deveplment work is done. Still need a chat withte app owner to resolve anoying QA service accounts issue that makes testing troublesome.
+ - Aviobook - Found the qualficiations do exlist in dev, but not in QA or prod still - so I reported that, then found that the QA environment quit responding; will verify today and let them know.
+   - I'll get the driver into QA so we can have it ready when they have the qualifications added but I'll probably stop production deployment until they add the qualviations.
+
+
+
+EE
+Heads up - I do plan on being out on Friday for my wife's birthday.
+ - Autocrib
+   - Review 1 of 2 meetings today with ops is complete, will do the second later today.
+   - standing by for some Myaccess configuration
+   - The
+
+Made progress on sprikler an aviobook, some minor issues we're working thorugh.
+
+
+
+
+
+
+
+
+
+
+feb 24 2/24/2025 3:18:21 PM
+last week ended with a few unexpected issues that I'll work to resolve today.
+ - We had an IDtoemployeeSvc driver incident that is mostly resolved.
+ - Sprikler and autocrib are deployed to QA.
+   - Sprinkler Found an issue with our service accounts on the sprinkler system.
+   - Autocrib found a bug in my driver. I fixed, and will redploy today in QA to test with the MyAccess guys.
+
+
+(aviobook - deploy)
+
+
+
+
+EE
+ - ran into lots of odd little issues, nothing major
+ Autocrib - Mike found a bug in my driver so I"m deploying to QA again today.
+ Sprinkler - something changed in our Idmunit test account it can't see data created by the driver; so will chat with the app owner today.
+
+ That'll probably fill my day.
+
+
+
+CHG0451792
+
+
+
+
+
+
+SWA
+EmployeeServices had a incident that should be closed up as soon as we can get a report from MyAccess.
+
+Autocrib -
+
+
+
+
+
+
+SWA
+Autocrib - App owner is still silent, I have a plan there. The MyAccess blockers are clear; so I can deploy into QA now and test with Mike; will do that first thing.
+
+Aviobook - Found a build problem the core team is helping me with; then will also deploy to QA.
+
+Sprinkler - The simple version of updating the partnerrole table code is done, and passing tests. I'll get with Akilan to confirm the bets path forward here, since we could go to QA with the simple version.
+
+EE
+A few blockers have been removed
+from right to left:
+4231 - This story is complete for aviobook - they added the qualificatoins, about to submit the MR.
+  4334, 4335 - The payload has been mostloy decided, will test shortly with Mike; we'll do a role assignment and role change.
+
+Still blocked - 4337 - initial migration: I am asking for either a user dump or rights to get all of the existing user, roels and permissions so I can do an initial migration. I'll reach out to the app owner again today.
+
+4336 - realized I do have more work to do here if roles themselves change; so will work on this after testing with Mike.
+
+
+
+
+
+
+
+
+
+
+Autocrib and Aviobok are now both blocked.
+  Autocrib is stopped in MyAccess, there's an issue with them using the API. The IDM driver doesn't have the same restrictions that they do.
+
+  Aviobook: they asked for new qualifications to be assigned, and they don't exist yet, so I'll ask again about those today.
+
+I'll get a head start on the QA and prod Cr paperwork done for both drivers.
+
+There's a thrid driver, the sprinkler driver that needs a table update, and more paprework, so I'll do that last.
+
+EE
+ - Autocrib stories here are still blocked, trying to get past some MyAccess troubles.
+ - AvioBook is unblocked in DEV at least, they were able to add the new qualifications, I have a test giving me trouble; so will work on that today plus paper work.
+ - Sprinkler is just about done, I need to synk up with Akilan on a QA test from MyAccess.
+
+ Today may be mostly paperwork doing mergerequests and submitting changes for these drivers.
+
+
+Autocrib:
+   - Grishma: initial migration
+   - MR/CR
+   -
+
+
+
+My open MRs, requested review about an hour ago 12/10/2024 1:42:34 PM
+
+https://southwest.gitlab-dedicated.com/csiam/idm/EmployeeServicesRoleMgmtDriver/-/merge_requests/31
+   - Needs 2: updates connection information and base roles over to EMPUAT1 for the month of December (then moving back).
+
+https://southwest.gitlab-dedicated.com/csiam/idm/templates/IDMDriverTemplateRepo/-/merge_requests/152
+   - Needs 2: Template repo: made updates to improve quality of example idmunit config, and add optional strip-packages library.
+
+https://southwest.gitlab-dedicated.com/csiam/idm/idtobrowserstack/-/merge_requests/30
+   - Needs 2: Minor code removal to avoid duplicate product setting in payload.
+
+https://southwest.gitlab-dedicated.com/csiam/idm/idmunit/swa-rest-connector/-/merge_requests/13
+   - Needs 2: Update to improve the error messages listed whenever the response from a REST API source gives some non success response.
+
+https://southwest.gitlab-dedicated.com/csiam/idm/idtosprinkler/-/merge_requests/19/diffs
+   - Needs 2: Has all latest updates that have already gone to prod; but needed to be reflected in Git.
+
+https://southwest.gitlab-dedicated.com/csiam/idm/idtoautocrib/-/merge_requests/17
+   - Needs 2 - this is to cover having a super simple but configured test framework; driver doesn't exist enough for test to pass yet; but the CSEE-4130 story is complete:
+
+https://southwest.gitlab-dedicated.com/csiam/idm/IDtoEmployeeSvc/-/merge_requests/31
+  - Needs 2 - fix: CSEE-4241 Minor fixes to further configure DEV to use FC3, similar to QA.
+
+
+
+Andrew,
+
+I apologize, let me be more clear. I want to make sure we're all on the same page. What you described about how the user -> role file should be generated seems correct, but I need to fix a concern on the timing. I think you are already saying the following, can you confirm?
+
+The role to user mapping file is meant to be a  'return and report' style reflection of what you have successfully processed so that when it is sent to MyAccess, it can properly close out any requests made since the last time the file was received. If we generate it based on the input file before you process it, it may not reflect what actually happened during your processing.
+
+So the overall summary is this:
+
+
+1 - The IDtoDocunet driver receives events, and writes them to a local file.
+2 - Files are packaged and encrypted then sent to the Vistar SFTP server using the user/host/path:  swa_vistair_PROD@sftp-dub.vistair.com/sftp-vistair-com/SWA_PROD
+3 - Vistar receives the files and processes them.
+4 - Once the processing is complete, Vistair produces the ONBOARDING/yyyy-mm-dd_hh_mm_C365_RETAIN.csv file, by reading the actual user to role assignements as they stand after processing the latest data.
+5 - Steve and I and the SWA team then will setup a UFM copy of that file back to our servers to be received by MyAccess.
+6 - MyAccess receives the user -> role file, and closes out requests made as appropriate.
+
+Is that what you are expecting?
+
+--Aaron
+
+
+
+
+starfish/St@rf1sh@098
+
+
+
+deleted from qa:
+QA
+Sprinkler to delete:
+cn=lib-sub-etp-CheckGating,cn=IDtoSprinkler,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=swa-idsat
+cn=pub-itp-AddAssociation,cn=IDtoSprinkler,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=swa-idsat
+cn=sub-etp-DriverScope,cn=Subscriber,cn=IDtoSprinkler,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=swa-idsat
+
+
+
+
+1/31/2025 1:18:09 PM
+Fixed these with Juan Alonzo, to show him how to set the base roles
+r39015
+r34914
+r11327
+
+
+
+cn=IDtoEmployeeSvc,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#4#
+
+
+
+
+
+An element of life that severly bothers me is the general chaos of life and permanence of the past. I've shaken my head and my goofed up self so much that I think its going to fall off.
+
+nvid
+zcb5JNG4yhy8eke_kzp
+
+
+
+sprinkler: this isn't qa, what is it? gm3hxmj78y27th2e959zawhz
+
+
+
+
+
+
+
+Sent to PM group just now 3/13/2025 1:19:47 PM
+
+
+I need some help coordinating with PMs, and other IDM developers - The IDtoAviobook driver work has abruptly stopped due to multiple RBE driver problems in DEV. I think I need to pivot now, here are things I am aware of that need to be completed.
+
+Stephanie / Dhivya  - when one of you have a moment, could I have a brief chat with you? I'm not sure where to best spend my time right now. Here's the places I could spend my time:
+
+1 - Help the core team/Joe/Yatin work on the RBE driver problem, and come up with a new solution to assign roles.
+2 - IDtoAutocrib: Data cleanup or at least create some plan to clean data up with Grishma.
+3 - IDtoAviobook: Work is stopped, I need to fix two bugs (mid April for Aviobook Prod deploy is the current expectation.
+4 - LMS driver updates from Stephanie just now: Nirosha may have taken point on this.
+5 - IDtoEmployeeSvc error management code needs to be added; currently paring with Nirosh on this.
+6 - EmployeeServicesRoleMgmtDriver: Fix the retiree base role problem for about 4K accounts.
+
+Response:
+z - Help the core team/Joe/Yatin work on the RBE driver problem, and come up with a new solution to assign roles
+I have to talk to Joe and Yatin on this. I did see these stories in the backlog, but I dont know the priority compared to everything else on the radar. Steph can you help on this one? Based on that, I can prioritize this as #3 and move emp driver as prority #4.
+IDtoAutocrib: Data cleanup or at least create some plan to clean data up with Grishma.
+I assume this is on hold until we hear back from AutoCrib, When this comes off hold, this will be TOP priority. Until then lets see what else can be worked on. So this is priorty 1 when it comes off hold
+IDtoAviobook: Work is stopped, I need to fix two bugs (mid April for Aviobook Prod deploy is the current expectation.
+Lets estimate whats the path of least problem (wait until Core gets the env back?) and we can have ths as priority 2
+LMS driver updates from Stephanie just now: Nirosha may have taken point on this.
+Yes let Nirosha take point on this and I have tagged Mike for hands on work. You can skip this one
+IDtoEmployeeSvc error management code needs to be added; currently paring with Nirosh on this.
+For now lets groom the stories and leave it in the backlog to be picked up as priority #6
+EmployeeServicesRoleMgmtDriver: Fix the retiree base role problem for about 4K accounts.
+Once we wrap Avio and there is room btn AutoCrib, then we can start this - so this is prority #3.
+
+
+
+
+
+
+3/13/2025 11:35:00 AM
+Jack: Jim Snitter
+   - helps analyze index attributes . .
+ldap:///O=swaiddev??sub?(&(|(swaPersonType=FE)(swaEmployeeGroup=M)(swaPersonType=FE)(swaPersonType=R)(swaLUVForceSend=TRUE)(swaEmployeeGroup=P)(swaEmployeeGroup=L)(swaEmployeeGroup=K)(swaEmployeeGroup=H)(swaEmployeeGroup=G)(swaEmployeeGroup=F)(swaEmployeeGroup=E)(swaEmployeeGroup=D))(objectClass=inetOrgPerson))?x-sparse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IDtoAvioBook | IDM | UAT Bugfixes
+https://southwest.atlassian.net/browse/CSEE-4431
+
+
+https://southwest.atlassian.net/browse/CSEE-4432
+
+
+CLONE - IDtoAvioBook | IDM | Change default qualifications - Prod Deploy (PRELIVE ONLY)
+
+
+
+
+3/13/2025 9:48:41 AM
+cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=services,o=swa-idsat#1#c89dcddb-c01f-443e-9059-dccc7a1bf41b
+
+
+
+3/13/2025 9:48:41 AM
+IDtoAvioBook - Nader
+3 tests:
+1 - assign one of the new 5 roles - see new quals set
+2 - see other roles use default qualifications still
+3 - Confirm function is populated for each test.
+
+
+1 - "avio_pilot,avio_ckp"
+2 - Functions are case sentivie through the API - e106728 - 'Administrator' lower case
+3 - deploy prelive driver only
+4 - migration in prelive ONLY
+
+
+
+
+
+The main environment for QA for my side is:
+
+Main driver: https://acc.swa.aviobook.aero/id. The prelive test area we're using is prelive driver https://test.swa.aviobook.aero/idp.
+
+"function":"GROUND_HANDLER" - maps to AirportOps in the UI . .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IDtoAvioBook | IDM | Change default qualifications - UAT
+https://southwest.atlassian.net/browse/CSEE-4430
+
+
+Grishma,
+if we can fix the 800 users, then we cna move fowrard
+
+
+
+
+autocrib:
+
+Next actions:
+To get the drive into production, Grishma and I discussed some possible next actions that I'd like to take as soon as we all agree:
+I will run a report to list all mismatches in locations that I have access to (I can access all but Orlando right now).
+I will then send email to Grishma and team containing mismatches.
+I then need Grishma's official approval either over chat or email of the driver doc: https://southwest.atlassian.net/wiki/spaces/CYSEC/pages/419594271/IDtoAutocrib
+Grishma is reviewing now and will give the approval shortly.
+Deploy to QA
+Execute a UAT: Grishma and I  and others as required will test together to confirm operation of the driver.
+Complete Production deploy paperwork
+Deploy IDtoAutocrib to production.
+Execute our stop-gap initial migration (all users that match exactly will be completely onboarded, and will be done).
+
+
+FYI: These are the next actions I am taking on the driver, as included in your meeting notes; the initial migration notes above help to resolve items 5, 6, and 14.
+
+1 - Resolve some MyAccess concerns: In progress with MyAccess team.
+2 - Confirm MyAccess can support the role + permissions payload design.
+3 - Update driver code with any role + permission payload design changes.
+4 - Re-baseline all tests for the Autocrib driver.
+5 - Get All current user data from all DBIDs to enable the creation of the initial migration file, and diffing after initial migration.
+6 - Design initial migration.
+7 - Complete QA CR paperwork for deployment.
+8 - Deploy IDtoAutocrib to QA.
+9 - Review the AC with the team and get official acceptance. https://southwest.atlassian.net/wiki/spaces/CYSEC/pages/419594271
+10 - Schedule and execute UAT: testing session with Grishma and team, to confirm driver behaves as expected.
+11 - Finalize initial migration steps.
+12 - Complete Prod CR paperwork for deployment.
+13 - Deploy IDtoAutocrib to production.
+14 - Execute initial migration steps for sites that have already gone live.
+15 - ONGOING for a few weeks as needed: Monitor new sites coming online as requests for new sites come in.
+
+
+
+
+Shawn
+Broderick Wilson
+
+Orland went live!!
+   - 10691
+
+
+Shawn, Broderick,
+
+ - Send the list of all users that don' match their expected department.
+
+
+
+
+The bottom line is this: We need to update eDirectory to appear as if all existing users have already selected roles in MyAccess. This ensures that even existing users can drop right into well known use cases for normal processing.  To do this, I need to produce some files that I can import into eDirectory that would look like this. Lines that are prefixed with a #, are just comments about the user:
+
+dn: cn=e100170,ou=users,o=swaiddev
+changetype: modify
+#current permissions: adjust:FALSE|||console:FALSE|||forceReferenceBin:TRUE|||issue:TRUE|||kitIssue:FALSE|||locate:FALSE|||maintain:FALSE|||physical:FALSE|||return:TRUE|||stock:FALSE|||supervisor:FALSE|||
+replace: swaAutocribRole
+swaAutocribRole: UNKNOWNROLE|||adjust:FALSE|||console:FALSE|||forceReferenceBin:TRUE|||issue:TRUE|||kitIssue:FALSE|||locate:FALSE|||maintain:FALSE|||physical:FALSE|||return:TRUE|||stock:FALSE|||supervisor:FALSE|||
+#departmentNo: null
+
+The key piece is the 'UNKNOWNROLE' value at the beginning of the swaAutocribRole attribute. Do you want to get on the phone tonight/tomorrow to discuss?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://southwest.gitlab-dedicated.com/csiam/idm/idtoaviobook/-/jobs/97829528
+  idtoaviobook:
+   sat_1_host_name not set . .
+
+3/11/2025 11:41:37 AM
+kenzie - Tang - Santaquin tomorrow at
+9:15 tomorrow - in Santaquin office in dort Tang
+   - 94 W mainstreet -
+
+Leahs appt May 21 at 9:30 -
+
+
+
+
+Latest get-next-version failure
+https://southwest.gitlab-dedicated.com/csiam/idm/idtoaviobook/-/jobs/97814738
+
+
+
+
+Monday 17th - 9:45 & wife in 10:15 - munn
+   - MOnday 17th -
+
+
+
+
+
+
+
+
+groups for prod access:
+CN=Cybersecurity_IDM_Admin_Deploy_Mgmt,OU=eDir Privileged Access Groups,OU=Security,OU=Admin,DC=LUV,DC=AD,DC=SWACORP,DC=com
+Account	CN=ax266698,OU=Multi-Factor Accounts,OU=Admin,DC=LUV,DC=AD,DC=SWACORP,DC=com
+
+
+
+3/21/2025 10:41:31 AM
+aviolbook test fix
+1_10avio_cabin_admin - can't use, broken role.
+2_2_3Manyroles - 20 - can't use avio_cabin_admin
+
+avio_product_admin
+
+
+3/21/2025 12:00:26 PM
+This is the list of drivers that *possibly* need updates due to the dept code changes as they make use of swaDeptCode (need to do one more scan):
+
+  Notification Loopback - Does not need to have changes.
+  Trax is gone
+
+  IDtoCrowd
+  EmployeeServicesRoleMgmtDriver
+  IDtoMaintenix
+  IDtoOpsSuite
+  LogicMOnitor
+
+
+These are the entitlement policies affected by the change.
+Aaron to make these changes.
+  avio_dispatchers
+  avio_dispatch_specialists
+  avio_atc_specialists
+  avio_chiefs
+  avio_network_directors
+
+
+DISCUSS THE NOTIFICATION LIST AND OPTIONALLY REMOVE THIS SECTION FROM THE KB:
+
+Current notification list:
+Aaron.Kynaston@wnco.com (this is me . should probably remove it eventually . . .)
+CentralPubsAutomationSupport-DG - Application owner's DG
+gerald.dunn@wnco.com - Interested in the status
+
+CybersecurityOperations-DG@wnco.com - Ops DG
+
+Are there any others that should be part of the notification? 
+
+
+CHG0458543
+FYI: I hit a complication: some codes are split into different
+
+
+Dhivya Balasubramanian, Stephanie Smith, and Yvonne Umeh
+Sean, I've noticed that your "Copy of Consolidated List of Changes V3.xlsx" lost the prefixing zeros for the single digit dept codes. When we look directly at swaDeptCode values in eDirectory, this is how they appear:
+
+0 -> 00
+1 -> 01
+2 -> 02
+3 -> 03
+5 -> 05
+6 -> 06
+7 -> 07
+8 -> 08
+9 -> 09
+
+Engineers will want to make sure to use the '0' prefixed value when doing updates.
+
+
+
+
+
+  Team, I've got a bunch of updates coming up for the re-org, can I please get a quick review of these three CRs?
+
+  *Needs 1 reviewer: This is the prod change (QA is done) for the EntitlementServiceRoleMgmtDriver for the re-org:
+  *review task: https://southwest.service-now.com/nav_to.do?uri=change_task.do?sys_id=99cb5055c3ecaa50d8c2300f0501312c%26sysparm_view=default
+
+  *Needs 1 reviewer: this the QA Aviobook entitlement policy update:
+  *review task: https://southwest.service-now.com/nav_to.do?uri=change_task.do?sys_id=d62af5adc3e42690a6cd1e53e40131fd%26sysparm_view=default
+
+  *Needs 1 reviewer: this the Prod Aviobook entitlement policy update:
+  *review task: https://southwest.service-now.com/nav_to.do?uri=change_task.do?sys_id=baaeb561c3682690a6cd1e53e4013193%26sysparm_view=default
+
+
+
+
+
+
+
+We can cancel/close these unneeded stories: re-org and retiree work has been combined, deploying to QA shortly on my new deploy stories:
+
+IDM | EmployeeServicesRoleManagementDriver - Ensure Retiree Base Role - QA Deploy
+https://southwest.atlassian.net/browse/CSEE-4262
+
+IDM | EmployeeServicesRoleManagementDriver - Ensure Retiree Base Role - Prod Deploy
+https://southwest.atlassian.net/browse/CSEE-4263
+
+
+We should move these re-org stories for Aviobook into the sprint starting today:
+
+IDM | IDtoAvioBook - Update Department Codes - Entitlement Policies
+https://southwest.atlassian.net/browse/CSEE-4543
+
+IDM | IDtoAvioBook - Update Department Codes - Entitlement Policies - QA deploy
+https://southwest.atlassian.net/browse/CSEE-4544
+
+IDM | IDtoAvioBook - Update Department Codes - Entitlement Policies - Prod deploy
+https://southwest.atlassian.net/browse/CSEE-4545
+
+
+
+
+
+Assignments:
+
+    EmployeeServicesRoleMgmtDriver - Aaron - Started.
+    IDtoMaintenix - Kyle
+    IDtoOpsSuite - Yatin
+    IDtoLogicMonitor - Joe - Not needed
+    IDtoCrowd - Kyle (Joe: Did the driver need to be decommissioned by IDtoAtlassian?)
+    NotificationLoopback - Kyle? (may already be done)
+
+Entitlement Policies - Aaron - Started.
+    avio_dispatchers
+    avio_dispatch_specialists
+    avio_atc_specialists
+    avio_chiefs
+    avio_network_directors
+
+
+
+
+3/21/2025 8:35:14 AM
+TODO
+Sean Caroll
+  - dept code planning
+
+IDtoAutocrib
+done  - fix customField12 issue in prod.
+done  - Finish go-live file tool.
+  1 - The TPA roles file has an entry "eOn Leave) (59808,Autocrib-AMT". Does this user need to go in? If so, I can fix the format.
+  2 - Just to confirm, it sounds like I can push these two files for new users into Autocrib right now, correct?
+  3 - Per your notes, I'll wait until Monday to push the fix files for the 4 existing sites.
+
+IDToAviobook:
+done   - fix QA test: don't use broken role.
+   - found: role change only does not assign quals.
+   - Prep for initla migration . . mostly just pushing users . .
+   - get CR approved - https://southwest.service-now.com/nav_to.do?uri=%2Fchange_request.do%3Fsys_id%3Dd3633e679394aa503c5b75ea6aba1009%26sysparm_domain%3Dnull%26sysparm_domain_scope%3Dnull%26sysparm_record_list%3Dactive%3Dtrue%5Eopened_by%3Djavascript:gs.getUserID()%5EORrequested_by%3Djavascript:gs.getUserID()%5EORassigned_to%3Djavascript:gs.getUserID()%5Estate!%3D17%5Eassigned_toISNOTEMPTY%5Eassignment_group!%3D250b2e87db534c1089a74d8b13961976%5EORassignment_groupISEMPTY%5EORDERBYDESCstart_date%26sysparm_record_row%3D2%26sysparm_record_rows%3D3%26sysparm_view%3DStandard%26sysparm_view_forced%3Dtrue
+   - get mr approved - https://southwest.gitlab-dedicated.com/csiam/idm/idtoaviobook/-/merge_requests/31
+   - Merge MR
+   - Deploy driver through QA
+   - notify nader I"m going into prelive.
+   - Deploy to prelive
+IDtoAutocrib   - Review modnay meeting info and record dbid request dates.
+IDToDocunet - KB0115345 - finish updating, and re-publish.
+IdMUnit - Mat conversation
+
+
+
+
+
+new:
+QA:
+CHG0457515: CSEE-4233 Deploy IDtoAutocrib driver in QA to resolve the customField12 issue
+CHG0457520: CSEE-4233 Deploy IDtoAutocrib driver in PROD to resolve the customField12 issue.
+
+
+
+
+
+
+C:\work\adminrepo>grep -Rif grepForThese.txt grepmefordeptcodes.txt
+They appear as follows when viewed through Apache Directory Studio. Each entitlement policy contains the definition of the role as an LDAP filter, and function like a native eDirectory dynamic group. For example, the avio_dispatch_specialists group currently contains the ldap query of: "ldap:///OU=Users,O=SWA-ID??sub?(&(|(swaStatus=L)(swaStatus=A))(|(jobCode=DP05)(jobCode=818A))(swaDeptCode=17))". It's not optimized for viewing at the moment but the bottom line is that it says if a user is on leave, or active, they have a jobCode value of DP05 or 818A along with a swaDeptCode of 17, then they are assigned the 'entitlement' is the terminology used by the driver.
+ldap:///O=swa-id??sub?(&(|(swastatus=a)(swastatus=i)(swastatus=l))(&(|(swadeptcode=01)(swadeptcode=08)(swadeptcode=17)(swadeptcode=18)(swadeptcode=44)(swadeptcode=67)(swadeptcode=92))(|(swatitlecode=107e)(swatitlecode=121a)(swatitlecode=130a)(swatitlecode=224a)(swatitlecode=228b)(swatitlecode=265b)(swatitlecode=269d)(swatitlecode=275a)(swatitlecode=281b)(swatitlecode=290a)(swatitlecode=312a)(swatitlecode=332d)(swatitlecode=355c)(swatitlecode=380a)(swatitlecode=401a)(swatitlecode=421b)(swatitlecode=422b)(swatitlecode=450d)(swatitlecode=461a)(swatitlecode=462d)(swatitlecode=466e)(swatitlecode=471d)(swatitlecode=483c)(swatitlecode=502a)(swatitlecode=503c)(swatitlecode=547a)(swatitlecode=549b)(swatitlecode=575b)(swatitlecode=578c)(swatitlecode=604b)(swatitlecode=615c)(swatitlecode=618b)(swatitlecode=619b)(swatitlecode=620b)(swatitlecode=622b)(swatitlecode=726d)(swatitlecode=723e)(swatitlecode=777e)(swatitlecode=782d)(swatitlecode=745a)(swatitlecode=776e)(swatitlecode=786a)(swatitlecode=808a)(swatitlecode=856d)(swatitlecode=865c)(swatitlecode=933d)(swatitlecode=943a)(swatitlecode=950d)(swatitlecode=951d)(swatitlecode=dc59)(swatitlecode=dc60)(swatitlecode=dc62)(swatitlecode=dd82)(swatitlecode=di69)(swatitlecode=di90)(swatitlecode=ex36)(swatitlecode=m810)(swatitlecode=mg06)(swatitlecode=pi01)(swatitlecode=pi02)(swatitlecode=ex06))))
+
+
+
+
+Active or On Leave (A or L)     17      avio_dispatchers        ldap:///OU=Users,O=SWA-ID??sub?(&(|(swaStatus=l)(swaStatus=a))(|(jobCode=385E)(jobCode=633E)(jobCode=M556)(jobCode=383A)(jobCode=DP01)(jobCode=DP02)(jobCode=DP03))(swaDeptCode=17))
+DP04, 566E      Active or On Leave (A or L)     17      avio_sod        ldap:///OU=Users,O=SWA-ID??sub?(&(|(swaStatus=L)(swaStatus=A))(|(jobCode=DP04)(jobCode=566E))(swaDeptCode=17))
+Active or On Leave (A or L)     17      avio_dispatch_specialists       ldap:///OU=Users,O=SWA-ID??sub?(&(|(swaStatus=L)(swaStatus=A))(|(jobCode=DP05)(jobCode=818A))(swaDeptCode=17))
+Active or On Leave (A or L)     17      avio_atc_specialists    ldap:///OU=Users,O=SWA-ID??sub?(&(|(swaStatus=L)(swaStatus=A))(|(jobCode=174D)(jobCode=DP06))(swaDeptCode=17))
+Active or On Leave (A or L)     17      avio_chiefs     ldap:///OU=Users,O=SWA-ID??sub?(&(|(swaStatus=A)(swaStatus=L))(swaDeptCode=17)(|(jobCode=DI95)(jobCode=978A)(jobCode=709D)(jobCode=DI57)(jobCode=867C)(jobCode=601E)(jobCode=295B)(jobCode=354D)))
+Active or On Leave (A or L)     17      avio_network_directors  ldap:///OU=Users,O=SWA-ID??sub?(&(|(swaStatus=L)(swaStatus=A))(|(jobCode=DC55)(jobCode=557D)(jobCode=DC55)(jobCode=557D)(jobCode=833A))(swaDeptCode=17))
+
+C:\work\adminrepo>
+
+
+avio_dispatchers
+avio_dispatch_specialists
+avio_atc_specialists
+avio_chiefs
+avio_network_directors
+
+Deploy todo items:
+ - prod elevate
+ - password storage during place holder build
+ - DirXML-TraceLevel, not DirXMl-DRiverTracelevel.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jeff, Joseph,
+
+I think we're going live with these on Tuesday, can I please get rights to these dbid's?
+Fort Lauderdale: FLL - 10802
+Tampa: TPA - 10803
+
+--Aaron
+
+
+
+
+AutoCrib | IDM - Create New Site Onboarding Tool
+https://southwest.atlassian.net/browse/CSEE-4504
+1 point
+
+
+options
+Pay
+contest
+Deferred p
+Tsc by april 4th
+
+
+
+kb review:
+   done - be ready to review with the team.
+
+Autocrib:
+   done - track down the 15 remaining users, confirm they're gone in edir.
+   story first: - Write tool that can help onboard users: just 'userid,role' file to ldif.
+
+Aviobook:
+   - Update QA test to use a role that isn't broken.
+   -
+
+
+
+Cleanup for initial migration:
+Actions I'll take:
+e2222 - disable in autocrib
+e179233 - Sean L. - disable user in autocrib.
+e101381 - disable in autocrib
+e155236 - disable in autocrib
+e185712 - disable in autocrib
+e56872 - disable in autocrib
+e80251 - disable in autocrib
+
+
+
+
+
+
+
+There are 6 more that will fail since the user no longer exists.
+
+Users that have been deleted from edirectory; likely they've been termianted longer than a few months: You may want to consider disabling/deleting these users:
+(cn=e139805)
+(cn=e170096)
+(cn=e91497)
+(cn=e2222)
+(cn=e9999)
+
+
+full list:
+
+(|
+    (cn=e101381)
+    (cn=e112745)
+    (cn=e139805)
+    (cn=e155236)
+    (cn=e170096)
+    (cn=e185712)
+    (cn=e56872)
+    (cn=e61776)
+    (cn=e80251)
+    (cn=e91497)
+    (cn=e2222)
+    (cn=e179233)
+    (cn=e50304)
+    (cn=e9999)
+)
+
+
+
+
+
+
+
+
+ - autocrib uat status email
+ - permission to do golive files
+ - 25 - if I can get it in production by then . .
+
+
+
+Autocrib-AMT|||adjust:FALSE|||console:FALSE|||forceReferenceBin:FALSE|||issue:TRUE|||kitIssue:FALSE|||locate:TRUE|||maintain:FALSE|||physical:FALSE|||return:TRUE|||stock:FALSE|||supervisor:FALSE|||
+
+ - Joseph/Jeff: When do we cleanup users if never deleting? do active=true use licences?
+   - Add to documentation: show when we cleanup.
+
+ - new stations going live . .
+
+
+Grishma:
+   - Sean - communication - regarding changes in booleans.
+     - communication:
+      1 - we'd be fixing permission en masse
+      2 - Admins sould no longer change data manually
+         - Grishma is the only admin, Sean/Roderick have access.
+   - Need to onboard en masse -
+    When stations go live - all mechanics go live . .
+     could do this whenever . .
+    - Get the ok to do userid,role.
+    - email for UAT
+    - ft l - 21
+
+Team,
+
+Grishma and I had a short driver-only UAT to talk through usecases, and accept the driver documentation. We completed the following:
+
+* We executed use cases
+* We talked about how the driver worked, and how it interacts with MyAccess.
+* We also talked about the communication that should be sent out for initial migration.
+* We also talked about a new request: for new sites that go-live, Grisham would like us to assist onboarding the users to avoid the need for hundreds of users to use MyAccess at the same time. See below for details.
+
+Sean, when we are doing the initial migration, there are two items we should include in the communication out to anyone that manages permissions. We've covered these already, but I wanted to put them here in a status:
+
+1 - We will be changing a few of the permission booleans for 800+ users. Those involved should expect there could be changes, and possibly even the need to have users select different roles in MyAccess to resolve.
+2 - Manual changes to rights should be avoided. If changes to roles need to be made, we should make them in MyAccess.
+
+
+Action items:
+ - Grishma: Accept the driver AC: Completed.
+ - Grishma: Question to the EE team: Can you help onboard new sites by importing users through the driver?
+ - Aaron: Confirm the onboarding request from Grishma.
+ - Aaron: If approved, write a related tool that can help bring new users online.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+joe
+ - sync - notify attrs
+ - build xml
+
+
+
+
+
+
+git remote set-url origin git@southwest.gitlab-dedicated.com:csiam/idm/IDtoSumTotal
+
+
+
+
+3/18/2025 3:15:38 PM
+before I leave:
+ - timecard
+ - autocrib: double check last few uers; find out why they don't match
+ - aviobook: get feedback from nader
+ - docunet: be ready for kt sesion
+
+
+
+
+
+
+
+
+Nader,
+
+This id/name mismatch in QA will mean that the driver cannot set some roles, nor would users be provsioned (if they weren't present already) since the role assignment failure is going to be a big problem for our QA enviornments (acc/test end point) for roles may only be a QA issue. In production, I scanned the roles, and it appears that for the users I looked through the ID always matched the role name: example:
+
+"roles": [
+  {
+      "id": "avio_connect_goramp",
+      "type": "USER",
+      "name": "avio_connect_goramp",
+      "organization": "default",
+      "archived": false,
+      "createdAt": "2024-11-12T18:52:55Z",
+      "modifiedAt": "2025-03-18T20:07:26Z"
+  }
+
+
+However, in QA, we have situations like this one, where the users role 'Tech-Mechanic' appears to have been created without a roper ID:
+
+"roles": [
+    {
+        "id": "d43f6db2-9bb3-42c0-99e5-1cc5fae9d67e",
+        "type": "USER",
+        "name": "Tech-Mechanic",
+        "organization": "default",
+        "archived": false,
+        "createdAt": "2022-05-06T18:41:24Z",
+        "modifiedAt": "2025-02-21T20:28:17Z"
+    }
+],
+
+
+
+
+CHG0454614 -aviobook change
+
+
+IDtoDocunet | IDM/UFM | KB and KT Session to Resolve UFM Issues
+https://southwest.atlassian.net/browse/CSEE-4431
+2 points
+
+
+
+
+Cybersecurity Enterprise Enablement
+
+
+
+
+3/14/2025 11:40:06 AM
+Dev query before deleting:
+ldap:///??sub?(&(&(|(swatitlecode=ex44)(swatitlecode=ex06)(swatitlecode=pi02)(swatitlecode=pi01)(swatitlecode=mg06)(swatitlecode=m810)(swatitlecode=ex36)(swatitlecode=di90)(swatitlecode=di69)(swatitlecode=dd82)(swatitlecode=dc62)(swatitlecode=dc60)(swatitlecode=dc59)(swatitlecode=951d)(swatitlecode=950d)(swatitlecode=943a)(swatitlecode=933d)(swatitlecode=865c)(swatitlecode=856d)(swatitlecode=808a)(swatitlecode=786a)(swatitlecode=776e)(swatitlecode=745a)(swatitlecode=782d)(swatitlecode=777e)(swatitlecode=723e)(swatitlecode=726d)(swatitlecode=622b)(swatitlecode=620b)(swatitlecode=619b)(swatitlecode=618b)(swatitlecode=615c)(swatitlecode=604b)(swatitlecode=578c)(swatitlecode=575b)(swatitlecode=549b)(swatitlecode=547a)(swatitlecode=503c)(swatitlecode=502a)(swatitlecode=483c)(swatitlecode=471d)(swatitlecode=466e)(swatitlecode=462d)(swatitlecode=461a)(swatitlecode=450d)(swatitlecode=422b)(swatitlecode=421b)(swatitlecode=401a)(swatitlecode=380a)(swatitlecode=355c)(swatitlecode=332d)(swatitlecode=312a)(swatitlecode=290a)(swatitlecode=281b)(swatitlecode=275a)(swatitlecode=269d)(swatitlecode=265b)(swatitlecode=228b)(swatitlecode=224a)(swatitlecode=130a)(swatitlecode=121a)(swatitlecode=107e))(|(swadeptcode=92)(swadeptcode=67)(swadeptcode=44)(swadeptcode=18)(swadeptcode=17)(swadeptcode=08)(swadeptcode=01)))(|(swastatus=l)(swastatus=i)(swastatus=a)))
+
+
+ldap:///??sub?(objectClass=FAKETOSPEEDUPQUERY)
+
+
+
+dxcmd -host w11dcledirdi019 -port 1524 -user ax266698.admins.swaiddev -getdriverstats "RBEAEv1.Driver Set AEv1.DirXML.Services.swaiddev" output && cat output | head -20
+
+OpenText Identity Manager Command Line Utility
+version 4.10.0.0000
+Copyright (c) 2024 OpenText Corporation. All Rights Reserved
+
+Enter user's password:
+Logging in using:
+        host: w11dcledirdi019/10.133.51.164:1524
+        user: ax266698.admins.swaiddev
+Using NDAP protocol
+DirXML version is 4.10.0.0000 AE.
+Driver set Driver Set AEv1.DirXML.Services.swaiddev.DEV_SWACO_ID. is associated with the server.
+<?xml version="1.0" encoding="UTF-8"?><driver-info driver-dn="CN=RBEAEv1,CN=Driver Set AEv1,OU=DirXML,OU=Services,O=swaiddev" server-dn="CN=w11dcledirdi019,OU=Services,O=swaiddev" timesta                                    mp="20250314173152.797Z">
+        <subscriber>
+                <cache>
+                        <size>52590080</size>
+                        <unprocessed-size>52496869</unprocessed-size>
+                        <transactions>
+                                <oldest>20250313002747.666Z</oldest>
+                                <newest>20250314172956.253Z</newest>
+                                <counts>
+                                        <add>526</add>
+                                        <modify>6354</modify>
+                                        <remove>187</remove>
+                                </counts>
+                        </transactions>
+                </cache>
+                <operations last-reset-time="20240617233340.469Z">
+                        <reported-events>
+                                <modify>73746</modify>
+                                <add>22763</add>
+                                <sync>48257</sync>
+
+
+
+
+
+3/13/2025 4:22:38 PM
+RBE replacement notes:
+Table Based Entitlements - TBE (FireDragon . .LOL)
+1 - Need a way to define a role name, and a role condition to know when to apply the role; and both should be outside of any driver.
+2 - When processing a user we need a way to ask a library if a user meets the qualifications of any of the role definitions, then assign the user that role.
+3 - We may want a way to have a set of users to be re-calculated, and re-pushed through a driver in a way that would make sense to each role.
+
+
+
+
+the whole team
+
+"Dhivya Balasubramanian" <Dhivya.Balasubramanian@wnco.com>; "Sean Lockard" <Sean.Lockard@wnco.com>
+
+
+"Yvonne Umeh" <Yvonne.Umeh@wnco.com>; "Ben Cundy" <Ben.Cundy@wnco.com>; "Grishma Subbaiah Bittianda" <Grishma.SubbaiahBittianda@wnco.com>; "Stephanie Smith" <Stephanie.Smith@wnco.com>; "Brad Petit" <Brad.Petit@wnco.com>; "Angie Johnson (Contractor)" <Angie.Johnson@wnco.com>; "Roderick Wilson" <Roderick.Wilson@wnco.com>; "Jeevan Gogineni (Contractor)" <Jeevan.Gogineni@wnco.com>
+
+
+
+
+For the record, the summary is that 'ROLE_NAME_IN_USE' happens when a driver is trying to use a role that has a name/id mismatch which doesn't happen in prod.
+
+
+
+cn=Cybersecurity_IDM_Admin_Deploy_Mgmt,ou=PrivAccGroups,o=SWA-ID
+
+
+3/21/2025 4:43:58 PM
+starting users in autocrib
+cn=e129703,ou=Users,o=SWA-ID
+cn=e179233,ou=Users,o=SWA-ID
+cn=e52081,ou=Users,o=SWA-ID
+cn=e999001,ou=Users,o=SWA-ID
+cn=e999002,ou=Users,o=SWA-ID
+
+
+(|
+    (swaDeptCode=1)
+    (swaDeptCode=3)
+    (swaDeptCode=5)
+    (swaDeptCode=06)
+    (swaDeptCode=8)
+    (swaDeptCode=9)
+)
+
+
+
+
+
+
+
+Latest status sent: 3/26/2025 9:21:02 AM
+
+Team,
+Here's the latest status on the re-org IDM work: Please let me know if there are corrections to make here.
+
+
+Assignments:
+  - Dynamic Groups: waiting on Ed Pawlik & team to report back.
+    Update: I will need a copy of the query that Pilots_D uses. The avio_pilot entitlement policy should have the same query.
+
+  - EmployeeServicesRoleMgmtDriver - 2025-03-26 - Aaron: QA deploy done, Prod CR planed for March 31 at 2 pm. Waiting on team review.
+  - IDtoCrowd - 2025-03-06: Kyle is waiting on answers to see if changes are needed.
+
+  - Entitlement Policies - 2025-03-26 - Aaron - All policies updated in DEV, preparing for QA deploy.
+      Note: old = number of members in current query in prod. 'new' is the number of people in the new query. These numbers should realtively evenly swap once the deptcode changes come in meaning the new codes are coming online. The counts for each item is from a query done from the old and new query in the corresponding role in prod.
+
+      * avio_pilots
+        - blocked: waiting on Pilots_D: has a few 1 to many department code mappings I can't work out . .
+
+      * avio_dispatchers:
+        done, 444 in old code currently, 0 in the new code currently; about as expected.
+
+      * avio_dispatch_specialists:
+        done, 20 in old, 0 in new.
+
+      * avio_atc_specialists
+        done, 20 in old, 0 in new.
+
+      * avio_chiefs
+        done, 28 in old, 0 in new.
+
+      * avio_network_directors
+        done, 10 in old, 0 in new.
+
+
+Completed, or no longer needs changes
+    IDtoLogicMonitor - Joe: No changes needed.
+    IDtoOpsSuite - 2025-03-26 Yatin: No changes needed.
+    NotificationLoopback – 2025-03-26 - Kyle: No changes needed
+    IDtoMaintenix – 2025-03-26 - Kyle: No changes needed
+
+
+
+Team, the Pilots_D group also needs to be updated. Allen Ricketts is listed as the owner on the group in prod - should I coordiate the dept code changes with him?
+
+
+box 2 items:
+ - capability items in <configuration-manifest
+
+
+
+
+
+4/1/2025 1:52:59 PM
+EE backlog/retro
+ - I'd like to understand what we are solving.
+Ben -  4/1/2025 2:05:55 PM
+   - Non 'art' - don't plan the same way as portfolio - don't carry initivaes as owners.
+   - 100% of the work is a dependency
+   - Can't commit to exact timelines; depends on customer so much.
+   - Really just looking at total aviablity for engineers; so we don't fit in agile.
+   - Kanban
+    - instead of two week iterations: how much work in progress at any given time?
+    - how are things prioritsed? one kanban view.
+   - question:I suppose I've benefited from artificial sprint start/end.
+  -
+
+
+
+
+INC6508429
+
+avio_pilot
+
+
+4/1/2025 7:30:29 AM
+Roles:
+  For these roles, we're pushing to get the new desired qualifications:
+*    avio_pilot
+    avio_ckp
+*    avio_cabin_fa
+*    avio_cabin_if_ops
+    avio_cabin_office
+
+  For these roles, we're pushing to set the new Function:
+*    avio_cabin_if_ops
+*    avio_cabin_office
+    avio_cabin_admin
+    avio_product_admin
+    avio_connect_admin
+    avio_connect_goadmin
+    avio_connect_gosups
+    avio_connect_goramp
+    avio_ckp
+
+
+avio_prelive_technology_developer
+
+
+
+
+
+
+4/7/2025 11:46:20 AM
+Gary walkthrough chat - started at 11
+did walkthrough
+ - Thursday: fix for double quotes . .
+ - Also include Gary's code.
+
+garys TODO list from our chat
+ - Add reason why didn't use an email template at the top of the policy
+ - else: show message 'no data found to email'
+ - JOB ACL update in service driver
+ - releasenotes have all information about how to use the new code, gcvs, don't forget to configure . .
+   - include the fact that the log file is deleted after emailing it.
+   Email: include the highest priority items, suchas the GCV config.
+
+
+
+# Temporary cronjob by Aaron Kynaston. This can be deleted by the end of 2025
+#       This is to help identify how many retries are used.
+* * * * * grep -c Requesting\ 30\ second\ retry\ delay /opt/idmlogs/IDtoEmployeeSvc/*
+00 */4 * * *  ls -rlth /opt/IDMFeeds/IDtoDocunet/ufm | wc -l | mail -s docunet-file-count aaron.kynaston@wnco.com
+
+
+4/17/2025 2:45:47 PM
+Hosein notes for git:
+Hosein,
+
+I recommend you taking these steps in the near future:
+
+ - setting up your SSH keys next, and get it added to bitbucket: setting up public key authentication is a very well know process; and is documented everywhere - e.g.: https://support.atlassian.com/bitbucket-cloud/docs/set-up-personal-ssh-keys-on-windows/
+
+ - Fully learning git status, git log and git branch.
+
+ - Consider aliases . .but only after you are comfortable with the non alias version of the commands. Some commands you'll do very often, like 'git status -s --branch'.
+
+
+Here's some links for your reference as you use git:
+
+Standards we are following for Git repos:
+https://trivir.atlassian.net/wiki/spaces/TECH/pages/1766981633/Git+Standards
+
+This shows how to have your config setup when using VMWare so that pieces of your config can be specific to you, and some can be specific to the VM.
+https://trivir.atlassian.net/wiki/spaces/TECH/pages/1372454913/Externalizing+Git+Config
+
+
+Query result empsvc . .
+
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:enterprise.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Header>
+        <LimitInfoHeader>
+            <limitInfo>
+                <current>151</current>
+                <limit>381305000</limit>
+                <type>API REQUESTS</type>
+            </limitInfo>
+        </LimitInfoHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <queryResponse>
+            <result>
+                <done>true</done>
+                <queryLocator xsi:nil="true"/>
+                <size>0</size>
+            </result>
+        </queryResponse>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+
+
+
+
+
+
+4/25/2025 5:43:23 PM
+Example pretty printed qurey respons of a user for IdMUnit validation:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:enterprise.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sf="urn:sobject.enterprise.soap.sforce.com">
+  <soapenv:Header>
+    <LimitInfoHeader>
+      <limitInfo>
+        <current>527</current>
+        <limit>381305000</limit>
+        <type>API REQUESTS</type>
+      </limitInfo>
+    </LimitInfoHeader>
+  </soapenv:Header>
+  <soapenv:Body>
+    <queryResponse>
+      <result>
+        <done>true</done>
+        <queryLocator xsi:nil="true"/>
+        <records xsi:type="sf:User">
+          <sf:Id>005Dl00000C5ltiIAB</sf:Id>
+          <sf:Alias>GSmit</sf:Alias>
+          <sf:Email>greg.smith@invalid.wnco.com</sf:Email>
+          <sf:EmployeeNumber>e8898509511</sf:EmployeeNumber>
+          <sf:FederationIdentifier>e8898509511</sf:FederationIdentifier>
+          <sf:FirstName>Greg</sf:FirstName>
+          <sf:IsActive>true</sf:IsActive>
+          <sf:LastName>Smith</sf:LastName>
+          <sf:Profile xsi:type="sf:Profile">
+            <sf:Id>00e2E000001IUCeQAO</sf:Id>
+            <sf:Name>ES Operations</sf:Name>
+          </sf:Profile>
+          <sf:UserRole xsi:type="sf:UserRole">
+            <sf:Id xsi:nil="true"/>
+            <sf:Name>ADA ACT Leader</sf:Name>
+          </sf:UserRole>
+          <sf:UserRoleId>00E2E000002RP35UAG</sf:UserRoleId>
+          <sf:UserType>Standard</sf:UserType>
+          <sf:Username>e8898509511@wnco.com.empdev1</sf:Username>
+        </records>
+        <size>1</size>
+      </result>
+    </queryResponse>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+MyAccess folks, I need some assistance. I've briefly talked about this with some of you, but here's the bottom line. I have a situation where I need to expose 200+ 'teams' (aka Miro groups) through MyAccess.  Ideally, the list would be populated from an API call. This API call returns all groups along with the entire membership list for all groups. The expost list should only show groups with 200+ members.
+
+Could I schedule a call with one of you one on one and make a plan?
+
+
+
+
+
+
+Leah
+804.18 - 4/28/2025 2:03:14 PM fsa - leah's contacts 698.00, 105.75
+
+Mckenzie
+105.75  - 4/28/2025 2:06:32 PM- paid
+
+Aaron
+131.25 - 4/28/2025 2:07:19 PM - paid
+
+
+
+
+4/29/2025 1:40:29 PM
+INC6561331
+cn=r7429,ou=Users,o=SWA-ID
+value was:
+EmployeeSvc_Retiree|||00E2E000002RP3oUAG|||00e2E000001IUCiQAO
+
+
+4/29/2025 3:53:00 PM
+aviobook 29 users missing aviochief, INC6575311
+(|
+(cn=e26697)
+(cn=e110496)
+(cn=e130589)
+(cn=e93488)
+(cn=e94711)
+(cn=e84007)
+(cn=e87960)
+(cn=e109931)
+(cn=e118394)
+(cn=e118403)
+(cn=e81883)
+(cn=e139896)
+(cn=e115805)
+(cn=e137094)
+(cn=e143947)
+(cn=e131644)
+(cn=e92230)
+(cn=e144042)
+(cn=e105460)
+(cn=e114734)
+(cn=e139886)
+(cn=e101772)
+(cn=e44933)
+(cn=e73773)
+(cn=e72759)
+(cn=e70512)
+(cn=e69444)
+(cn=e43992)
+(cn=e38037)
+)
+
+
+
+4/30/2025 4:58:06 PM
+empsvc mrs
+https://southwest.gitlab-dedicated.com/csiam/idm/IDtoEmployeeSvc/-/merge_requests/36
+https://southwest.gitlab-dedicated.com/csiam/idm/EmployeeServicesRoleMgmtDriver/-/merge_requests/35
+https://southwest.gitlab-dedicated.com/csiam/idm/IDtoEmployeeCarePicture/-/merge_requests/18
+
+
+
+IDtoEmployeeSvc
+   - Create CR
+   - MR: https://southwest.gitlab-dedicated.com/csiam/idm/IDtoEmployeeSvc/-/merge_requests/36
+
+EmployeeServicesRoleMgmtDriver:
+   - create CR
+   - MR: https://southwest.gitlab-dedicated.com/csiam/idm/EmployeeServicesRoleMgmtDriver/-/merge_requests/35
+
+IDtoEmployeeCarePicture
+   - create cr
+   - mr: https://southwest.gitlab-dedicated.com/csiam/idm/IDtoEmployeeCarePicture/-/merge_requests/18
+
+
+
+Nader and team, I've completed the latest updates and have validated through QA. Thanks for the idea to use the 'test' end point Nader, that helped get past the worst of my troubles.  Here are the changes going in. Please let me know if/when I can proceed, or if you'd like to chat first.
+
+Version 1.9.4 of the driver has these updates:
+1 - avio_cabin_fa FA role will now be applied to prehire FAs automatically. (Thanks Duce, for helping identify users to push in the mean time. After this deploy, we won't need to do this any more).
+2 - The avio_pilot now receives 6 qualifications; the 5 defaults have been added:
+    "qualifications": [
+        {"id": "fltops_pilot"},
+        {"id": "avio_qual_b737"},
+        {"id": "avio_qual_b737_700"},
+        {"id": "avio_qual_b737_800"},
+        {"id": "avio_qual_b737_max7"},
+        {"id": "avio_qual_b737_max8"}
+      ]
+3 - Some minor corrections have been made to re-org definition on the roles (per recent INCs).
+
+
+
+
+Amy,
+
+I spoke with Ops and he helped me realize, as long as your users have their ID/username matching; then the only thing we'd want to do here is have you submit an INC to "Cybersecurity-Engineering Operations" and request that they migrate the user to Avibook.  The name of the driver is IDtoAviobook.  They can ignore the IDtoAvioBookPrelive driver in these cases; so a request might be as follows. This would help ensure the user is created properly and ends up with the proper roles, qualifications and function.  I'm still working to answer the question regarding the MyAccess delay.
+  New INC: We need to have you migrate the user e987654 user to Aviobook through the IDtoAvioBook driver.
+
+
+(|
+(cn=r49183)
+(cn=r15198)
+(cn=r23554)
+(cn=r16738)
+)
+
+INC6618124 - R49183
+
+
+<?xml version="1.0" encoding="UTF-8"?><template name="IDtoEmployeeSvc-Error-Reporting" subject="An EmployeeServices driver reported an error ($driverName$)">
+    <data>
+        <html xmlns:form="http://www.novell.com/dirxml/workflow/form">
+            <form:token-descriptions>
+                <form:token-description description="Full CN of the IDM driver reporting the issue." item-name="driverName"/>
+                <form:token-description description="Full error message reported by the driver." item-name="errorMsg"/>
+                <form:token-description description="User CN of the user in question if there was one involved." item-name="userCN"/>
+                <form:token-description description="Event causing the error." item-name="xdsEvent"/>
+            </form:token-descriptions>
+            <head>
+                <title>An EmployeeServices driver reported an error ($driverName$)</title>
+                <style>
+                    <!-- body { font-family: Trebuchet MS } -->
+                </style>
+            </head>
+            <body BGCOLOR="#FFFFFF">
+                <p>The driver $driverName$ has reported an error for user: $userCN$.  The error was: $errorMsg$. The event that caused this error was: $xdsEvent$</p>
+            </body>
+        </html>
+    </data>
+</template>
+
+
+5/20/2025 11:21:57 AM - FIRST INC SENT for ufm failure in docunet I believe.
+WAIT - docunet: Wait on Bala Bandredi UFM docunet: INC6613365 - Claudio Reyes worked on this: UFM restart for documetn on pi010
+
+
+5/20/2025 3:49:20 PM
+did 33 removal of avio_cabin_fa; as already assigned . .
+
+
+
+Teams I've notified: (all CC dhivya & ben)
+aviobook: Nader, kinsley JOhnson, ducedu
+empsvc: josh logini jeff
+aptio: asleigh
+autocrib: sean & grisham
+
+OOO Notice for Aaron Kynaston
+
+Team,
+
+I'll be OOO June 18 - 20 (3 days), and then again from July 11 - 25 (11 days). If you need something during this time, please email my team with your request to: CybersecurityEnterpriseEnablementTeam-DG@wnco.com. Otherwise, feel free to email me directly, as I'll periodically check my email and I'll help to resolve it when I'm back in the office. Please feel free to forward this to those who may need to be included.
+
+--Aaron
+
+
+
+
+
+
+
+Dhivya, Ben,
+
+Here's my plan so far for my open projects.  I'll send updates as my two week OOO on July 11 gets closer. I believe only EmployeeSvc and Aviobook may ask for support while I'm gone, and I've included them below.  I'll send an email now to CybersecurityEnterpriseEnablementTeam-DG@wnco.com to schedule a KT session to help cover while I'm gone.
+
+Please let me know if you'd like any changes. I am going to proceed now and schedule an internal KT session to help support EmployeeSvc, and Aviobook while I'm out.
+
+
+
+
+
+DETAILS:
+
+I'm working on putting together an explicit plan for my FTO. Here is what I plan on sending to our customers that I have context on. I should probably spend 15-30 minutes with another IDM engineer to have them be aware of what we've done to maintain items, along with who is involved, the state of things as of now, and items that will need help when I'm out in July.
+
+I realize some of this may change over the next month, so I'll send an update to this as needed.
+
+Customers involved:
+  Aviobook: Nader Hassan
+  EmployeeSvc: Josh Saulson & Logini Sivalogan
+  IDtoApptio: Ashleigh Wansbrough
+  IDtoAutocrib: Sean Lockard
+
+Here's the state of things:
+  Aviobook: just completed a QA and Prod deploy, all went well; last push of users should complete within 30 mins.
+     - Last minute changes: these changes involved updating avio_pilots to match the pilots_D group at all times, add more titlecodes to avio_connect_gosups, and avio_connect_goramps.
+
+  EmployeeSvc: We'll talk about an open issue, and schedule a UAT tomorrow when they are free from PI planning.
+     - Last minute changes: None. About to have a UAT with them after finishing a todo list of 9 items.
+
+  IDtoApptio: Ashleigh and I learned quite about about the API, I don't think she'll need anything while I'm gone, but I'll include her in the communication.
+     - Last minute changes: None. Still learning the API, will start driver stories when it's the next priority.
+
+  IDtoAutocrib: We should finish the last go live a few days before June 18; we'll see if he needs assistance while I'm out; it's been pretty quiet.
+     - Last minute changes: None; though we did just submit the LAX users for the next go live around June 1.
+
+
+Items that are likely needed while I am gone:
+  EmployeeSvc: Users may need to be re-pushed through the drivers. I should probably spend 20-30 mins to update another IDM engineer on this process.
+  Aviobook: They may ask for incorrectly created users (manual users) to be re-created, it's a relatively simple process.
+  IDtoApptio: No issues; can wait while I'm out to my knoweldge.
+  IDtoAutocrib: No issues; can wait while I'm out to my knoweldge.
+
+I'll send this note to the main contacts for the 4 projects above ASAP:
+
+
+Team,
+
+I'll be OOO June 18 - 20 (3 days), and then again from July 11 - 25 (11 days). If you need something, please email with your request: CybersecurityEnterpriseEnablementTeam-DG@wnco.com. You are welcome to ping me in emergencies, though I may have limited access to Teams. Please let me know if you have any concerns.
+
+--Aaron
+
+
+
+
+5/28/2025 5:06:26 PM
+most recent failure
+ - Add column for IDPreliveValidation 'dn' missing!
+aviobook
+IDtoAvioBookTests > org.idmunit.IdMUnitTestCase.testAC2_1AddRemoveMulti[45] FAILED
+    com.swa.idmunit.connector.RestConnectorException: Issue while checking: [$.roles[*].id], expected: [["avio_pilot"]] but was: [["avio_cabin_office"]]
+
+testAC2_2SyncMulti[28] -> needs prelive split
+
+IDtoAvioBookTests > org.idmunit.IdMUnitTestCase.testAC2_2_1SyncMultiBugFix[26] FAILED
+    com.swa.idmunit.connector.RestConnectorException: Issue while checking: [$.roles[*].id], expected: [NOT FOUND] but was: [["avio_pilot"]]
+
+IDtoAvioBookTests > org.idmunit.IdMUnitTestCase.testAC2_2_3ManyRoles[20] FAILED
+    junit.framework.AssertionFailedError: Validation failed: statusCode was [404], Reason phrase was: [Not Found], Full message body was:[[{"code":"NOT_FOUND","message":"Resource could not be found.","technicalInfo":"User 'e8562232794' could not be found."}]]
+
+IDtoAvioBookTests > org.idmunit.IdMUnitTestCase.testAC2_2_3ManyRoles[21] FAILED
+    com.swa.idmunit.connector.RestConnectorException: Issue while checking: [$.items[?(@.id=='inflight_cabin')].users[?(@.id == 'e8562232794')].id], expected: [["e8562232794"]] but was: [[]]
+
+    > org.idmunit.IdMUnitTestCase.testAC3_1TermDeprov[26] FAILED
+    junit.framework.AssertionFailedError: Validation failed: statusCode was [200],
+
+
+
+ org.idmunit.IdMUnitTestCase.testAC2_3PreliveRole[28] FAILED
+    junit.framework.AssertionFailedError: Validation failed: statusCode was [200]
+
+
+error when dup test users:
+[{"code":"USER_ID_IN_USE","message":"ID 'e8566210663' is in use."},{"code":"USER_USERNAME_IN_USE","message":"Username 'e8566210663' is in use."}]
+
+IDPreliveValidation
+
+
+
+
+
+EmployeeSvc deploy work:
+
+QA:
+CHG0466620 - CSEE-4841 EmployeeSvc driver deploy for new Error response manager
+https://southwest.service-now.com/nav_to.do?uri=change_request.do?sys_id=e192638283d122d0a0979710feaad367%26sysparm_view=Standard
+
+Prod
+CHG0466623 - CSEE-4230 EmployeeSvc driver deploy for new Error response manager
+https://southwest.service-now.com/nav_to.do?uri=change_request.do?sys_id=02742382831522d0a0979710feaad3e1%26sysparm_view=Standard
+
+
+IDtoAviobook (RBEAEv1)
+
+QA:
+CHG0466283 - CSEE-4831, CSEE-4832 - Deploy IDtoAvioBook pilot qualification changes, prehire FA, and and Entitlement policy updates.
+https://southwest.service-now.com/nav_to.do?uri=change_request.do?sys_id=f13b841583d5ea50a0979710feaad37c%26sysparm_view=Standard
+
+
+Prod:
+CHG0466285 - CSEE-4230, CSEE-4832 - Deploy IDtoAvioBook pilot qualification changes, prehire FA, and Entitlement policy updates
+https://southwest.service-now.com/nav_to.do?uri=change_request.do?sys_id=2126941d8399ea50a0979710feaad3d4%26sysparm_view=Standard
+
+
+
+MAYBE: empsvc: NICE TO HAVE: add swidmunit to all empsvc tests
+HOLD - PRB0085196 - Germonte & Deborah chat
+HOLD - INC6561331 - 5/1/2025 1:20:24 PM Elvin Rodriguez - seeing if we can close the ticket.
+MRs - get approved: 5/1/2025 1:29:14 PM- sent to Gokul/Nirosha/Mike
+  https://southwest.gitlab-dedicated.com/groups/csiam/idm/-/merge_requests?scope=all&state=opened&author_username=x266698
+
+
+IDToAviobook/RBEAEv1:
+   - revisit 6 updates, fix aivo_chiefs, check others
+      avio_pilots
+      avio_dispatchers
+      avio_dispatch_specialists
+      avio_atc_specialists
+      avio_chiefs
+      avio_network_directors
+   - new stories?
+   - Add 6 qualifications for pilots.
+   - AWS update: remove second server in dev!
+
+
+failed tests
+- TC2leaderhr45 - expected HR, was Employee
+- TC3hrtoemp - expected employee, not HR
+
+
+
+
+Empsvc error review:
+ - Empsvc: add errors to documentation and/or fixes:
+
+    ***
+    new one: was a copy paste of all data . .
+      <operation-data DRIVER_REVISION="12.5.11" Op-User-Status="TRUE" checkError="IDtoEmployeeSvc-ERR-0059: Update user failed CN=e9999999ErrorCode=FIELD_INTEGRITY_EXCEPTION ErrorMsg=Cannot
+     grant or remove a profile with modify all data,&lt;br>without having the modify all data permission yourself.: Profile ID" objectType="employee"/>
+        </modify>
+
+
+IDtoEmployeeSvc drivers: QA CR (all three)
+IDtoEmployeeSvc drivers: Prod CR (all three)
+
+
+** MAINTENANCE: avio_chiefs - static and dynamic assigned
+(&
+    (swaAvioBookRoles=avio_chiefs)
+    (DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Flight-avio_chiefs</id><param>avio_chiefs</param></ref>)
+)
+** MAINTENANCE: avio_cabin_fa - static and dynamic assigned
+(&
+    (swaAvioBookRoles=avio_cabin_fa)
+    (DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Cabin-avio_cabin_fa</id><param>avio_cabin_fa</param></ref>)
+)
+
+
+
+
+
+
+done inc - 4/29/2025 1:08:56 PM https://southwest.service-now.com/nav_to.do?uri=%2Fincident.do%3Fsys_id%3D537411924745e6902efcba85d36d43f2
+ - IDToAviobook: remove secondary server from pipeline . .
+ - done: INVALID_SESSION_ID - log in again!
+ - see if IDtoaviobook: can push flight attendant role as static role . .what happens when they later get it??
+
+
+
+
+
+WAIT - IDtoEmployeeSvc: blocked: can't send email for error checker.
+WAIT - Hector Jaquez - why laptop stopping for crowdstrike? google searchines failing, then come in bak?
+
+ - Git training
+ - IGA sales
+
+6/10/2025 3:50:47 PM per a request from Steven Soto: user was termed back in 2024, but active now; we don't have unarchiving in place yet.
+Just unarchived this user:
+{
+    "id": "e151514",
+    "email": "Sean.Fitzgerald@wnco.com",
+    "firstName": "Sean",
+    "lastName": "Fitzgerald",
+    "credentials": {
+        "username": "e151514"
+    },
+    "organization": "default",
+    "systemRole": "USER",
+    "locked": false,
+    "roles": [
+        {
+            "id": "avio_pilot",
+            "type": "USER",
+            "name": "avio_pilot",
+            "organization": "default",
+            "archived": false,
+            "createdAt": "2024-01-04T18:49:58Z",
+            "modifiedAt": "2025-06-10T21:39:08Z"
+        }
+    ],
+    "active": true,
+    "archived": false,
+    "createdAt": "2024-04-04T09:19:45Z",
+    "submittedAt": "2025-06-10T21:41:22.804308Z",
+    "submittedBy": "avio-idp-api",
+    "modifiedAt": "2025-06-05T05:09:05Z",
+    "modifiedBy": "avio-idp-api",
+    "function": "UNKNOWN"
+}
+
+
+6/13/2025 9:49:22 AM
+Sean at standup
+Nathan Chugito - new
+loss of people!
+ - Puja - access managemnet - EFI pod . .
+   - SSPR - moving to Puja in ping world . .divinci workfflows.
+   - Kent & Waseem moving!!
+
+
+
+6/13/2025 12:06:59 PM
+6/13/2025 11:38:20 AM
+users to fix in QA . .error emails on empsvc
+empsvc user error reports:
+e183969 - profile
+e191024 - email address
+e176712 - email
+e184760 - base role
+e176482 - email
+e179943 - email
+
+
+(|
+(cn=e183969)
+(cn=e191024)
+(cn=e176712)
+(cn=e184760)
+(cn=e176482)
+(cn=e179943)
+}
+
+
+
+6/13/2025 1:21:17 PM
+Juan Alonszo: odd ticket to set profile/role ids . .
+
+e184664
+
+
+1 - Most users already have an elevated role, and you are requesting the Employee or Leader role which are both base roles.
+2 - Why did this happen? Normally wouldn't these users, or their manager request a removal of the elevated role instead?
+
+
+
+
+
+
+ConnectMe Communities User" Profile Name and "00e2E000001IUCdQAO" as the ProfileID, and the Role is either Employee with ID "00E2E000002RP3JUAW" or Leader with ID "00E2E000002RP3aUAG". I have outlined this all in the attached Excel.
+
+
+
+
+
+
+6/25/2025 1:36:53 PM
+pushed user per Sean's request just now:
+pushed user cn=e185581,ou=Users,o=SWA-ID
+AutoCrib-AMTSUPP|||adjust:FALSE|||console:FALSE|||forceReferenceBin:FALSE|||issue:TRUE|||kitIssue:FALSE|||locate:TRUE|||maintain:FALSE|||physical:FALSE|||return:TRUE|||stock:FALSE|||supervisor:TRUE|||
+cn=IDtoAutocrib,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#10787-185581
+
+
+7/9/2025 4:18:23 PM
+<<<<<<< HEAD
+=======
+7/9/2025 2:12:17 PM
+Ashleigh: putting together summary
+
+Team,
+
+Today we made some key decisions, and we wanted to summarize here.
+
+Key points:
+ - We don't have a Non prod enviornment for cloudability (though we can mimic this with fake roles).
+ - We confirmed we can't go live with any portion until UFM components are included to expose the roles and enable collecition that are going live. The Apptio team is responsible for this.
+ - We ultimately decided to expose 1 MyAccess apps, and 1 driver for phase 1, and second for TargetProcess.
+   - FrontDoor Main (for Cloudability and ApptioOne, provision only for "Targetprocess User" role)
+     - Goal: August 25 for production.
+     - TBD on date for UAT
+   - TargetProcess - Focused entirely on TargetProcess API.
+     - UAT goal is before October (TBD) for prod for this component.
+     - TBD on date for UAT
+
+
+   Also note: only the roles included in the Role definition file will be exposed in MyAccess.
+   NEXT ACTION: - Ashleigh to work with Mike on end user interface for MyAccess.
+ - We covered Jay Allen and Nishant Seth are contacts for an example of automated MyAccess role generation.
+ - UFM is owned by Chandra Billava
+ - Roles don't need to include Apptio in the name, but should probably include Name of app and role.
+ - We've decided to provide the GUID instead of an environment short name to enable GUID/env changes as needed
+ -
+
+
+
+
+Key Question:
+ - We need to know if it is possible to administer not just the world accessible roles, but also the admin roles by the appropriate people.
+ -
+
+
+
+
+
+>>>>>>> da163ba (notes so far with Ashleigh)
+
+
+
+
+
+
+
+7/8/2025 9:30:02 AM
+Empsvc: portal user error notes:
+  r29191 - latest: lvcreate scenario - CreateContactResponseId - has contact ID to use in user create . .
+     - YES on match match - op property: Op-EmpSVC-ContactId="003ce00000GQ5MDAA1"  -
+   -  first: understand what is it that conncts these two: Jeff wiltion
+
+
+7/8/2025 8:59:39 AM
+Team,
+
+As I work to shift work to Gokul for IDtoApptio, I wanted to give a few statuses before I'm out on Friday.
+
+I sure appreciate Gokul and Nirosha for really stepping in and helping out here; you both have been awesome, and I sure appreciate your efforts.
+
+
+1 - IDtoApptio:
+   - The app team is working on desinging the payload that we'll use in both MyAccess files, and the driver. This is more work than I thought; but they know what is on their plate now.
+   - Since I have a good idea on what they are likely to choose, I can still make progress in the driver, and in the initial migration tool with minimal rework I think; so I'll push on this.
+   - Gokul is quickly coming up to speed on the driver, and already has all of the context of the driver. I'll keep him updated directly as I work to complete what I can before I'm out.
+
+2 - IDtoEmployeeSvc: Needs a re-enabling fix and 'cant create user without portal user'. I have email notifications that are really helping to point out issues in dev; though I won't work on this until I'm stopped on Apptio.
+
+3 - IDtoAviobook: Nirosha is working on the XORA update and will report her status as needed. We also have an 'unarchiving' feature to add to the driver.
+
+4 - IDtoDocunet: I need to push a bunch of users through the driver. I found a way to split the import file in a clean way; and can slowly push these users through over the next few weeks.
+
+
+
+
+
+
+
+
+IDtoApptio
+
+
+
+
+official todo list reportd to team.
+1. For IDtoEmployeeSvc:
+  1. The manual email messages are a minimum viable solution; they really need to be submitted as INCs, but we don't have a way to do this reliably yet.
+  2. I'll be including Jeff Wade to speak to the email postfix portion of the resolution and see what we can do to avoid the 'wnco.com' postfix.
+2. For IDtoAviobook: decide on our path forward if we want Ops to use Postman.
+  1. I believe the Ops team has a goal to move away from manual data fixing, and there are probably no plans to use Postman nor have direct data fixing in Aviobook.
+  2. We'll need to find a pattern to follow here. The Aviobook team may need to be setup with the API so they can resolve their own issues.
+
+3. For IDtoDocunet:
+  1. Push all users through the driver again (about 120K users). They fixed a bug in their parsing and suspect they may have lost data; so need all of it again.
+  2. We will likely need a way to formalize this process - we may need the Docunet team to submit a RITM or something similar in the future, though I don't know if this is the desired path forward.
+
+4. Ops Manual assigned work:
+  1. Ops is pushing to automate issue resolution. To make this happen we are going to need to see patterns in the issues reported by the email error notification

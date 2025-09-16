@@ -1,0 +1,1 @@
+grep -Ri --include=*.xsl --include=*.md ":#" *

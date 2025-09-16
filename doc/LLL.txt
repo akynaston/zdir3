@@ -1,0 +1,10 @@
+6/4/2025 6:46:38 PM
+Started to store items that just need to be logged.
+
+LONG TERM LOG
+6/4/2025 4:57:57 PM - pushed cn=e112099,ou=Users,o=SWA-ID through aviobook; to confirm prod isn't broken
+
+6/4/2025 6:48:02 PM- updated as of this timestamp:
+  EmployeeServicesRoleMgmtDriver - 10.8.6
+  IDtoEmployeeCarePicture - 1.4.5
+  RBEAEv1 - 1.4.3

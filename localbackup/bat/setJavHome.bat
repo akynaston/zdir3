@@ -1,0 +1,1 @@
+set JAVA_HOME=C:\Users\akynaston\.jdks\azul-17.0.10

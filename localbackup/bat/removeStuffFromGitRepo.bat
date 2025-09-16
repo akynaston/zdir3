@@ -1,0 +1,1 @@
+python C:\work\adminrepo\tools\git-filter-repo.py --replace-refs delete-no-add --invert-paths --paths

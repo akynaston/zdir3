@@ -1,0 +1,1 @@
+C:\Users\x266698\.jdks\azul-17.0.12\bin\java.exe %1 %2 %3 %4 %5 %6

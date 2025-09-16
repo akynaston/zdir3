@@ -1,0 +1,15 @@
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+core.autocrlf=false
+remote.origin.url=file:///G:/z/
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.dev.remote=origin
+branch.dev.merge=refs/heads/dev
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+gui.wmstate=normal
+gui.geometry=1450x878+286+286 175 196

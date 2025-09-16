@@ -1,0 +1,82 @@
+
+
+
+Nirosha, I had a sec to study this, and I found the problem!! I know the aviobook folks have been updating their system, and it's caused their API to be slightly more restrictive on the JSON payload format. I think their upgrades are only complete through QA . . I think DEV may be having the same issue.
+ 
+Please feel free to tell them you found the fix! You're doing a great job, and I'd love to have you push forward on this - I'll work to support when I can.
+
+
+I've run out of time for now; but this needs to be communicated to them, then we need to make a plan:
+
+
+1 - A while back, they upgraded all non prod environments that caused the
+
+
+
+Team,
+
+We found the problem: A while back, we found the Aviobook team had upgraded their non prod enviornments, causing their API to be slightly more restrictive on formatting, and I completely forgot that this would stop our testing in non-prod, I apologize.
+
+
+
+
+
+
+
+
+However: the fix to this
+ 
+ 
+There are two main problems here now with how our driver sends the payload in all non prod enviornments:
+ 
+1 - On creates, every field can't be sent as a single item array: The default XDStoJSON I think tries to do that for multivalued attrs Is my guess; but the API ccan't deal with it.
+ 
+ 
+2 - On HTTP put, the whole JSON payload can't be surrounded by '[]'. I think it's probably technically incorrect to do this; but it hasn't caused problems until now.
+ 
+
+
+
+Examples:
+So for #1, 
+
+
+[
+    {
+        "active": [
+            "true"
+        ],
+        "credentials": {
+            "username": "e175854"
+        },
+        "email": [
+            "none@testwnco.com"
+        ],
+        "firstName": [
+            "Matthew"
+        ],
+        "function": [
+            "GROUND_HANDLER"
+        ],
+        "id": "e175854",
+        "lastName": [
+            "Wood"
+        ],
+        "organization": [
+            "default"
+        ],
+        "preferredName": [
+            "Matt"
+        ],
+        "roles": [
+            {
+                "id": "avio_connect_goramp",
+                "name": "avio_connect_goramp",
+                "organization": "default"
+            }
+        ],
+        "systemRole": [
+            "USER"
+        ]
+    }
+]

@@ -1,0 +1,156 @@
+version: 1
+
+dn: cn=ax266698,ou=Admins,o=SWA-ID
+objectClass: DirXML-ApplicationAttrs
+objectClass: DirXML-EmployeeAux
+objectClass: DirXML-EntitlementRecipient
+objectClass: DirXML-PasswordSyncStatusUser
+objectClass: inetOrgPerson
+objectClass: ndsLoginProperties
+objectClass: organizationalPerson
+objectClass: Person
+objectClass: swaIdentity
+objectClass: swaPerson
+objectClass: Top
+cn: ax266698
+sn: Kynaston
+ACL: 1#subtree#cn=ax266698,ou=Admins,o=SWA-ID#[Entry Rights]
+ACL: 16#subtree#cn=Cybersecurity_IDM_Deploy_Impersonators,ou=PrivAccGroups,o
+ =SWA-ID#[Entry Rights]
+ACL: 2#entry#[Public]#messageServer
+ACL: 2#entry#[Root]#groupMembership
+ACL: 2#entry#[Root]#networkAddress
+ACL: 3#subtree#cn=ax266698,ou=Admins,o=SWA-ID#[All Attributes Rights]
+ACL: 32#subtree#cn=Cybersecurity_IDM_Deploy_Impersonators,ou=PrivAccGroups,o
+ =SWA-ID#[All Attributes Rights]
+ACL: 6#entry#cn=ax266698,ou=Admins,o=SWA-ID#loginScript
+ACL: 6#entry#cn=ax266698,ou=Admins,o=SWA-ID#printJobConfiguration
+ACL: 7#entry#cn=ax266698,ou=Admins,o=SWA-ID#givenName
+ACL: 7#entry#cn=ax266698,ou=Admins,o=SWA-ID#Language
+ACL: 7#entry#cn=ax266698,ou=Admins,o=SWA-ID#mail
+ACL: 7#entry#cn=ax266698,ou=Admins,o=SWA-ID#photo
+ACL: 7#entry#cn=ax266698,ou=Admins,o=SWA-ID#sn
+ACL: 7#entry#cn=ax266698,ou=Admins,o=SWA-ID#telephoneNumber
+ACL: 7#entry#cn=ax266698,ou=Admins,o=SWA-ID#title
+description: Admin ID of Aaron Kynaston
+DirXML-ADAliasName: ax266698
+DirXML-ADContext: CN=ax266698,OU=Multi-Factor Accounts,OU=Admin,DC=LUV,DC=AD
+ ,DC=SWACORP,DC=com
+DirXML-Associations: cn=Entitlements Service Driver,cn=DirXML Driver Set,ou=
+ DirXML,ou=Services,o=SWA-ID#1#{31DB4162-7126-424C-A9EA-6241DB312671}
+DirXML-Associations: cn=Entitlements Service Driver,cn=Driver Set v3,ou=DirX
+ ML,ou=Services,o=SWA-ID#1#{31DB4162-7126-424C-A9EA-6241DB312671}
+DirXML-Associations: cn=IDtoACCESS,cn=DirXML Driver Set,ou=DirXML,ou=Service
+ s,o=SWA-ID#1#{6241DB31-2671-4c42-A9EA-6241DB312671}
+DirXML-Associations: cn=IDtoAD,cn=Driver Set v3,ou=DirXML,ou=Services,o=SWA-
+ ID#1#66c7f7600fd8e442a11ebb7c373dbd23
+DirXML-Associations: cn=IDtoBackupDB,cn=Driver Set v3,ou=DirXML,ou=Services,
+ o=SWA-ID#1#PK_USERID=6241DB31-2671-4c42-A9EA-6241DB312671,table=USER,schema
+ =IDMDB
+DirXML-Associations: cn=IDtoLDAP,cn=DirXML Driver Set,ou=DirXML,ou=Services,
+ o=SWA-ID#1#{6241DB31-2671-4c42-A9EA-6241DB312671}
+DirXML-Associations: cn=RoleManagementDriver,cn=Driver Set AEv1,ou=DirXML,ou
+ =Services,o=SWA-ID#1#YkHbMSZxTEKp6mJB2zEmcQ==
+DirXML-EntitlementRef: cn=UserAccount,cn=IDtoAD,cn=Driver Set v3,ou=DirXML,o
+ u=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\Services\DirXML\Driver 
+ Set v3\Entitlement Policies\IDtoADAdminEntitlement</id></ref>
+DirXML-PasswordSyncStatus: 
+DirXML-PasswordSyncStatus: 00646C6CC55BDC11A743001185E7DDE920220117164337967
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 00646C6CC55BDC11A743001185E7DDE920220117164337975
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 00646C6CC55BDC11A743001185E7DDE920220117164337983
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 00646C6CC55BDC11A743001185E7DDE920220117164337986
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 00646C6CC55BDC11A743001185E7DDE920220117164338053
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 00646C6CC55BDC11A743001185E7DDE920220117164338062
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 00DF6FC51471DC11A743001185E7DDE920220117164408275
+ 000000000001Code(-8016) Operation vetoed by object matching policy.
+DirXML-PasswordSyncStatus: 088ED79BEB95194631AB088ED79BEB9520220117164337967
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 088ED79BEB95194631AB088ED79BEB9520220117164337975
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 088ED79BEB95194631AB088ED79BEB9520220117164337983
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 088ED79BEB95194631AB088ED79BEB9520220117164337986
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 088ED79BEB95194631AB088ED79BEB9520220117164338053
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 088ED79BEB95194631AB088ED79BEB9520220117164338062
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 803E4819DC70D711A7390008027FDD9020220117164337967
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 803E4819DC70D711A7390008027FDD9020220117164337975
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 803E4819DC70D711A7390008027FDD9020220117164337983
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 803E4819DC70D711A7390008027FDD9020220117164337986
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 803E4819DC70D711A7390008027FDD9020220117164338053
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 803E4819DC70D711A7390008027FDD9020220117164338062
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 892592E2A2AEC540E480892592E2A2AE20220117164337967
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 892592E2A2AEC540E480892592E2A2AE20220117164337975
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 892592E2A2AEC540E480892592E2A2AE20220117164337983
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 892592E2A2AEC540E480892592E2A2AE20220117164337986
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 892592E2A2AEC540E480892592E2A2AE20220117164338053
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: 892592E2A2AEC540E480892592E2A2AE20220117164338062
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: D5F90D5709E0E3471E93D5F90D5709E020220117164408442
+ 000000000001Code(-8016) Operation vetoed by object matching policy.
+DirXML-PasswordSyncStatus: F48CE53942C34B4C8080F48CE53942C320220117164337967
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: F48CE53942C34B4C8080F48CE53942C320220117164337975
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: F48CE53942C34B4C8080F48CE53942C320220117164337983
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: F48CE53942C34B4C8080F48CE53942C320220117164337986
+ 000000000005Password Synchronization is pending.
+DirXML-PasswordSyncStatus: F48CE53942C34B4C8080F48CE53942C320220117164338062
+ 000000000005Password Synchronization is pending.
+fullName: Aaron Kynaston
+givenName: Aaron
+groupMembership: cn=HDQ Campus EE Cntr_D,ou=Groups,o=SWA-ID
+groupMembership: cn=MFA_AllAdmins_D,ou=Groups,o=SWA-ID
+groupMembership: cn=PFED_MFA_Admins_Users_D,ou=Groups,o=SWA-ID
+groupMembership: cn=WS_Allow Streaming Media_D,ou=Groups,o=SWA-ID
+loginExpirationTime: 20260101040000Z
+loginGraceLimit: 6
+loginGraceRemaining: 6
+loginIntruderAddress:: OSPvv73vv70K77+9EFA=
+loginTime: 20250814172457Z
+manager: cn=e114220,ou=Users,o=SWA-ID
+nspmPasswordPolicyDN: cn=swa-adminusers,cn=Password Policies,cn=Security
+passwordAllowChange: TRUE
+passwordExpirationInterval: 7776000
+passwordExpirationTime: 20251110151450Z
+passwordMinimumLength: 12
+passwordRequired: TRUE
+passwordUniqueRequired: TRUE
+preferredName: Aaron
+securityEquals: cn=HDQ Campus EE Cntr_D,ou=Groups,o=SWA-ID
+securityEquals: cn=MFA_AllAdmins_D,ou=Groups,o=SWA-ID
+securityEquals: cn=PFED_MFA_Admins_Users_D,ou=Groups,o=SWA-ID
+securityEquals: cn=WS_Allow Streaming Media_D,ou=Groups,o=SWA-ID
+swaAdminOfEnv: LUV
+swaIDMConnSys: IDtoACCESS
+swaIDMConnSys: IDtoAD
+swaIDMConnSys: IDtoLDAP
+swaLocation: HDQ
+swaNeedseDirAdminID: TRUE
+swaParentEmpID: cn=x266698,ou=Users,o=SWA-ID
+swaPingIDDeviceEnrolled: TRUE
+swaPreferredFullName: Aaron Kynaston (Admin)
+swaStatus: A
+swaUniqueID: ax266698
+swaUserType: Admin
+

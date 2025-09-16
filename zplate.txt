@@ -1,0 +1,92 @@
+9/12/2025 1:51:21 PM
+
+Yv
+
+0 - Sailpoint efforts: documenting what can be done in drivers to help convert to sailPoint
+1 - IDtoApptioFrontDoor - code complete; needs MyAccess end-to-end testing.
+2 - IDtoApptioTargetProcess - about 80% code complete; needs MyAccess end-to-end testing.
+3 - Aviobook - (Nirosha: will be closed after Monday, Sept.15)
+4 - IDtoSprinkler - On Gokul's todo list.
+5 - IDtoEmployeeSvc: Gokul QA work, need to check in, and then do 12 stories on https://southwest.atlassian.net/browse/CYSEE-929
+6 - IDtoAltea: Joe's mentioned there may be a test or two to write, I need to check in with him.
+7 - RBEAEv1 - Need to document how to manage the entitlement exports: it's the first and only driver to have entitlements, and we're 8 - IDtoDocuware
+9 - LMS driver - Nirosha's todo list - - 9/12/2025 3:28:23 PM
+10 - IronClad driver: Nirosha's todo list - 9/12/2025 3:28:49 PM
+
+
+
+
+
+
+
+
+
+
+
+
+0 - Sailpoint efforts: documenting what can be done in drivers to help convert to sailPoint
+   - Dhivya & Gokul: desire to document everything we can for the sail-point migration.
+  Next action: 9/12/2025 2:47:05 PM- I asked Dhivya what format she wants - I want aux/hints file.
+
+1 - IDtoApptioFrontDoor - code complete; needs MyAccess end-to-end testing.
+  Next action: deploy latest to QA if needed, and do MyAccess testing.
+
+2 - IDtoApptioTargetProcess - about 80% code complete; needs MyAccess end-to-end testing.
+  Next action: deploy latest to QA if needed, and do MyAccess testing.
+     - adding last deploy test, and sync test
+     - then review of documentation with app owner to pick up any other missing functionality.
+
+3 - IDtoAviobook -
+  9/15/2025 2:42:27 PM- Nirosha completed the deploy
+
+4 - IDtoSprinkler - On Gokul's todo list.
+  Next action: None, Gokul is running with this driver currently, Gokul's status from: 9/12/2025 2:17:46 PM
+
+  Gokul is mostly working on this: here's the status:
+   - LOA changes: Gokul
+   - Multi-role support: Gokul
+   - early scoping policy: Gokul
+   - early attr check policy: Gokul
+   - move environment specific clientID to GCV: Gokul
+   - remove roles during deactivation: Gokul
+   - updating wnco.com address to wncotest.com in the test excel: Gokul
+   - Confirming: Devin is checking whether email reuse will be an issue - Gokul.
+
+   Items we will not do:
+   - NOT WORKING ON: Any non-critical changes/main documetnation will not be done; in preference of the
+   move to Sailpiont - NO ONE ASSIGNED TO THIS; NOT WORKING ON IT
+   - NOT WORKING ON: some of the roles in Test Excel exist ONLY in Sprinklr DEV environment and not in PROD. But not going to touch itNO ONE ASSIGNED TO THIS; NOT WORKING ON IT
+
+5 - IDtoEmployeeSvc: Gokul QA work, need to check in, and then do 12 stories on https://southwest.atlassian.net/browse/CYSEE-929
+  Next action: 9/12/2025 2:48:29 PM - Gokul says we're waiting on them to finish CMAppTest in QA; then we'll move to SWAFC3, then we can pull commits from his branch.
+     - Nirosha: may contact Gokul on this to check-in 9/12/2025 3:42:11 PM
+
+6 - IDtoAltea: 9/12/2025 3:38:58 PM Joe has some new work.
+  Next Action: 9/12/2025 3:43:06 PM- wait for answer from Joe regarding new work.
+
+7 - RBEAEv1 - Need to document how to manage the entitlement exports: it's the first and only driver to have entitlements, and we're manging them with LDIF only; and it is not obvious how the process works.
+  Next Action: 9/12/2025 2:48:45 PM- write documentation.
+
+8 - IDtoDocuware
+  Next Action: 9/12/2025 3:55:06 PM- so far, transfered to Nirosha.
+
+  - 9/12/2025 1:55:28 PM- QA has had a data truncation issue. Driver needs 3-5 stories of fixes; no current prod issues.
+  Next Action: find out why 'Data truncation' issue is happening in QA, then reproduce in IdMUnit test, and then create stories.
+  - Also needs working IdMUnit-config: it doesn't have a 'Docuware' connection!
+  - See if this driver is still important and being used: Naveen Kumar Konduri - not the app owner . . "Silicon Savvy Pod-DG" is the app owner.
+  - Find out who the app owner is.
+  - Add IDToDocuware IdMUnit connection config to idmunit-config.xml
+  - Run tests, confirm they all pass.
+  - Review the issue in QA: driver is in an infinite retry loop due to the "data truncation issue"
+  - Reproduce issue in a new test.
+  - Reconcile the driver in DEV, QA, Prod with the Git gold copy; and see what deployments are needed.
+  - Discuss with Aaron regarding what difference you see and decide on what needs to be done.
+  - Make a plan
+  - Execute!
+
+9 - LMS driver - Nirosha's todo list - - 9/12/2025 3:28:23 PM
+  - Next Action: On Nirosha's state.
+
+10 - IronClad driver: Nirosha's todo list - 9/12/2025 3:28:49 PM
+  - Next Action: to deploy to prod in disabled state, another IDM engineer can enable . .
+

@@ -1,0 +1,108 @@
+TO: Sean Carroll; Dhivya Balasubramanian
+​CC:  Kyle Burkhardt; Yatin Dodia; Joe Gividen
+​subject: Impact list of IDM for the deptcode changes
+
+Sean, Dhivya,
+
+Kyle, Yatin, and I have put together a list of drivers/entitlement policies affected by the SWA org changes. Please find the attached file with all of the notes. In summary, here are the drivers/entitlements that likely need to be updated along with a suggested owner for that task. After you confirm the assignments, could we get help creating stories or whatever step we need to take next?
+
+This is already obvious, but I think all of us already have a lot on our plate. If we want to insert this work now, we'll have to revisit commitments and adjust as needed.
+
+Here are three key items to consider:
+1 - I think we have 6 working days to make fixes to the driver to make changes where needed, deploy to QA, and then deploy to prod.
+2 - I think we're going to have to schedule the prod deploys to coincide with the changes being made in prod right?
+3 - Should this work come before our current stuff so we complete on time?
+
+
+Assignments:
+    EmployeeServicesRoleMgmtDriver - Aaron
+    IDtoMaintenix - Kyle
+    IDtoOpsSuite - Yatin
+    IDtoLogicMonitor - Joe
+    IDtoCrowd - Kyle (Joe: Did the driver need to be decommissioned by IDtoAtlassian?)
+    NotificationLoopback - Kyle? (may already be done)
+
+Entitlement Policies - Aaron
+    avio_dispatchers
+    avio_dispatch_specialists
+    avio_atc_specialists
+    avio_chiefs
+    avio_network_directors
+
+--Aaron
+
+
+Attachment: File contents
+
+Used to generate, then removed any instances not containing a comparison:
+
+grep "swaDeptCode" -Ri --include=\*.xml --exclude-dir=adminrepo  | grep exports
+
+Assignments:
+    EmployeeServicesRoleMgmtDriver - Aaron
+    IDtoMaintenix - Kyle
+    IDtoOpsSuite - Yatin
+    IDtoLogicMonitor - Joe
+    IDtoCrowd - Kyle (Joe: Did driver need to be decommisioned by IDtoAtlassian?)
+    NotificationLoopback - Kyle? (may already be done)
+
+Entitlement Policies - Aaron
+    avio_dispatchers
+    avio_dispatch_specialists
+    avio_atc_specialists
+    avio_chiefs
+    avio_network_directors
+
+Locations:
+
+IDtoMaintenix
+    exports/IDtoMaintenix.xml:                                            <if-attr mode="regex" name="swaDeptCode" op="equal">~gcvMaintenixDepartmentWhitelist~</if-attr>
+    exports/IDtoMaintenix.xml:                                            <if-attr mode="regex" name="swaDeptCode" op="not-equal">~gcvMaintenixDepartmentWhitelist~</if-attr>
+
+IDtoOpsSuite
+    exports/IDtoOpsSuite.xml:                    <filter-attr attr-name="swaDeptCode" merge-authority="default" publisher="ignore" publisher-optimize-modify="true" subscriber="notify"/>
+    exports/IDtoOpsSuite.xml:                                    <if-op-attr mode="regex" name="swaDeptCode" op="changing-from">03|57</if-op-attr>
+    exports/IDtoOpsSuite.xml:                                    <if-attr mode="regex" name="swaDeptCode" op="not-equal">03|57</if-attr>
+
+IDtoLogicMonitor
+    exports/IDtoLogicMonitor.xml:                    <filter-attr attr-name="swaDeptCode" merge-authority="default" publisher="ignore" publisher-optimize-modify="true" subscriber="notify"/>
+    exports/IDtoLogicMonitor.xml:                    <definition display-name="Technology Dept Code" name="gcv.swaDeptCodeAllowed" type="string">
+    exports/IDtoLogicMonitor.xml:                            <description>Veto if swaLogicMonitorRole not present OR not part of allowed swaDeptCode</description>
+    exports/IDtoLogicMonitor.xml:                                            <if-attr mode="nocase" name="swaDeptCode" op="equal">~gcv.swaDeptCodeAllowed~</if-attr>
+    exports/IDtoLogicMonitor.xml:                            <description>Veto if swaLogicMonitorRole not present OR not part of allowed swaDeptCode</description>
+    exports/IDtoLogicMonitor.xml:                                            <if-attr mode="nocase" name="swaDeptCode" op="equal">~gcv.swaDeptCodeAllowed~</if-attr>
+    exports/IDtoLogicMonitor.xml:                            <description>Set swaLogicMonitorRole if not already set for allowed swaDeptCode</description>
+    exports/IDtoLogicMonitor.xml:                                    <if-attr mode="nocase" name="swaDeptCode" op="equal">~gcv.swaDeptCodeAllowed~</if-attr>
+    exports/IDtoLogicMonitor.xml:                            <description>Set swaLogicMonitorRole if not already set for allowed swaDeptCode</description>
+    exports/IDtoLogicMonitor.xml:                                    <if-attr mode="nocase" name="swaDeptCode" op="equal">~gcv.swaDeptCodeAllowed~</if-attr>
+    exports/IDtoLogicMonitor.xml:                            <description>On Modify check role still assigned, DELETE user if no role assigned and not part of allowed swaDeptCode</description>
+    exports/IDtoLogicMonitor.xml:                                    <if-attr mode="nocase" name="swaDeptCode" op="not-equal">~gcv.swaDeptCodeAllowed~</if-attr>
+    exports/IDtoLogicMonitor.xml:                                    <if-op-attr name="swaDeptCode" op="changing"/>
+    exports/IDtoLogicMonitor.xml:                                    <if-attr mode="nocase" name="swaDeptCode" op="not-equal">~gcv.swaDeptCodeAllowed~</if-attr>
+    exports/IDtoLogicMonitor.xml:                            <description>On swaLogicMonitorRole change, set role default if not already set for allowed swaDeptCode</description>
+    exports/IDtoLogicMonitor.xml:                                    <if-attr mode="nocase" name="swaDeptCode" op="equal">~gcv.swaDeptCodeAllowed~</if-attr>
+
+EmployeeServicesRoleMgmtDriver
+    EmployeeServicesRoleMgmtDriver/exports/EmployeeServicesRoleMgmtDriver.xml:                                            <if-op-attr mode="regex" name="swaDeptCode" op="equal">~gcv_Emp_SVC_HR_Dept_Code~</if-op-attr>
+    EmployeeServicesRoleMgmtDriver/exports/EmployeeServicesRoleMgmtDriver.xml:                                    <if-attr mode="regex" name="swaDeptCode" op="equal">~gcv_Emp_SVC_HR_Dept_Code~</if-attr>
+    EmployeeServicesRoleMgmtDriver/exports/EmployeeServicesRoleMgmtDriver.xml:                                    <if-attr mode="regex" name="swaDeptCode" op="not-equal">~gcv_Emp_SVC_HR_Dept_Code~</if-attr>
+
+IDtoCrowd
+    IDtoCrowd/exports/IDtoCROWD.xml:                                    <if-attr mode="regex" name="swaDeptCode" op="not-equal">~Allowed_Dept_Codes~</if-attr>
+
+NotificationLoopback
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-attr mode="case" name="swaDeptCode" op="not-equal">02</if-attr>
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-src-attr mode="case" name="swaDeptCode" op="not-equal">02</if-src-attr>
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-src-attr mode="nocase" name="swaDeptCode" op="equal">02</if-src-attr>
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-src-attr mode="nocase" name="swaDeptCode" op="equal">02</if-src-attr>
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-src-attr mode="nocase" name="swaDeptCode" op="equal">02</if-src-attr>
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-op-attr mode="nocase" name="swaDeptCode" op="not-changing-from">02</if-op-attr>
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-op-attr mode="nocase" name="swaDeptCode" op="changing-to">02</if-op-attr>
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-op-attr mode="nocase" name="swaDeptCode" op="changing-from">02</if-op-attr>
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-op-attr mode="nocase" name="swaDeptCode" op="not-changing-to">02</if-op-attr>
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-src-attr mode="nocase" name="swaDeptCode" op="equal">02</if-src-attr>
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-op-attr mode="nocase" name="swaDeptCode" op="not-changing-from">02</if-op-attr>
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-op-attr mode="nocase" name="swaDeptCode" op="not-changing-to">02</if-op-attr>
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-src-attr mode="nocase" name="swaDeptCode" op="equal">02</if-src-attr>
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-op-attr mode="nocase" name="swaDeptCode" op="not-changing-from">02</if-op-attr>
+    NotificationLoopback/exports/Notification LoopBack.xml:                                    <if-op-attr mode="nocase" name="swaDeptCode" op="not-changing-to">02</if-op-attr>

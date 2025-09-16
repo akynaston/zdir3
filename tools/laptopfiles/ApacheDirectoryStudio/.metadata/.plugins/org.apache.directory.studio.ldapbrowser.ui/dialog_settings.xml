@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="org.apache.directory.studio.ldapbrowser.ui.editors.searchresult.ShowQuickFilterAction.showQuickFilter" value="false"/>
+	<item key="org.apache.directory.studio.ldapbrowser.ui.wizards.BatchOperationFinishWizardPage.executeMethod" value="0"/>
+	<item key="org.apache.directory.studio.ldapbrowser.ui.wizards.BatchOperationFinishWizardPage.continueOnError" value="true"/>
+	<item key="org.apache.directory.studio.ldapbrowser.ui.wizards.ImportLdifMainWizardPage.updateIfEntryExists" value="true"/>
+	<item key="org.apache.directory.studio.ldapbrowser.ui.wizards.ImportLdifMainWizardPage.continueOnError" value="true"/>
+</section>

@@ -1,0 +1,77 @@
+# Note: this is the config that Aaron uses. If you choose to use the same setup be sure to install:
+#	WinMerge
+# 	Notepad++
+# And document where the software is installed, as you may need to change it.
+
+[user]
+	name = Aaron Kynaston (Contractor)  # Put your full name here, including the (Contractor) if you are a contractor.
+	email = Aaron.Kynaston@wnco.com 	# Put your full wnco email address here.
+[alias]
+	lg = !git lg1						# All lg aliases give an ideal form of logging.
+	lgs = lg --simplify-by-decoration
+	lgn = !git lg1 -n 5
+	lg1 = !git lg1-specific
+	lg2 = !git lg2-specific
+	lg1-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+	lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+	s = !git status -s --branch && git stash list
+	si = !git status -s --branch --ignored && git stash list	# Gives status plus lists files that are ignored.		
+	b = branch -vv						# List all local branches along with commit id's and messages.
+	ba = branch -avv					# List all local and remote branches.
+	r = remote -v		
+	f = fetch -v
+	#a = !git f --all -v && git b && echo && git stash list && git s
+    #hardclean expires everything, and removes all items that don't have an explicit reference to it.
+	hardclean = !git reflog expire --expire=now --expire-unreachable=now --all && git gc --prune=now --aggressive
+[diff]
+	tool = winmerge						# Tool specified to do diffing. You can use your own; though you'll need to research the config.
+[merge]
+	tool = winmerge
+	ff = only  # only allows fast forward merges; is useful to avoid merge commits when they're unnecessary; use --no-ff to disable.
+[difftool "winmerge"]
+	cmd = /c/Program\\ Files/Winmerge/WinMergeU.exe -u -e $LOCAL $REMOTE
+[mergetool "winmerge"]
+	cmd = /c/Program\\ Files/Winmerge/WinMergeU.exe -u -e $LOCAL $REMOTE
+[difftool]
+	prompt = true
+[mergetool]
+	prompt = true
+	keepBackup = true
+[core]
+	autocrlf = true
+	editor = 'C:\\Program Files\\Notepad++\\Notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+	excludesfile = C:\\Users\\x266698\\.gitignore
+	longpaths = true
+[rerere]
+	enabled = true
+[http]
+	postBuffer = 157286400
+	sslBackend = schannel	 # Use schannel for ssl comunication.
+	sslVerify = true
+[pull]
+	ff = only				 # Allow only fast forward merges unless specified otherwise . .
+
+[url "https://stash1-tools.swacorp.com/scm/csiam/"]
+	insteadOf = swa:
+[url "https://stash1-tools.swacorp.com/scm/~x266698/"]
+	insteadOf = me:
+[url "https://akynaston@git.trivir.com/scm/swa/"]
+	insteadOf = trivir:
+[url "git@gitlab-ssh.apex-tools.prod0.prod.aws.swacorp.com:csiam/idm/"]
+	insteadOf = gitlab:
+[url "git@gitlab-ssh.apex-tools.prod0.prod.aws.swacorp.com:x266698/"]
+	insteadOf = gitlabavk:
+[credential]
+	helper = manager
+[diff "xl"]
+	command = git-xl-diff.exe
+[credential "https://git.trivir.com"]
+	provider = bitbucket
+[safe]
+	directory = C:/work/idmunit-utils
+	directory = '%(prefix)///192.168.0.125/swa/IDtoQualtrics'
+	directory = %(prefix)///192.168.0.125/swa/IDtoFusion
+[credential "https://stash1-tools.swacorp.com"]
+	provider = bitbucket
+[credential "https://gitlab-tools.swacorp.com"]
+	provider = generic

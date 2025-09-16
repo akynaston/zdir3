@@ -1,0 +1,1 @@
+excel2json --ow --test-dir=../src/test/resources --log-file=../src/test/resources/JSONConverter.log

@@ -1,0 +1,1455 @@
+9/15/2025 10:06:36 AM
+TriVir call
+ - timesheets - 10% 8.4 milliion dollar year
+ - BAES good money
+ - Sales - contract currently funded - 7M under contract - LAUSD 3M!
+ - just need to work the hours, and get the money in.
+ - LAUSD - change order, more funding - 290K
+ - Huston: variable comp -> company perfrmance: everyone paid out.
+ - Zions Bank (Brent)
+	 - Work for them?
+	 - Payroll step 25 - week from thursday.
+ - Insurance how has it gone
+ - Survey for company - 
+ - standup changing: still be 30 mins.
+	- people from other places will be joinining.
+
+
+
+
+
+
+
+
+
+
+
+8188
+
+
+git fetch --prune --prune-tags
+git brn
+
+
+
+
+git branch -r | grep -v "origin/main" | cut -d/ -f2- | xargs -I {} git push origin --delete {}
+
+
+
+
+9/8/2025 3:13:04 PM
+AFCU Issue:
+
+IDM server rebooted, and drivers wouldn't start any more. We found the C:\netiq\common\jre folder had a bunch of files deleted, it only had a total of about 12 files. We found per a backup, that the files appear to have been deleted on September 4th, though we don't know why.
+
+
+
+
+DETAILS:
+ - eDirectory server rebooted, and IDM woudln't load any more.
+ - ndscons: started 3 or 4 times, didn't load
+ - command line - did this typo "ndscons / ?" and it finally worked!
+	 - why did that work???
+	 - startup of jvm filaed under 'Misc'
+	 - Drvrs - shows - 299
+ - dstrace.dlm -> showed everything, and found C:\netiq\common\jre has been cleared out sometime around September 4th morning . .
+ - Peter Love joined, and started looking into a backup; this is where we got the sep 4 date.
+ - They're now working on restoring the files.
+ 
+ 
+ 
+
+Hey guys, thx for checking in. Lately I seem to live completely overwhelmed all the time. Doing simple things seems to be more than I can handle.
+
+
+
+
+
+
+
+
+
+navy - 25.90
+https://oldnavy.barclaysus.com/servicing/home?domainCPC=ONV&vz4ldtpt4ejzzijik2yqghkf6a=4TOVwuIM-VRDJEgMi5WHp-os8p6nZL4y9hOh56hSEoy6t3q3QwPNdodkNikRgDAisaUy0VPA
+
+sears - 272
+https://citiretailservices.citibankonline.com/RSauth/signon?pageName=signon&siteId=PLCN_SYW&langId=en_US&desc=EDZP6BDP0005&cmp=ESVC_EDZP6BDP0005
+
+paypal - 243
+https://www.paypal.com/signin/?returnuri=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin%2Fwebscr&state=%3fcmd%3d_statement&ijjhs5ppcry7jz7o77ckgsz6uq=kRspx6ph83BdnquS3Z92ezkbjIemyE-YiD59ZMarKqt-vzDrlH2B1oUETM3vh1yDWWsbIg_0
+
+captial 1 120, 251.69, 75.46
+https://myaccounts.capitalone.com/accountSummary
+
+
+disney - 16.50
+https://secure.chase.com/web/auth/dashboard?tk4kigbzlf52pf3r43rf6glp5y=n-LSmNzFgV4HOJd42blwuduOVvwwq45KadiZ0Fc1d1qsRjvggY6fFOYrtYAPo9_3epPNqoFz#/dashboard/overviewAccounts/overview/index
+
+costco - 76.27
+https://online.citi.com/US/ag/dashboard/credit-card?accountId=1dac4f49-2cb7-484e-934f-d971246c0d28
+
+discover - 72
+https://www.discover.com/?v24ga3pugqqsuy7d3imr4d6c3a=4X9y1vncoDOX2ZQGBoxxpodwPOF-jtz6lcIxiVTsidRbqN3dK6D7ulqKgLf3A5ztrX8VKBBF
+
+amex 78
+https://global.americanexpress.com/dashboard
+
+
+
+
+9/5/2025 3:59:08 PM  FCPS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+540073-75
+
+
+apt install openssh-server
+
+
+
+C:\work\gitlabs>git ba
+  featurex                4ec6291 [origin/featurex] Add feature X
+  featurey                98af27b [origin/featurey] Add feature Y
+  featurez                1c2790b [origin/featurez] Add feature Z
+* master                  46c761a [origin/master] Pom: testing executable jar settings
+  remotes/origin/HEAD     -> origin/master
+  remotes/origin/featurex 4ec6291 Add feature X
+  remotes/origin/featurey 98af27b Add feature Y
+  remotes/origin/featurez 1c2790b Add feature Z
+  remotes/origin/master   46c761a Pom: testing executable jar settings
+  
+  
+
+swaApptioRolesMainDefault
+swaApptioRolesMainCustom
+swaApptioRolesCloudabilityDefault
+swaApptioRolesCloudabilityCustom
+swaApptioRolesTargetProcess
+
+
+
+AFCU AFCU-IDM NHI troubleshooting
+
+
+
+
+git training
+git reflog: do watch
+
+
+
+Myaccess requires the ability to receive roles, and to receive fullfilment of roles assigned. This has had many roadblocks, and we are investigating three options.
+
+These are roadblocks:
+ - Due to a nonstandard FrontDoor API and difficulties with MyAccess using this API, this has taken time to both investigate the posibility of options; but then to see how MyAccess could be configured to operate properly.
+ - Another option TBM Studio has internally has X . .
+ - Pulling from TBM Studio has a complication of providing a JSON that MyAccess cannot work with natively and would need to be transformed into something MyAccess can use.
+
+
+
+
+8/8/2025 10:54:16 AM
+NHI log review:
+
+ - first item:
+[08/06/25 16:15:57.700]:NonHuman PT:Applying policy: %+C%14CTranslate Login Disabled%-C.
+[08/06/25 16:15:57.716]:NonHuman PT:  Applying to query #1.
+[08/06/25 16:15:57.716]:NonHuman PT:    Evaluating selection criteria for rule 'Get Login Disabled from Lawson'.
+[08/06/25 16:15:57.716]:NonHuman PT:      (if-op-attr 'Login Disabled' not-available) = TRUE.
+[08/06/25 16:15:57.716]:NonHuman PT:    Rule selected.
+[08/06/25 16:15:57.716]:NonHuman PT:    Applying rule 'Get Login Disabled from Lawson'.
+[08/06/25 16:15:57.716]:NonHuman PT:      Action: do-set-dest-attr-value("Login Disabled",token-src-attr("Login Disabled")).
+[08/06/25 16:15:57.716]:NonHuman PT:        arg-string(token-src-attr("Login Disabled"))
+[08/06/25 16:15:57.716]:NonHuman PT:          token-src-attr("Login Disabled")
+[08/06/25 16:15:57.716]:NonHuman PT:            Token Value: "".
+[08/06/25 16:15:57.716]:NonHuman PT:          Arg Value: "".
+
+ - next item:
+	I see an add for PK_WFID=99699,table=ROBOTS,schema=HUMAN at 16:20 on 8/6
+	Initial event on publisher is seen in policy: [08/06/25 16:20:38.619]:NonHuman PT:Receiving DOM document from application.
+	- No association, so synthetic add: 
+		[08/06/25 16:20:39.119]:NonHuman PT:Synthetic add:
+	- No match . .
+		[08/06/25 16:20:39.228]:NonHuman PT:        No matches found.P
+	- Unique CN of JDoe is discovered:
+		[08/06/25 16:20:39.462]:NonHuman PT:            Token Value: "JDoe".
+	- dyoungberg found as manager
+		[08/06/25 16:20:39.915]:NonHuman PT:            
+    - Event is built up into three pieces and submitted:
+		 - [08/06/25 16:20:40.650]:NonHuman PT:Pumping XDS to eDirectory.
+		 - three pieces: 
+			1 - full user add with about two dozen attributes
+			2 - Password expire set for new user.
+			3 - direct reports on dyoungberg to point back at jdoe
+    - These three events fail:
+		1 - The add fails, due to -672 ERR_NO_ACCESS.
+		2 - The password set fails, as the user doesn't exist.
+		3 - The setting for dyoungberg fails with -672 ERR_NO_ACCESS.
+
+
+
+
+
+
+
+
+From Developer https://x.com/reitinet, one of my favorite games on Android has been remastered - check it out here: https://play.google.com/store/apps/details?id=com.rnet.RoboMinerRM
+
+I love digging + supply games, it's super fun and getting better every day!
+
+
+
+
+
+curl https://jsonplaceholder.typicode.com/todos/1
+
+
+69QJZ6GRAT
+
+
+48771 State Rte. 14
+New Waterford, Ohio 44445
+USA
+
+
+What is in a commit ID?
+ - message, author time, commit time.
+ - Tree of all files in that state 
+ - is based on all commits before it:
+	 - meaning: it can only exist in its current state exactly as it is now: if anything changes anywhere, git creates new commits.
+	 - commits stick around until all references have been removed for somewhere between 30-90 days.
+
+
+
+
+7/3/2025 10:06:33 AM
+BAES - new ttrs estimate chat with Glen and Shaun.
+AD driver location estimates
+https://docs.google.com/spreadsheets/d/1M9l7ecgBxTbO1XIuazyfXoFfPQ010E3Dk8nCWV06Y4w/edit?gid=708506936#gid=708506936 
+ - Nick has asked for location information into greenlink
+ - Need to get from success factors . .
+ - Legal entity set of attributes . .but not what's needed in this case . .not same as physical work
+ - This need: need actual work location to be available in GL for a whitepages out of GL.
+ - Successfactors - place of work country . . not in the vault at the moment.
+ - Mappings from 3 digit country code to a firendly name . . 'GBR' -> united kingdom . .
+ - In AD: use two character country codes, not 3 from SF.
+ - All we need is the baePlaceOfWork - like Warton  . . city where they work
+ - baePlaceofworkcountry - 3 digit code, store on valut in extended schema.
+ - in greeinlink
+	 - AD - C and CO - one is name and country code . .
+	 - msExchUsageLocation
+ - DVE addition - Work location from SF, also have non sf users in identify vault, get these from VRS.
+ - VRS already sending this to us - schem amping refer . .
+ - When we are dealing with NSF person, VRS information in vualt.
+ - For SF person - new attrs, and write into same IDV attributes . .
+ - Write the data or kill it - 
+	 - If SF work information in vault, then get vrs the next day - vrs sending working location on same user . .
+	 - since SF user, VRS country code 
+ - 
+
+
+6/16/2025 7:00:50 PM
+Andrew driving meeting notes
+ - focus on driving
+ - no phones period
+ - never reach for anything.
+ - messed up gps . .
+ - be a good passenger.
+ - GDL law - no passengers outside of immediate famlily: after you get your license for 6 months!
+ - Friends are #1 distraction!!
+ - anger or emotional driving . . 
+ - remember to talk to andrew about my left turn onto the bridge at work.
+ - response time: 1.5 seconds!!!
+ - 3 three seconds of following . .
+ - DO NOT TAILGATE
+ - do not pass over double yello
+ - DO NOT use drive to make up time!
+ - never drive angry or upset!
+ - DAD controls the keys . . . 0:-)
+ - avoid realiation, breath, carry on
+ - Sober - alchool - over 21 - BAC over .05 - lowest in entire nation ..
+ - For teens: not a drop of beer . .if caught with single drop, DUI can take licence away.
+ - Watch for anything that can impair your drving.
+ - Don't get in the car with someone else that is imparied.
+ - DROWSY SLEEPING!! BAD BAD BAD!!
+ - CONTRACT FOR DRIVINg.
+ -DRIVING ALERT:
+	 - get good nights dleep
+	 - switch drivers sooner.
+	 - don't push through  . .
+	 - wake your body up: jumping jacks - gas station, blod flowing, drinking water, taking a break.
+	 - pull off the road and take a nap. SLEEP not Tiktok
+ - 12 am - 5 am - no driving under 17!
+ - one unbuckled: increase risk by 40%
+ - drive buckled:
+	 - everyone every time.
+	 - make it your rule - ALWAYS
+	 - Use it correctly: shoulders and hip to hip.
+ - certificate to be emailed by tomorrow (6/16/2025 7:29:19 PM)
+ - in TWO DAYS reach out 
+ - Fill out new drivers agreement.
+ - Thanks for attending.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+Year to date FTO: 125.25 Hours
+Planned FTO: 112 Hours (June 18-20 and July 11 through 25)
+Remaining Holidays: 32 Hours (Labor Day, Thanksgiving, the Friday after, and Christmas. Note, Juneteenth, July 4th, and Pioneer Day are captured above in your planned FTO)
+
+Total FTO (Taken and Planned): 269.25
+
+Normalized (you have 12.75 OT hours thus far): 256.5
+
+FTO Balance Available: 63.5 hours (320 minus 256.5)
+
+Note: This does not include any planned time off for the Holiday Break (Dec 26 through 31). That could add another 32 hours, leaving you with 31.5 hours for illness and emergencies for the remainder of the year. 
+
+
+
+
+
+
+
+Hey guys!
+
+I don't think that I've sent the numbers Bob requested this morning; so wanted to send mine out for my FTO:
+
+Taken this year so far: 125.25. 
+I have a total of 205.25 hours of FTO taken + planned throughout the end of the year, currently normalized to 192.5 hours. The year-review site at https://oa.trivir.com/year-review currently reflects my intent for FTO for 2025.
+
+
+
+
+
+
+
+From Yearly review: 205.25 hours, normalized to 192.5.
+
+
+
+As mentioned, I'll be out three days this week startin
+
+
+6/16/2025 10:03:03 AM
+732 - no Census . .loss about 100K short
+YTD - 4.1 - 9.8mil . .LAUSD will help.
+may - 812 - worked value . .most in LAUSD.
+
+Veza - revenu coming from AFCU . . they hired us to build connectors . . This will be a good addition . .
+
+'prox' . 
+UVU - Octa for UVU - first formal Octa engagement.
+
+100K - golden one love us - Steve likes us . .
+
+AFCU - May fund us for a year - 5mill under contract
+Michael: 5 millino  .but they control the pace . .likely need more like 7-8 million in backlog . .
+
+HR
+ - payrol - thursday june 26 -> 30
+ - 26 - will get paylrol done info . .
+
+ - when submitting FTO - manager & to project managers. 
+	FTO taken to date
+	Planed FTO for the remainder of hte year
+	about 320 hours fto -
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+871704 - payoff 200 leah kynaston
+
+
+
+6/3/2025 2:09:24 PM
+sears card
+mohters mother: betty
+youngest of siblings: carl
+
+
+
+5/30/2025 3:07:42 PM
+BAES gary & shaun chat
+ - New hires . .management frustrated
+ - Understand requirements
+ - Requirements, AC and Code all match
+ - between 1508 - 1563
+	 - added start date
+	 
+
+
+Version 1497  May 9 2024 -
+	<description>(AC 1.2.2.2)Match on DOB givenName and SN</description>
+							Matches between SF data IDV DOB, Given Name, and Surname are supported in order to facilitate rehires where the GCI Number might not match. 
+
+Note: If we found an object (check for @src-dn, then we manually set the association &amp; dest dn).  If that found object also already has an association, we remove it.  This manual 'match' confirmation lets us change the association if the match happens to an account that's already associated.  BAES has assured us that a match on DOB, givenName and SN guarantees uniqueness.
+
+ if we have a match here; we just have GCI changing; so switch the associations now.</comment>
+
+
+ 
+
+
+
+
+
+akynaston public:
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAdJyLLTxjBHfiEs+aQTJDwHqk7dahH2ELJDUWx6Bl+8
+
+
+C:\>manage-bde -protectors -get C:
+BitLocker Drive Encryption: Configuration Tool version 10.0.26100
+Copyright (C) 2013 Microsoft Corporation. All rights reserved.
+
+Volume C: []
+All Key Protectors
+
+ERROR: No key protectors found.
+
+C:\>
+
+
+
+Bob,
+
+I wanted to look at taking some pretty crazy FTO. I know I started out the year kinda rough, but have been able to repair somewhat; and going forward I want to nail this down and make sure I'm in front of FTO related issues.
+
+
+I have a few questions for you:
+1 - We of course want 100% each day & week; would you prefer I end each querter with 100%, or have one be like 98% and another 102%? Maybe it doesn't matter; what is your preference?
+2 - I'm planning as if I won't work at all on vacation; but will most likely have time where I can put in good SWA hours while I'm out after I sync up with my team on this, and I'll assume you are good with this until you say otherwise.
+
+
+DETAILS:
+
+I plan on taking this FTO through the rest of the year
+June 18, 19, 20 - 24 hours
+July 11 (Friday) - 25th - 11 days, 88 hours
+
+for a total of 112 hours . .which is pretty intense. I've been able to use the FTO calculator, and here are my current + estimated numbers:
+
+Quarter 1: 105% (already over)
+Quarter 2: 112% (about half way through
+Quarter 3: 102% (Most weeks will need to be a full 40 hours, minus the july time off)
+Quarter 4: 100% (Half of the weeks will need to be 40 hours with Christmas and new year off.)
+
+
+
+5/12/2025 10:07:34 AM
+Jims' IGA meeting
+Michales/WWWT/Veza
+ - Main guy . .Myabe MIke Shirk
+ - If not vez, make this recommendatoin
+ - New guy tlaking: 6 weeks with veza . .
+ - David Levine - veza review.
+ - reporting is the best: being able to run reports, and what to fix.
+ -  
+
+
+
+
+10970 - duisabked
+13574
+
+
+4/16/2025 3:56:37 PM
+AFCU meeting; scripts for the call:
+
+Ldif Script
+Bitbucket: 
+AFCU project
+IDM Repo
+Folder called Ldif
+Util/ldifbranch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4/9/2025 2:15:30 PM
+Jermeiah moved repo:
+https://git.trivir.com/projects/TM/repos/schema-checker/browse
+
+
+Aaron k - port 18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AJ Kynaston
+	Aaron 801 368 8633
+	Leah 385 354 9695
+
+asher stevens
+	alicia - 801 616 1073
+	jon - 801 850 7128
+
+atticus grenz
+	david Grenz 801 787 1913
+
+beckham atkinson
+	tim - 801 381 6209
+	heather - 801 231 2192
+
+brady kober
+jacob kobar
+	josh 801 473 5130
+	camille 801 602 3155
+
+bronx kelsey
+	David - 385 895 7593
+	Kala - 385 200 4787
+
+carter lotz
+	Ben no number on either!
+	Kaitlyn
+
+damien perez
+	Jorge - 435 817 7288
+	Melinda - 435 817 7288 (same)
+
+easton madsen
+	Stephen 801 822 9818
+	aubrey 801 361 9371
+
+emmet burton
+	Eric - 801 655 3608
+	Cassie - 801 319 3123
+
+logan download
+	Adam - 801 618 6824
+	Sarah - 801 618 5195
+
+ryder lovel
+	Rick - 801 310 8941
+	Holly 801 368 9403
+
+
+talmage sharp (moved)
+willam capell
+	Joe  801 574 0665
+	Amber 801 636 3327
+
+zion carter
+	Henry 385 492 9225
+	Melanie 385 497 0688
+
+
+
+
+
+EndeD L&L, now billing BAES:
+2/26/2025 1:09:17 PM
+ - done with baes
+ 2/26/2025 1:46:09 PM
+
+
+
+2/26/2025 1:22:25 PM
+Findings on the BAES remote workstation.
+
+It appears the 10.180.162.39 server, the one we use for our RDP access on the VPN has been completely rebuilt. Here are some findings:
+
+* The server appears to not yet be activated . .not sure if this is a problem . .but thought I'd mention it.
+* D:\Remoteloader\Trivir does appear to be our new drop off point for releases.  The previous 10.5.9 is there; though I do not see the 10.5.10 release that I believe Gary may have installed. . .or 10.5.11 . .?
+* I copied a new Designer shortcut icon to the desktop, at least on my user: reminder: you must run Designer as Administrator; or you immediately get a useless error instructing you to review a log that doesn't exist.
+* D:\RHEL_7.6 does appear to be a working Designer installation, and seems to have our 8 most recent installation workspaces. I did confirm I could successfully do a live compare of the SF driver.
+* The other RHEL folders on the drive do exist; though I've left them alone per the note regarding future updates.
+* Designer is listed as Version 4.8, Build 20191022
+
+
+
+
+
+
+
+
+
+Byurocks8_9
+
+3852191369
+
+2/6/2025 1:28:54 PM
+Sales call
+Jesssica - general interest . .when/how to give data
+
+Harsh - IGA team was interested . .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://link.resilio.com/#f=sync&sz=19E10&t=1&s=Y56YU6CSPDC2TM67RLH6BVYH6ZR3VMDU&i=CULOXXS6SMQ7LV7VANKAGCC6JURPIKJSX&e=1737837797&v=3.0&a=2
+
+
+
+MCP9C-9YK2D-8P
+
+
+1/3/2025 2:12:18 PM
+done1 - Holly agree to loan payment
+done - through nov 11- setup 75 today, and 75 along wth phone payment
+done2 - ynab: pay all bills
+2.5 - Ynab: create Ohio category (3,000)
+3 - ynab: Budget out January
+4 - Sign u for insurance
+5 - check al dependecy names and dates.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12/11/2024 1:11:51 PM
+BAES Gary chat:
+
+ASEN2024 - 04 - LMS data validation
+https://app.clickup.com/t/45049292/BAESUK-267
+
+Talking through requirements for LMS:
+Going to AC 1.4:
+https://docs.google.com/document/d/1Pu0wxfQ83CGQYfyfAJ_ph1x777LRnUN7/edit#heading=h.3mj2wkv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11/30/2024 6:16:37 PM
+ - Leah shows as primary . .
+ - got Leah to give me permission 11/30/2024 6:18:44 PM
+ - teledoc health code? 11/30/2024 6:20:20 PM
+ - username
+ - lkynaston
+ - saturdaylk695
+	- mothers maiden name
+	- vanmoos (all lower case)
+ - prefer 385 354 9695
+ - english
+
+help@healthiestyou.com
+My teledoc account is not connecting to my UHC account for Leah Kynaston, but my teledoc account is active. Birthdate is February 29, 1984 and she'd just like to get connected to do a telehealth visit.
+
+conf
+38899603
+
+
+
+UTLOUDBAHJRPXDK5
+
+ajtheboss1011@gmail.com
+trivir12345678
+
+
+
+
+
+ baes: fix duplciated dve parameters setting in config for succcess factors
+
+
+
+11/1/2024 10:56:46 AM
+ - INstall communicity edition of the OpenVPN
+ - SVN update
+ - Confirm tests pass
+ - Export any and all drivers, email templates, any other settings that need to be exported and save.
+ - Normalize drivers.
+ - TortoiseSVN -> right click in BAES/IDM folder, and select commit
+ - Unclick all items in the list.
+ - Revert items that need reverting
+ - Confirm all diffs are as expected.
+ - Commit.
+ - Update IDM/doc/Release-Notes.txt - following the existing pattern.
+ - Update IDM/doc/Deploy Instructions - IDM.txt - following the existing pattern.
+ - Open build.xml: change 10.5.8 -> 10.5.9
+ - Command line: run 'ant' - the default task will run a new release.
+ - Delete the old delivery/BAESIDMDrivers-Release-10.5.8.zip
+ - SVN add the new 10.5.9 zip.
+ - Commit with a commit message simliar to the ones before it.
+
+
+
+
+
+
+commit-parts - unnecessarially complicated, instructions are incomplete.
+find-swearwords - pretty good rebase & edit commits to avoid specific words; but the verification seems messy.
+find-bug - reasonable; though is more of a repair situation: you get pretty far without any tests . . annoying . .
+
+hjow to write own excercises
+https://github.com/fracz/git-exercises/blob/verifications/CONTRIBUTING.md
+
+
+
+
+
+All, FYI: this is a new text group: I'm adding my Google voice number 801 609 1233 since it lets me text in a browser.  Here's the summary from yesterday: Please feel free to add/correct as needed; otherwise I'm going to call this complete.
+
+10/30/2024 10:53:29 AM
+DND Session Summary (with fixes):
+ - We got back up to speed on Curse of Strahd.
+ - Met up with Christian's (spelling?) and Aaron's new characters.
+ - Had a very nice picnic with Strahd and tried not to die :-).
+ - Strahd offered us a job, and he left while we were still trying not to die.
+ - We decided that we needed to head into the city to sell of our chariot of stuff.
+ - And then head to the swamps to find info on the sad lady so we can get strahds back story
+
+
+
+
+10/30/2024 10:03:01 AM
+
+
+
+
+need to do emissions
+Utah County
+Phone: (801) 851-7600
+
+
+
+All,  One of my dev plan goals is to put together a super effective Git training. Can I please get your input on something?
+
+It's been difficult to tell how much/what kind of training is needed. From chats with a few of you, it seems the following are most needed items.  Do you agree/disagree? What would you like to see? Git more Git!!
+
+
+Prerequisite: Take this Udemy training first: Its 6 hours long; but covers the basics well: https://trivir.udemy.com/course/git-complete/learn/lecture/1438990#overview
+
+1 - 'Git-ing Disciplined' :-) -> keeping a super deliberate branch relationships in mind.
+  A - Reasoning behind super focused commits: Keep 'fixup' in mind: vs manual Interactive rebase + edit.
+  B - Reasoning behind frequent fetches, frequent integration and automated tests.
+  C - Mindful Merging: Being mindful of ancestry merge points between branches.
+  D - When to Push & value of multi-pipeline build with tests.
+2 - Effective commit tree navigation.
+3 - Effective index management: not just for commits!
+  A - Power of tracking files that should change vs those that shouldn't (e.g. fixing build issues)
+  B - Incremental Diffing.
+  C - Incremental Commiting & reason for/against.
+
+
+
+10/29/2024 1:46:32 PM
+Top level IdMUnit in bitbucket:
+https://git.trivir.com/projects/IDMUNIT
+
+jdbc connector:
+https://git.trivir.com/projects/IDMUNIT/repos/jdbc-connector/browse
+
+
+
+10/28/2024 10:58:45 AM
+BAES reported issues:
+
+Request to BAES:
+ - In the future please send fuller logs, and include the user name you are testing; it's helpful to provide more context. For this one we had enough.
+
+Assumption we made:
+	leaver entry = user already in eDirectory correct?
+	Active Entry = user coming in on the event correct?
+
+	SUMMARY OF ISSUE: Code is written to match the AC 1.2.2.3.3; however, the email sent in the AC recommends to fix an issue that the AC never accounts for: the user being already terminated.
+	(Secondary: When checking the input doc's dates, don't bother querying if we don't need to check existing user)
+
+
+BREAKDOWN:
+AC 1.2.2.3.3 covers an error condition when users match on DOB/GivenName/Surname, but not contract type or start date, so an email for a manual fix is required.
+
+Flow of events:
+ - 1.2.2.1 didn't match as dest-dn was not available, meaning GCI number in eDirectory was NOT 3042547. (not in trace)
+ - 1.2.2.3.1 - Didn't match, as baeContractType = "Employee", and baeCompanyStartDate = 2024-05-28.
+ - 1.2.2.3.2a - start date not in the future: Check for start date in the future: Event had 2024-05-28 start date; so event should move past AC item*.
+ - 1.2.2.3.2 - start date not in the future: initial check for just givenname/surname/baeDOB found UKB00084187; start date was still 2024-05-28, ideally don't even query*.
+ - 1.2.2.3.3 - initial check for just givenname/surname/baeDOB found UKB00084187: since user existed, start date was more than 5 days in the past, and baeLastWorkingDay was 1899-12-31 - this error condition was recognized: The user coming in has a different GCI (3042547), has different contract type, and existing user UKB00084187 should have been terminated.
+	 - The email describes a manual situation that needs to be fixed, aka terminate the existing uesr.
+		 - However, POSSIBLE AC BUG: the AC 1.2.2.3.3 Never confirms that the user has a last working day in the past!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nelson
+Spencer bennet
+devin ortin
+Dorel Kynaston
+Jim Ivie
+Michael cunningham
+Nathan cunning ham
+brand cunningham
+Don Aina
+
+Hey guys! This is Aaron Kynaston, just wanted to start a text group to make sure everyone is on the same page.  All of you are awesome people that have already or are in the process of making my home better, and I sure appreciate it. The Santaquin 10th Ward may be doing some work in my back yard (possibly up to and including sprinklers and grass WAHOO!) and possibly garage work and I wanted to let everyone know and keep everyone updated. Even if we end up doing nothing, I am grateful to all of you for all you have done or will do.
+
+
+So far that is what has happened:
+
+1 - We submitted a request to 811 regarding digging in my yard and pipes and stuff.
+2 - We've drawn a very simple outline of what we'd like to do in the back.
+
+
+
+
+
+
+
+
+
+
+Hello! Our next activity will be Tuesday, August 6th at 4:00 at the blue park for some water activities. Please come in a swimming suit.  Please let us know if your boys can come! Please review this permission slip and sign asap at this link: https://www.santaquin10thward.com/primary/primary-activities
+
+
+
+
+
+
+
+
+
+8/1/2024 10:04:05 AM
+BAES multi project sync up
+ - familiar with two compontens I thnik: the general upgrade, and the moving of the AS system to it sown tree.
+   - ofcourse the AS extraction deals with new hardware, so we can just install what we want of course
+    - on the upgrade for exstign stuff; my tendnacie would be to want to upgrade everything first, so that's out of the way and the standard we can base all of our work on rather than targeting multiple versions.
+
+
+RHEL -0 7.6 - time frame? why 7.9 now? - RHEL is out of support, though not EOL.
+eDirectory
+idm
+imanager
+remote loader
+
+June 30 RHEL 7 end of support
+
+ - Shuan wants dates by Monday . .
+ -
+
+
+
+Support for versions
+ - Need to document the versions
+ - dealing with new peopl
+
+
+
+
+ - Talking outloud - seems to be wise to get the upgrade done very first everywhere - as long as our mismatch to production is something we can deal with in the mean time.
+ -
+
+
+
+
+
+
+
+We will be having our activity days tonight. We are going to the Payson pool! Please meet at the Dowland's between 5:45 and 6:00. We will have a permission slip that will need to be filled out. We will drop the boys off when we get back. Please let us know if your son can make it or if you have any questions. Thanks!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7/30/2024 8:53:24 AM
+BAES
+Looking at our upgrade plan, I think we understand you'll eventually be going al
+the way to redhat 9; I think the incremental upgrades are probably required, I think between redhat 7 and 9 there is wasn't a direct upgrade path; though the leap app seems to help .
+
+Martin Flexman
+Faris
+Ian Allman - host
+Shaun Briscoe
+
+watching upgrade orders
+ - why? says ian . .
+ - because current stuff is out of support.
+ - Some form of extended support - 6-7 months.
+ - Ian shows change freeze in December 9
+ - shift produciton work until after freeze.
+ - Jan 13 - appears to be the unfreze date
+ - ian knows about as space.
+ - Added a trivir section - 10 to upgrade, 10 to test
+ - want to further dig into docs; thankfully each of these upgrades appear to be a relatively small jump. I know some of the ordering can be tricky with later jumps; I need to check requiements at each upgrade step and order.
+ - IDM 4.8.3 -> 4.8.6?
+ - 4.8.0 AE - > 4.8.3 - sp 4
+ - Quesiton: still out of support??? - at least 6 months supported from January 2025.
+ - Research this
+ - until april 2025 - is what Iean said . .
+ - Martin: bigger jumps: inplace upgrade - Remove one replica,build new server . .
+ - plan: building new servers . .
+ - "Certificate strucutres" - moe to the new servers . .
+ - Analysis - can burn through credits . .
+ - in the next week or so:
+	- plan is reasonably ok
+	- understand risk
+	- supportability dates
+	- along wiht "cbt" "enahmcenents 3" "obsleenceice"
+ - Shaun: concern about drift between environments
+ - Ian: CBT and other projects need to
+ - need to chat with shaun nxt
+ - 8.8/8.9/92/9.3 concern etc:
+
+		One item does concern me - edir 9.2 lists a few supported OSes: https://www.netiq.com/documentation/edirectory-92/edir_install/data/a79kg0t.html - and shows RHEL 8.8, 8.9, and RHEL 9.2, 9.3 . . seems odd that we're only considering RHEL 7.6 to 7.9 . .something seems off; yet - it is possible we are the people that helped them get on what they are on now . .we may want to double check current versions during this call if we have access to an SSH session.
+
+
+ - RHEL 7.6 7.9
+ - eDir 92-924
+
+
+
+
+
+
+
+
+
+
+
+DNS Name: ds-config1.dev.trivir.com
+Admin Port: 1444
+LDAPS Port: 1636
+Root Suffix: ou=am-config
+Admin: uid=am-config,ou=admins,ou=am-config
+/etc/systemd/system/tomcat-am.service
+/opt/java17/
+
+/opt/java17/bin/keytool -import -file AM-Server1.der -keystore /opt/java17/lib/server/cacerts -alias am-trivir-server-1
+
+/etc/hosts:
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+172.17.2.75 am1.dev.trivir.com configstore1.dev.trivir.com ds-config1.dev.trivir.com
+172.17.2.76 am2.dev.trivir.com configstore2.dev.trivir.com ds-config2.dev.trivir.com
+
+
+
+
+
+7/15/2024 10:01:08 AM
+Monthly call
+735K - slightly below monthly . .
+   - needs to be 780
+   - 4.9M - ahead of goal
+   - 160 ahead . .
+   - $220, up from may, 210
+   - remainder of the year - just under 4M,
+   - Additional funding - 500K - FCPS
+   - court of appeals - 350K
+   - afcu - veza connector . .
+   - st newhmbsire -
+   - mit linconln labs
+   - 2.8M dollars
+   - LASD - still coming; hasn't closed
+   - HR payrol - Monday July 29
+   - performance comp statement - Aaron Miwa - may be able to see aaron's new paycheck tool
+   - business point of view: FTO - policy -
+   - mike mercer, just got merried - kid in three months.
+   -
+
+7/11/2024 9:09:58 PM
+Holly
+ - Delete data in accont to enable email sending
+
+Goals:
+1 - Get Money
+	 - FASFA is filled out
+	 - do the task list in FASA
+2 - UVU task list
+	 - Do task list; select a few scholarships - pick 1 and fill it out completely and submit.
+     - continue task list
+		 - Dad's questions:
+			 - Do we need to speak with an advisor
+			 - if yes, do we need to do it in person?
+
+
+
+
+
+
+
+UVU Task list
+
+
+
+
+7/2/2024 12:08:26 PM
+
+ - ARchive VMS
+ - Get idmunitconfig diffed back into SVN.
+
+
+q
+7/1/2024 2:07:48 PM
+5 days - buffer if last working day not populated . .gave HR team a buffer . .
+
+
+baeCompanyStartDate = July 1
+
+Now = July 7
+
+
+nowminus5 = july 2
+start date = july 1
+
+ - 1.2.2.3.3 - > 5 days - send email, Add variation: < 5 days . . .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ac with jml
+https://docs.google.com/document/d/1heXxCXWVDVwe-kvHipqHbEkquWm3NX7x/edit
+
+
+
+
+6/26/2024 10:50:44 AM
+BAES writeup:
+AC 1.2.2.3.3 -
+  - line 14207     <Company_Start_Date>2022-06-28T00:00:00+01:00</Company_Start_Date> received
+  - company start date rule: AS-RO-1008
+  - function call appears incorrect:
+    - validateDate(attributeValue, 64, 50)
+    - the lower range and upper range values appear swapped.
+  - Also, the code appears to interpret these values as years; yet they are reporting a 5 day error; we should talk on this one.
+
+
+
+AC 1.2.2.7 -
+
+   - The trace shows there was not a match as there was an already existing object that was already associated. If this identical test was repeated, when UKB00504818 was not already associated to the SF driver, it should have succeeded.
+    [06/26/24 11:42:31.332]:sf PT:Found an associated object.
+    [06/26/24 11:42:31.332]:sf PT:Merging eDirectory and application values.
+    [06/26/24 11:42:31.333]:sf PT:Reading relevant attributes from BAES\Users\UKB00504818.
+
+Other Minor issues we'll want to consider resolving:
+  Issue 1: the "Last Day Worked set to the past" rule attempted to get baeLastWorkingDay, but it wasn't available; in fact, it did a 'token-attr' which attempts to read from the source if it wasn't avaialble in the event. It should probably be just token-op-attr, and then allowed to fail if not populated . .assuming it can be missing from the input doc.
+     - note: the lastworkding day provided was '1899-12-31' and this is considered the 'blank value' . .so we shouldn't try to get if it's not already present; change token-attr to token-op-attr.
+
+  Issue 2: the Rule: SuccessFactors-Driver/Publisher/pub-cmd-users#XmlData:26: should be updated to avoid converting blank dates:
+     - Couldn't convert date/time '': java.text.ParseException: Unparseable date: ""
+     - If it isn't available; it shouldn't attempt to parse.
+
+
+
+
+
+
+
+meet spouse: santaquin
+city me born: provo
+eldist sbimling: brent
+memorable neighberos: farish
+mother born: etna
+
+
+
+
+
+./dsrepl status --hostname ds-config2 --port 1444 --bindDN "uid=admin" --bindPassword 'TriVir#1' --trustAll
+
+
+https://stackoverflow.com/questions/22290554/find-java-home-and-set-it-on-rhel
+
+
+
+
+2024-06-05
+ - L&L - Not caught up need two ds instances replicating.
+ - Use tomcat 9 - 10 & 11 use 'jakarta' pakages that aren't working.
+ - bitbicket - can show commit signatures with SSH keys
+ - Externalizing git config ocnfluence
+	 - also have examle one showing signging key
+	 - gpg "ssh" - allowed_signers 'allowedSignersFile'
+ - [gpg "ssh] section - will want to move to this more
+ - Github already supports this . .
+ - git commit - NOT snapshot - effectivly set of diffs
+ - Chris: it does represent a snapshot; but at a technical level; not snapshot.
+	- Rebasing: good agument for not seeing it as snapshot
+ - some discussion on dealing with conflicts on rebase
+ -  xcopy C:\users\akynaston\.ssh\* C:\z\localbackup\ssh /s/e/i/d/h/y
+ - daily 'sync' commits ok just to store wip.
+ - recommendatoin to cleanup 'sync' commits.
+ - Take care of these . . Clean as you go.
+ - Git: need some discssoin about how to manage commits.
+	 - Each commit that is going to be on master should be a focused,
+ - Style rules: decide early on! painful to change.
+ - Checkstyle is what we use: run early on and often.
+ - 'Detekt'
+ - 7 trainings in 2021.
+ - combine these:
+	N:\training\LunchAndLearn\Git
+ - Rebase - does it resign . .
+ - Can see the commit and author in the gui!
+ - Discussion about git workflow
+ - Definition of branches:
+	- Master: IN produciotn, or shortly to be deployed.
+	- development: always on top of master, has all work that is passing and could potentially be merged to master.
+	- hotfix - keeep unti next release branhc?
+	- tag 1.5 vs hotfix . .
+	- my qestion: merge stuff back into your branch that you 're owrkin gon? vs rebase . .
+ - Am journeys - Issue with jsons: only one person work on a json at a time.
+ - Journey Mutex LOL
+ - Cherry picking comment.
+
+
+git config --global gpg.format ssh
+git config --global user.signingkey C:\Users\akynaston\.ssh\id_rsa.pub
+
+
+
+5/29/2024 12:38:09 PM
+
+
+
+
+
+cpap leah bill
+https://photos.google.com/photo/AF1QipMua_ahuY-0MeaiQWnT6YMe508nVKcLGdaYNDV6
+888 887 5582 - 453.79
+ - Leah - 990 754521 - 206973 pin
+ - 9/25/2024 3:34:14 PM - leahs cpam hacnien iks ours
+ - last billing cycle: january
+ - first payment monday sep 30 - 453.79
+ - 'Ruth' - payment plan - until.
+ - still in precoclirions
+ - Ruth
+
+ - 9/25/2024 3:52:46 PM
+   - ruth again!
+   - Checking
+   - can setup both acconts
+   - bank is for one acocunt
+   - Mine: 990 - 608081
+
+
+
+
+
+https://webpay.intermountainhealthcare.org/webpay/
+990-75431
+206973 - pin
+02/29/1984 - guanrator date
+
+
+   cpap leah bill
+https://photos.google.com/photo/AF1QipMua_ahuY-0MeaiQWnT6YMe508nVKcLGdaYNDV6
+888 887 5582 - 453.79
+ - Leah - 990 754521 - 206973 pin
+ - 9/25/2024 3:34:14 PM - leahs cpam hacnien iks ours
+ - last billing cycle: january
+ - first payment monday sep 30 - 453.79
+ - 'Ruth' - payment plan - until.
+ - still in precoclirions
+ - Ruth
+
+
+https://webpay.intermountainhealthcare.org/
+990608081
+442746
+02/07/1978
+
+
+ - 9/25/2024 3:52:46 PM
+   - ruth again!
+   - Checking
+   - can setup both acconts
+   - bank is for one acocunt
+   - Mine: 990608081
+	pin
+
+
+C:\zall\Resilio Sync>rsync -rltiviP sync risoSync
+
+
+3/5/2025 12:59:07 PM
+cmments on L&L
+
+Since my voice is goofed, I figured I'd add a comment here:
+
+Correct me if I'm wrong Joey, It seems like the main pain point here is that we aren't talking enough. Estimates, clickup, statuses, etc: all of it is to keep us talking at the right time.
+
+For me, it was fear stopping me from talking in the past; either due to a goofed estimate, fear of exposing ignorance, etc: If you have fear, it's already tme to talk :-)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C:\work\gitlabsBackup>git fetch
+remote: Enumerating objects: 49, done.
+remote: Counting objects: 100% (49/49), done.
+remote: Compressing objects: 100% (35/35), done.
+remote: Total 45 (delta 17), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (45/45), 4.05 KiB | 10.00 KiB/s, done.
+From ssh://git.trivir.com:7999/~akynaston/gitlabs
+   a816f2c..c5ad910  difflab             -> origin/difflab
+ * [new branch]      carl                -> origin/carl
+ * [new branch]      huston              -> origin/huston
+ * [new branch]      jeremiah            -> origin/jeremiah
+ * [new branch]      koooooooooooooooooo -> origin/koooooooooooooooooo
+ * [new branch]      logexample          -> origin/logexample
+ + a924cd7...46c761a master              -> origin/master  (forced update)
+ * [new branch]      master2             -> origin/master2
+ * [new branch]      not-josh            -> origin/not-josh
+ * [new branch]      not/brian           -> origin/not/brian
+ * [new branch]      preston             -> origin/preston
+ * [new branch]      sam                 -> origin/sam
+ * [new branch]      sean                -> origin/sean
+ * [new branch]      test                -> origin/test
+
+C:\work\gitlabsBackup>

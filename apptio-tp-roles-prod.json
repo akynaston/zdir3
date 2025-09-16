@@ -1,0 +1,364 @@
+{
+    "items": [
+        {
+            "resourceType": "Role",
+            "id": 1,
+            "name": "Assignee"
+        },
+        {
+            "resourceType": "Role",
+            "id": 4,
+            "name": "QA Engineer"
+        },
+        {
+            "resourceType": "Role",
+            "id": 6,
+            "name": "Support Person"
+        },
+        {
+            "resourceType": "Role",
+            "id": 12,
+            "name": "HTML Coder"
+        },
+        {
+            "resourceType": "Role",
+            "id": 18,
+            "name": "Solution Owner"
+        },
+        {
+            "resourceType": "Role",
+            "id": 23,
+            "name": "Account Manager"
+        },
+        {
+            "resourceType": "Role",
+            "id": 27,
+            "name": "Designer"
+        },
+        {
+            "resourceType": "Role",
+            "id": 28,
+            "name": "Marketing Developer"
+        },
+        {
+            "resourceType": "Role",
+            "id": 32,
+            "name": "Administration"
+        },
+        {
+            "resourceType": "Role",
+            "id": 33,
+            "name": "RESPONSIBLE"
+        },
+        {
+            "resourceType": "Role",
+            "id": 36,
+            "name": "Mobile Developer"
+        },
+        {
+            "resourceType": "Role",
+            "id": 38,
+            "name": "DevOps"
+        },
+        {
+            "resourceType": "Role",
+            "id": 43,
+            "name": "Portfolio Epic Owner"
+        },
+        {
+            "resourceType": "Role",
+            "id": 44,
+            "name": "Release Train Engineer"
+        },
+        {
+            "resourceType": "Role",
+            "id": 45,
+            "name": "Product Owner"
+        },
+        {
+            "resourceType": "Role",
+            "id": 47,
+            "name": "Solution Train Engineer"
+        },
+        {
+            "resourceType": "Role",
+            "id": 48,
+            "name": "Value Stream Manager"
+        },
+        {
+            "resourceType": "Role",
+            "id": 49,
+            "name": "Product Manager"
+        },
+        {
+            "resourceType": "Role",
+            "id": 50,
+            "name": "Key Stakeholder"
+        },
+        {
+            "resourceType": "Role",
+            "id": 51,
+            "name": "Pairing Partner"
+        },
+        {
+            "resourceType": "Role",
+            "id": 52,
+            "name": "Approver"
+        },
+        {
+            "resourceType": "Role",
+            "id": 53,
+            "name": "Epic Owner"
+        },
+        {
+            "resourceType": "Role",
+            "id": 54,
+            "name": "Engineering Contact"
+        },
+        {
+            "resourceType": "Role",
+            "id": 55,
+            "name": "Initiative Owner"
+        },
+        {
+            "resourceType": "Role",
+            "id": 56,
+            "name": "ACCOUNTABLE"
+        },
+        {
+            "resourceType": "Role",
+            "id": 57,
+            "name": "Management Team"
+        },
+        {
+            "resourceType": "Role",
+            "id": 58,
+            "name": "Project Management"
+        },
+        {
+            "resourceType": "Role",
+            "id": 59,
+            "name": "Business Analysts"
+        },
+        {
+            "resourceType": "Role",
+            "id": 60,
+            "name": "Scrum Masters"
+        },
+        {
+            "resourceType": "Role",
+            "id": 61,
+            "name": "Leaders"
+        },
+        {
+            "resourceType": "Role",
+            "id": 62,
+            "name": "Director/MD"
+        },
+        {
+            "resourceType": "Role",
+            "id": 63,
+            "name": "VP/SVP"
+        },
+        {
+            "resourceType": "Role",
+            "id": 64,
+            "name": "Strategists"
+        },
+        {
+            "resourceType": "Role",
+            "id": 65,
+            "name": "Designers"
+        },
+        {
+            "resourceType": "Role",
+            "id": 66,
+            "name": "Product Managers"
+        },
+        {
+            "resourceType": "Role",
+            "id": 67,
+            "name": "Architects"
+        },
+        {
+            "resourceType": "Role",
+            "id": 68,
+            "name": "Data Scientists"
+        },
+        {
+            "resourceType": "Role",
+            "id": 69,
+            "name": "Support"
+        },
+        {
+            "resourceType": "Role",
+            "id": 70,
+            "name": "Developers"
+        },
+        {
+            "resourceType": "Role",
+            "id": 71,
+            "name": "Engineers"
+        },
+        {
+            "resourceType": "Role",
+            "id": 72,
+            "name": "Cybersecurity"
+        },
+        {
+            "resourceType": "Role",
+            "id": 73,
+            "name": "Operations"
+        },
+        {
+            "resourceType": "Role",
+            "id": 74,
+            "name": "QA Testers"
+        },
+        {
+            "resourceType": "Role",
+            "id": 75,
+            "name": "Assistants"
+        },
+        {
+            "resourceType": "Role",
+            "id": 76,
+            "name": "NA"
+        },
+        {
+            "resourceType": "Role",
+            "id": 77,
+            "name": "Workforce Strategy"
+        },
+        {
+            "resourceType": "Role",
+            "id": 78,
+            "name": "Solution Architect"
+        },
+        {
+            "resourceType": "Role",
+            "id": 79,
+            "name": "Domain EA"
+        },
+        {
+            "resourceType": "Role",
+            "id": 80,
+            "name": "Accountable Architect"
+        },
+        {
+            "resourceType": "Role",
+            "id": 81,
+            "name": "TAC Lead"
+        },
+        {
+            "resourceType": "Role",
+            "id": 82,
+            "name": "Supporting Architect"
+        },
+        {
+            "resourceType": "Role",
+            "id": 83,
+            "name": "Technology Project Manager"
+        },
+        {
+            "resourceType": "Role",
+            "id": 84,
+            "name": "Technology Manager"
+        },
+        {
+            "resourceType": "Role",
+            "id": 85,
+            "name": "Technology Director"
+        },
+        {
+            "resourceType": "Role",
+            "id": 86,
+            "name": "Voter"
+        },
+        {
+            "resourceType": "Role",
+            "id": 87,
+            "name": "VP Voter"
+        },
+        {
+            "resourceType": "Role",
+            "id": 88,
+            "name": "CIO Voter"
+        },
+        {
+            "resourceType": "Role",
+            "id": 89,
+            "name": "Architecture Practice"
+        },
+        {
+            "resourceType": "Role",
+            "id": 91,
+            "name": "Architecture Leader"
+        },
+        {
+            "resourceType": "Role",
+            "id": 93,
+            "name": "Product Owner/Product Manager"
+        },
+        {
+            "resourceType": "Role",
+            "id": 94,
+            "name": "OCIO Planner"
+        },
+        {
+            "resourceType": "Role",
+            "id": 95,
+            "name": "Tech Lead/Scrum Master"
+        },
+        {
+            "resourceType": "Role",
+            "id": 96,
+            "name": "Initiative/Epic Owner"
+        },
+        {
+            "resourceType": "Role",
+            "id": 97,
+            "name": "RTE"
+        },
+        {
+            "resourceType": "Role",
+            "id": 98,
+            "name": "Tech Leader"
+        },
+        {
+            "resourceType": "Role",
+            "id": 99,
+            "name": "VMO"
+        },
+        {
+            "resourceType": "Role",
+            "id": 100,
+            "name": "Identified By"
+        },
+        {
+            "resourceType": "Role",
+            "id": 101,
+            "name": "ATP Admin"
+        },
+        {
+            "resourceType": "Role",
+            "id": 103,
+            "name": "Developer"
+        },
+        {
+            "resourceType": "Role",
+            "id": 104,
+            "name": "Architecture Leaders"
+        },
+        {
+            "resourceType": "Role",
+            "id": 105,
+            "name": "View Only"
+        },
+        {
+            "resourceType": "Role",
+            "id": 106,
+            "name": "Tech FP&A"
+        }
+    ]
+}

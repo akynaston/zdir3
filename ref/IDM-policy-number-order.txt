@@ -1,0 +1,22 @@
+
+
+4th policy in output transform
+otp-XDStoJSON-simple,cn=Subscriber,cn=IDtoAutocrib,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-IDALPHA#3#2
+
+0#0 - mapping rule
+
+X#1 - input
+
+
+ECMAscript
+0#3 - cn=lib-JSONParsing,cn=SWALibrary,ou=DirXML,ou=Services,o=SWA-IDALPHA#0#3
+
+e179530
+cn=IDtoEmployeeSvc,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#0054w00000CDNA1AAP
+
+
+6th policy in pubcommand
+cn=sub-ctp-FinalizeEvent,cn=Subscriber,cn=IDtoAutocrib,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-IDALPHA#5#11
+
+6th policy in subcommand
+cn=sub-ctp-FinalizeEvent,cn=Subscriber,cn=IDtoAutocrib,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-IDALPHA#5#10

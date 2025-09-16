@@ -1,0 +1,277 @@
+﻿
+
+2/3/2022 4:57:40 PM
+
+Disable bell (from :https://stackoverflow.com/questions/36724209/disable-beep-in-wsl-terminal-on-windows-10)
+
+To disable the beep in bash you need to uncomment (or add if not already there) the line set bell-style none in your /etc/inputrc file.
+
+Note: Since it is a protected file you need to be a privileged user to edit it (i.e. launch your text editor with something like sudo <editor> /etc/inputrc).
+
+To disable the beep and the visual bell also in vim you need to add the following to your ~/.vimrc file:
+
+set visualbell
+set t_vb=
+To disable the beep also in less (i.e. also in man pages and when using "git diff") you need to add export LESS="$LESS -R -Q" in your ~/.profile file.
+
+
+
+
+older:
+
+
+Root red:
+
+Add to /root/.bashrc:
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+
+Add to ~/.bashrc for users (green!)
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+XMLLINT_INDENT='    '
+
+VI settings (note: use .vimrc to make settings persistent, included below)
+	VI: tabs to spaces
+	https://howchoo.com/g/m2u0nthkyti/vim-convert-tabs-to-spaces
+	:set tabstop=4 shiftwidth=1 expandtab
+
+	tabs to spaces
+	:retab
+
+6/28/2019 10:24:44 AM
+To speed up gnome: this seemed to help
+set org.gnome.desktop.interface clock-show-seconds false
+
+DU notes - sortable human readable file sizes:
+du --max-depth=1 -h | sort -h
+
+Git notes:
+
+#Show all root commits in the repo.
+git rev-list --max-parents=0 --branches=*
+
+# supposedly shows all tags in a list,   . .thinking to maintain tags ina  rebase.
+git log tagA...tagB --decorate --simplify-by-decoration
+
+
+Removing dangling objects:
+	git reflog expire --expire-unreachable=now --all
+	git gc --prune=now --aggressive
+
+Add pr as branches:
+	git config --add remote.origin.fetch '+refs/pull-requests/*/from:refs/remotes/origin/pr/*'
+	git config --add remote.origin.fetch '+refs/pull//head:refs/remotes/origin/pr/'
+
+    Fetnc in bitbucket
+    git fetch origin refs/pull-requests/1/from:pr1
+    
+    git config --add remote.origin.fetch '+refs/pull-requests/*:refs/remotes/origin/pull/'
+
+git ignore files that are changing; but don't need to be checked in:
+    git update-index --assume-unchanged (filename)
+    
+
+Get shallow clone (have to use file when using local clone testing, depth is ignored on local file systems).
+	git clone --depth 1 file:///C:/z/ C:/w/    
+		Note: consider using --branch to make single branch clone, and later expand to all branches by using:
+		git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+        - looks like this: git clone file:///G:\z --depth=1 --branch=dev .
+        
+	get fetch --deepen to pull more into your repo.
+
+
+	If you want to add a single branch, you can do the following:
+
+		git remote set-branches --add origin [remote-branch]
+		git fetch origin [remote-branch]:[local-branch]
+
+		from: https://stackoverflow.com/questions/17714159/how-do-i-undo-a-single-branch-clone
+
+Find a specific file
+git lg --name-status **/HeadFirst*
+
+
+#Set up to get any other branches from the remote:
+	git remote set-branches origin branchiwant
+	git fetch -v
+
+Show tags and their commit id's but sort by commit id so that you can see which tags point to the same commit:
+git show-ref --tag | sort
+
+List largest files in repo 
+https://stackoverflow.com/questions/9456550/how-to-find-the-n-largest-files-in-a-git-repository
+git ls-tree -r -l --abbrev --full-name HEAD | sort -n -r -k 4 | head -n 10
+
+Find a file in history:
+git lg --all --full-history --name-only -- disney*
+Find a string in history
+git lg -G
+
+Remove a file from history
+git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch [FULL PATH TO FILE NO BRACKETS]" HEAD
+ 
+Show the entire history of a file (including history beyond renames):
+$ git log --follow -p -- <file>
+    https://www.shellhacks.com/git-particular-file-change-history/
+ 
+(from: https://help.github.com/en/articles/removing-sensitive-data-from-a-repository)
+ git filter-branch --force --index-filter  "git rm --cached --ignore-unmatch PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA"   --prune-empty --tag-name-filter cat -- --all
+  
+  
+
+git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch avkDefaultSoftware-P50" HEAD
+
+Clone all repos with "clone all script" below.
+
+
+===============================================================
+Ant
+Ant way to override basedir: helpful when using build.xml outside of maven . .
+ant -Dbasedir=`pwd` -f shim-config/build.xml normalize
+
+
+
+Linux notes for setting up external config 
+
+===============================================================
+
+
+
+Contents of ~/.vimrc
+" Don't try to be vi compatible
+" set nocompatible
+"
+" " Helps force plugins to load correctly when it is turned back on below
+" filetype off
+"
+" " TODO: Load plugins here (pathogen or vundle)
+"
+" " Turn on syntax highlighting
+" syntax on
+"
+" " For plugins to load correctly
+" filetype plugin indent on
+"
+" " TODO: Pick a leader key
+" " let mapleader = ","
+"
+" " Security
+" set modelines=0
+"
+" " Show line numbers
+" set number
+"
+" " Show file stats
+" set ruler
+"
+" " Blink cursor on error instead of beeping (grr)
+" set visualbell
+"
+" " Encoding
+" set encoding=utf-8
+"
+" " Whitespace
+
+set tabstop=4 shiftwidth=1 expandtab
+
+" set wrap
+" set textwidth=79
+" set formatoptions=tcqrn1
+set tabstop=4
+" set shiftwidth=1
+" set softtabstop=2
+set expandtab
+" set noshiftround
+"
+" " Cursor motion
+" set scrolloff=3
+" set backspace=indent,eol,start
+" set matchpairs+=<:> " use % to jump between pairs
+" runtime! macros/matchit.vim
+"
+" " Move up/down editor lines
+" nnoremap j gj
+" nnoremap k gk
+"
+" " Allow hidden buffers
+" set hidden
+"
+" " Rendering
+" set ttyfast
+"
+" " Status bar
+" set laststatus=2
+"
+" " Last line
+" set showmode
+" set showcmd
+"
+" " Searching
+" nnoremap / /\v
+" vnoremap / /\v
+" set hlsearch
+" set incsearch
+" set ignorecase
+" set smartcase
+" set showmatch
+" map <leader><space> :let @/=''<cr> " clear search
+"
+" " Remap help key.
+" inoremap <F1> <ESC>:set invfullscreen<CR>a
+" nnoremap <F1> :set invfullscreen<CR>
+" vnoremap <F1> :set invfullscreen<CR>
+"
+" " Textmate holdouts
+"
+" " Formatting
+" map <leader>q gqip
+"
+" " Visualize tabs and newlines
+" set listchars=tab:▸\ ,eol:¬
+" " Uncomment this to enable by default:
+" " set list " To enable by default
+" " Or use your leader key + l to toggle on/off
+" map <leader>l :set list!<CR> " Toggle tabs and EOL
+"
+" " Color scheme (terminal)
+" set t_Co=256
+" set background=dark
+" let g:solarized_termcolors=256
+" let g:solarized_termtrans=1
+" " put
+" https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
+" " in ~/.vim/colors/ and uncomment:
+" " colorscheme solarized
+
+
+Contents of clone all bitbucket:
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo "waiting for the following arguments: username + max-page-number"
+    exit 1
+else
+    name=$1
+fi
+
+if [ -z "$2" ]; then 
+    max=2
+else
+    max=$2
+fi
+
+cntx="users"
+page=1
+
+echo $name
+echo $max
+echo $cntx
+echo $page
+
+until (( $page -lt $max ))
+do 
+    curl "https://api.github.com/$cntx/$name/repos?page=$page&per_page=100" | grep -e 'git_url*' | cut -d \" -f 4 | xargs -L1 git clone
+    $page=$page+1
+done
+
+exit 0
+

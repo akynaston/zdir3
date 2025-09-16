@@ -1,0 +1,66 @@
+[core]
+	autocrlf = input
+	compression = 9
+	excludesfile = C:\\Users\\akynaston\\.gitignore
+	editor = \"C:\\\\Program Files\\\\Notepad++\\\\notepad++.exe\" -multiInst -notabbar -nosession -noPlugin
+
+[push]
+	followTags = true
+[rerere]
+	enabled = true
+[user]
+	email = akynaston@trivir.com
+	name = Aaron Kynaston
+[alias]
+	lg = !git lg1
+	lgs = lg --simplify-by-decoration
+	lgn = !git lg1 -n 5
+	lg1 = !git lg1-specific
+	lg2 = !git lg2-specific
+	lg1-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+	lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+	st = status
+	ci = commit
+	co = checkout
+	b = branch -avv
+	r = remote -v
+	c = count-objects -v
+	f = fetch --all -v
+	t = git show-ref --abbrev=7 --tags
+	hardclean = !git reflog expire --expire-unreachable=now --all && git gc --prune=now --aggressive
+	p1 = pull --depth=1
+	a = !git f && git b && echo && git stash list && git s
+	diffr = diff --word-diff-regex=.
+	fff = !git hardclean && git fetch --depth=10
+	ba = branch -avv
+	s = !git status -s --branch && git stash list
+	mh = log master..HEAD --name-status
+	j = !clear && git show-ref && git branch -avv && git lg -5 && git s
+
+
+
+[mergetool]
+    prompt = false
+    keepBackup = false
+
+    keepTemporaries = false
+
+[merge]
+    tool = winmerge
+[diff]
+    tool = winmerge
+
+[mergetool "winmerge"]
+    name = WinMerge
+    trustExitCode = true
+	cmd = /c/Program\\ Files/Winmerge/WinMergeU.exe -u -e $LOCAL $REMOTE
+
+[safe]
+	directory = C:/zall/zdir
+	directory = C:/zall/zdirFULLREPO
+	directory = C:/zall/zwork/BAESystemsUK
+	directory = C:/zall/zBAES
+	directory = C:/zall/zgit
+	directory = C:/zall/zwork/dtf-connector
+[config]
+	rerere = =

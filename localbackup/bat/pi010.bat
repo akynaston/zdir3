@@ -1,0 +1,2 @@
+rem @ssh -i C:\Users\x266698\.ssh\id_ed25519.pub x266698@w11pcledirpi010.swacorp.com
+ssh -i C:/Users/x266698/.ssh/PROD/key.openssh x266698@EDIRengPRD#diracvsps.cis.prod.swacorp.com@w11pcledirpi010@psmp.cis.prod.swacorp.com

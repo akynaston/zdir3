@@ -1,0 +1,21 @@
+8/15/2025 10:42:14 AM
+NOte I sent to the team regarding the python script workaround:
+
+Team,
+
+One more link for you: once you've confirmed you have access, I've confirmed this python script (GetPSMKeys.py) works great to retrieve the keys automatically, with one caveat:  The DEV & QA HTTPS urls use certificates that we don't have trusted in our browsers; I'm waiting on a fix.
+
+https://southwest.atlassian.net/wiki/spaces/CYSEC/pages/421661295/CyberArk+PSM+for+MFA+SSH+Key+Retrieval+Script
+Log in with Atlassian account
+Log in to Jira, Confluence, and all other Atlassian Cloud products here. Not an Atlassian user? Sign up for free.
+southwest.atlassian.net
+
+
+DETAILS ON WORKAROUND:
+There is a workaround for the failure to get keys in DEV/QA: Add this to line 364 in your script:
+
+    chrome_options.add_argument(" --ignore-certificate-errors")
+
+I'm waiting on some cert installation stuff that's supposed to be coming through softwarecenter, but I haven't seen it yet; this is the correct path forward, instead of just ignoring the certificates, but it is not complete yet.
+
+--Aaron

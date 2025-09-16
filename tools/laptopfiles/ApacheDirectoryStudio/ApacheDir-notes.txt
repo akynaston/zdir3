@@ -1,0 +1,7 @@
+8/3/2023 2:02:34 PM
+
+C:\Users\x266698\.ApacheDirectoryStudio\.metadata\.plugins\org.apache.directory.studio.connection.core
+     - Main connections
+     
+C:\Users\x266698\.ApacheDirectoryStudio\.metadata\.plugins\org.apache.directory.studio.ldapbrowser.core
+    - Searches maybe?

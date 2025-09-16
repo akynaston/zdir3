@@ -1,0 +1,160 @@
+<Users>
+    <User ResourceType="User" Id="72">
+        <FirstName>Julie</FirstName>
+        <LastName>Rios</LastName>
+        <Email>julie.rios@wnco.com</Email>
+        <Login>julie.rios@wnco.com</Login>
+        <FullName>Julie Rios</FullName>
+        <CreateDate>2024-10-19T12:57:00</CreateDate>
+        <ModifyDate>2025-07-10T16:38:24</ModifyDate>
+        <DeleteDate nil="true"/>
+        <IsActive>true</IsActive>
+        <IsAdministrator>true</IsAdministrator>
+        <Locale nil="true"/>
+        <Kind>User</Kind>
+        <GlobalId>BADF40DE-88AA-46DC-811B-5513DF4D9BFE</GlobalId>
+        <IsIntegration>false</IsIntegration>
+        <AccessStartDate nil="true"/>
+        <AccessEndDate nil="true"/>
+        <FrontdoorUserId>8fb212b0-8d6f-484a-af46-26d7ea7ad568</FrontdoorUserId>
+        <FrontdoorUserRoles>Targetprocess Admin, Targetprocess User</FrontdoorUserRoles>
+        <PasswordHashAlgorithm>ProprietaryV1</PasswordHashAlgorithm>
+        <EntityVersion>115958220</EntityVersion>
+        <LastLoginDate>2025-07-10T00:00:00</LastLoginDate>
+        <WeeklyAvailableHours>40.0000</WeeklyAvailableHours>
+        <CurrentAllocation>0</CurrentAllocation>
+        <CurrentAvailableHours>40.0000</CurrentAvailableHours>
+        <AvailableFrom>2024-10-20T00:00:00</AvailableFrom>
+        <AvailableFutureAllocation>100</AvailableFutureAllocation>
+        <AvailableFutureHours>40.0000</AvailableFutureHours>
+        <IsObserver>false</IsObserver>
+        <IsContributor>false</IsContributor>
+        <LegacySkills nil="true"/>
+        <ActiveDirectoryName nil="true"/>
+        <RichEditor>Html</RichEditor>
+        <Role ResourceType="Role" Id="91" Name="ATP Admin"/>
+        <Location ResourceType="Location" Id="444130" Name="TX-Dallas-DAL"/>
+        <JobProfile ResourceType="JobProfile" Id="930995" Name="829C - Sr Product Owner"/>
+        <SupervisoryOrg nil="true"/>
+        <Leader ResourceType="User" Id="31">
+            <FirstName>Aaron</FirstName>
+            <LastName>Keener</LastName>
+            <Login>aaron.keener@wnco.com</Login>
+            <FullName>Aaron Keener</FullName>
+            <Kind>User</Kind>
+        </Leader>
+        <Department ResourceType="Department" Id="441446" Name="Technology"/>
+        <Vendor nil="true"/>
+        <StatementOfWork nil="true"/>
+        <CustomFields>
+            <Field Type="Number">
+                <Name>Daily Hours</Name>
+                <Value>8.00</Value>
+            </Field>
+            <Field Type="Money">
+                <Name>Total Active Involvement</Name>
+                <Value>100.00</Value>
+            </Field>
+            <Field Type="DropDown">
+                <Name>Resource Type</Name>
+                <Value>Employee</Value>
+            </Field>
+            <Field Type="Text">
+                <Name>Resource eID</Name>
+                <Value>E143712</Value>
+            </Field>
+            <Field Type="Money">
+                <Name>Active Span of control</Name>
+                <Value>0.00</Value>
+            </Field>
+            <Field Type="Date">
+                <Name>Start Date</Name>
+                <Value>2019-12-16T00:00:00</Value>
+            </Field>
+            <Field Type="Date">
+                <Name>End Date</Name>
+                <Value nil="true"/>
+            </Field>
+            <Field Type="Text">
+                <Name>Leader Lv 1 Name</Name>
+                <Value>Aaron Keener</Value>
+            </Field>
+            <Field Type="Text">
+                <Name>Leader Lv 2 Name</Name>
+                <Value>Samantha Scott</Value>
+            </Field>
+            <Field Type="Money">
+                <Name>CapEx Percent</Name>
+                <Value>0.50</Value>
+            </Field>
+            <Field Type="Money">
+                <Name>OpEx Percent</Name>
+                <Value>99.50</Value>
+            </Field>
+            <Field Type="Number">
+                <Name>Team Percentage</Name>
+                <Value>100.00</Value>
+            </Field>
+            <Field Type="Money">
+                <Name>SoC Weighting</Name>
+                <Value>1.00</Value>
+            </Field>
+            <Field Type="DropDown">
+                <Name>Management Level</Name>
+                <Value>Individual_Contributor_P3</Value>
+            </Field>
+            <Field Type="CheckBox">
+                <Name>updated</Name>
+                <Value>true</Value>
+            </Field>
+            <Field Type="Money">
+                <Name>Planned Span of control</Name>
+                <Value>0.00</Value>
+            </Field>
+            <Field Type="Number">
+                <Name>Min Ideal Span Of Control</Name>
+                <Value>0.00</Value>
+            </Field>
+            <Field Type="Number">
+                <Name>Max Ideal Span Of Control</Name>
+                <Value>0.00</Value>
+            </Field>
+            <Field Type="DropDown">
+                <Name>Active SoC Range</Name>
+                <Value>Ideal</Value>
+            </Field>
+            <Field Type="DropDown">
+                <Name>Planned SoC Range</Name>
+                <Value>Ideal</Value>
+            </Field>
+            <Field Type="CheckBox">
+                <Name>Validated by WFS</Name>
+                <Value>false</Value>
+            </Field>
+            <Field Type="DropDown">
+                <Name>WFS Role</Name>
+                <Value nil="true"/>
+            </Field>
+            <Field Type="DropDown">
+                <Name>Role Type</Name>
+                <Value>NA</Value>
+            </Field>
+            <Field Type="DropDown">
+                <Name>Employee Type</Name>
+                <Value>Internal</Value>
+            </Field>
+            <Field Type="DropDown">
+                <Name>Contract Type</Name>
+                <Value nil="true"/>
+            </Field>
+            <Field Type="CheckBox">
+                <Name>Exception User</Name>
+                <Value>false</Value>
+            </Field>
+            <Field Type="Text">
+                <Name>Teams</Name>
+                <Value>Work Management - SPME</Value>
+            </Field>
+        </CustomFields>
+    </User>
+</Users>

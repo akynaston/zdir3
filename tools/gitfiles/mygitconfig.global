@@ -1,0 +1,37 @@
+user.name=Aaron Kynaston
+user.email=akynaston@trivir.com
+push.default=simple
+push.followtags=true
+color.ui=auto
+diff.tool=p4merge
+difftool.prompt=false
+difftool.p4merge.cmd=p4merge $LOCAL $REMOTE
+merge.tool=p4merge
+mergetool.prompt=false
+mergetool.keepbackup=false
+mergetool.p4merge.cmd=p4merge $BASE $LOCAL $REMOTE $MERGED
+core.excludesfile=C:\Windows\.gitignore
+core.autocrlf=false
+core.longpaths=true
+winupdater.recentlyseenversion=2.22.0.windows.1
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+ssh.variant=ssh
+alias.lg=!git lg1
+alias.lgs=lg --simplify-by-decoration
+alias.lgn=!git lg1 -n 5
+alias.lg1=!git lg1-specific
+alias.lg2=!git lg2-specific
+alias.lg1-specific=log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+alias.lg2-specific=log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+alias.st=status
+alias.s=status -s
+alias.ci=commit
+alias.co=checkout
+alias.b=branch -avv
+alias.r=remote -v
+alias.c=count-objects -v
+alias.f=fetch -v
+alias.t=git show-ref --abbrev=7 --tags

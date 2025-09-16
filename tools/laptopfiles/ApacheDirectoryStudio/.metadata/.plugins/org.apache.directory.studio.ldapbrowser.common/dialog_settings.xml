@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="recentFilePath" value="C:\work\work"/>
+	<item key="org.apache.directory.studio.ldapbrowser.common.widgets.entryeditor.ShowQuickFilterAction.showQuickFilter" value="true"/>
+	<item key="org.apache.directory.studio.ldapbrowser.common.dialogs.DeleteDialog.useTreeDeleteControl" value="true"/>
+	<item key="org.apache.directory.studio.ldapbrowser.common.dialogs.RenameEntryDialog.deleteOldRdn" value="true"/>
+	<item key="org.apache.directory.studio.ldapbrowser.common.wizards.NewEntryTypeWizardPage.preferredEntryCreationMethod" value="true"/>
+	<list key="org.apache.directory.studio.ldapbrowser.common.widgets.browser.BrowserQuickSearchWidget.attributeHistory">
+		<item value="cn"/>
+		<item value="cn=FO_CHECK*"/>
+		<item value="sn"/>
+		<item value="givenName"/>
+		<item value="mail"/>
+		<item value="uid"/>
+		<item value="description"/>
+		<item value="o"/>
+		<item value="ou"/>
+		<item value="member"/>
+	</list>
+	<list key="fileHistory">
+		<item value="C:\z\Both-x-accounts-in-prod.ldif"/>
+		<item value="C:\work\work\next.ldif"/>
+		<item value="C:\work\work\test.ldif"/>
+		<item value="C:\work\RBEAEV1\auxiliary\EntitlementPolicies.ldif"/>
+		<item value="C:\work\input.ldif"/>
+		<item value="C:\work\work\11307-dallas-more.onboard.ldif"/>
+		<item value="C:\work\work\listofalluserstopush - Copy.ldif"/>
+		<item value="C:\work\work\listofalluserstopush.ldif"/>
+		<item value="C:\work\work\defaulttestuser.ldif"/>
+		<item value="C:\work\work\defaulttestuser.xml"/>
+		<item value="C:\work\work\JuanAlonzo48Users.ldif"/>
+		<item value="C:\work\work\PHX Roles.txt.onboard.ldif"/>
+		<item value="C:\work\work\dev-associations-to-remove.ldif"/>
+		<item value="C:\work\work\LAS Roles.txt.onboard.ldif"/>
+		<item value="C:\work\work\QA-FC3-Roles-To-Convert-To-EMPUAT1.csv"/>
+		<item value="C:\work\work\QA-FC3-Roles-To-Convert-To-EMPUAT1.ldif"/>
+		<item value="C:\work\work\LAX Roles.txt.onboard.ldif"/>
+		<item value="C:\work\work\ep-after-prod-deploy.ldif"/>
+		<item value="C:\work\RBEAEV1\final\PROD\EntitlementPolicies.ldif"/>
+		<item value="C:\work\work\ep-before-prod-deploy.ldif"/>
+	</list>
+	<list key="searchFilterHistory">
+		<item value="(objectClass=*)"/>
+		<item value="(CN=IDtoApptio*)"/>
+		<item value="(objectClass=DirXML-DriverSet)"/>
+		<item value="(&amp;(cn=e770*)(swaStatus=A))"/>
+		<item value="(cn=e770792)"/>
+		<item value="(&amp;(objectClass=DirXML-Driver)(modifyTimestamp&gt;=20250101000000Z))"/>
+		<item value="(&amp;(objectClass=DirXML-Driver)(createTimestamp&gt;=20250101000000Z))"/>
+		<item value="(objectClass=DirXML-Driver)"/>
+		<item value="(cn=IDtoDocuware*)"/>
+		<item value="(cn=idtodocuware)"/>
+		<item value="(cn=IDtodocuware*)"/>
+		<item value="(cn=e98888*)"/>
+		<item value="(|(cn=e118641)(cn=e121800)(cn=e88776)(cn=e143973))"/>
+		<item value="(cn=IDtoDocuware)"/>
+		<item value="(cn=*266698)"/>
+		<item value="(cn=ax266698)"/>
+		<item value="(swaAutocribRole=*)"/>
+		<item value="(swaApptioRoles=*)"/>
+		<item value="(cn=e9897313673)"/>
+		<item value="(cn=e41292)"/>
+	</list>
+	<list key="returningAttributesHistory">
+		<item value=""/>
+		<item value="DirXML-TraceFile, DirXML-TraceLevel"/>
+		<item value="swaApptioRolesCloudabilityCustom, swaApptioRolesCloudabilityDefaul, swaApptioRolesMainCustom, swaApptioRolesMainDefault, swaApptioRolesTargetProcess"/>
+		<item value="swaApptioRolesCloudabilityCustom, swaApptioRolesCloudabilityDefaul"/>
+		<item value="swaSprinklerRole"/>
+		<item value="swaAutocribRole"/>
+		<item value="memberQueryUrl, DirXML-EntitlementRef"/>
+		<item value="memberQueryURL, DirXML-EntitlementRef"/>
+		<item value="memberQueryUrl"/>
+		<item value="swaTerminationDate, swaHireDate, wd-E-Hiredate, swaStatus"/>
+		<item value="swaStatus, swaLocation, swaAutocribRole"/>
+		<item value="swaApptioRoles, swaStatus"/>
+		<item value="swaApptioRoles"/>
+		<item value="givenName, surname, preferredName, swaPreferredFullName"/>
+		<item value="swaAvioBookRoles"/>
+		<item value="swaStatus, mail, swaLocation, swaAutocribRole"/>
+		<item value="swaStatus, swaAvioBookRoles, DirXML-EntitlementRef, givenName, initials, surname, preferredName"/>
+		<item value="swaStatus, swaAvioBookRoles, DirXML-EntitlementRef, givenName, initials, surname"/>
+		<item value="swaStatus, swaAvioBookRoles, DirXML-EntitlementRef"/>
+		<item value="groupMembership"/>
+	</list>
+	<list key="dnHistory">
+		<item value="cn=IDMProvAdmin,o=swa-idsat"/>
+		<item value="cn=Driver Set v3,ou=DirXML,ou=services,o=swa-idsat"/>
+		<item value="o=SWA-ID"/>
+		<item value="o=swaiddev"/>
+		<item value=""/>
+		<item value="o=swa-idsat"/>
+		<item value="cn=Entitlement Policies,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=swaiddev"/>
+		<item value="ou=Users,o=SWA-ID"/>
+		<item value="ou=Users,o=swaiddev"/>
+		<item value="ou=Users,o=swa-idsat"/>
+		<item value="o=swa-id"/>
+		<item value="cn=e147427,ou=users,o=swa-id"/>
+		<item value="cn=e147247,ou=users,o=swa-id"/>
+		<item value="cn=aap_breakglass_S,ou=Groups,o=swaiddev"/>
+		<item value="cn=TEST_EMM_Group_SWA_All Users_D,ou=Groups,o=swaiddev"/>
+		<item value="cn=Pilots_D,ou=Groups,o=swaiddev"/>
+		<item value="cn=e85664,ou=Users,o=swaiddev"/>
+		<item value="cn=e100137,ou=Users,o=swaiddev"/>
+		<item value="cn=x266698,ou=Users,o=swaiddev"/>
+		<item value="cn=ax266698,ou=Admins,o=swaiddev"/>
+	</list>
+	<list key="org.apache.directory.studio.ldapbrowser.common.widgets.browser.BrowserQuickSearchWidget.valueHistory">
+		<item value="e10177"/>
+		<item value="FO_Check*"/>
+		<item value=""/>
+		<item value="e999*"/>
+	</list>
+</section>

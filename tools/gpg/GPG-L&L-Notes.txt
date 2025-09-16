@@ -1,0 +1,252 @@
+2/3/2021 12:07:52 PM
+Reading group
+ - Create GPG key
+ - https://docs.google.com/document/d/12BeVc437mpTFZZZLUJm_Mof-ix0b5PtzFdW5eLggufQ/edit#heading=h.387qxqvvxl1j
+ - generating private keys, csrs - 
+	 - generate the private key where it is going to live.
+	 - CSR sends to issuer, they give cert.
+ - Trust is the next thing.
+ - cacerts file - have lots of certs
+ - Cert issues for domain name, for users, email address, etc.
+ - Chain of issues
+ - create private key, sign my own private key.
+ - hit a web site
+ - validates correct site by domain name.
+ - Now prove that you have private key
+ - client send soemthing to server, server signs, then client verifies signature
+ - was signed by private key
+ - Commit singing with Git
+ - Take hash by commit, sign with key.
+ - designer: needed signed version confirms micorofocus owns the software
+ - gpg: Verifies data that was signed hasn't changed.
+ - when it's signed, then I know the binary I have is the same binary they created and signed.
+ - slide about trust:
+	 - gpg is community of trust, certificates are military style
+ - piv and pgp stuff on yubikey are different pins . .
+ - use ykman or gpg 
+ - kleopatra - 
+ - at users\akynaston\.gnupg
+ - and - C:\Users\akynaston\AppData\Roaming\gnupg
+	- has stuff too . .
+ - The first one might be git bash version.
+
+ - Added this line
+	reader-port Yubico Yubi
+	to
+	C:\Users\akynaston\AppData\Roaming\gnupg\scdaemon.conf
+	to enable yyubik in kelobatra
+	
+	then gpgconf --kill gpg-agent
+	
+	then restart kelobpatr -> smart kards . .
+	
+	
+
+- ckecking yubikey:
+
+
+C:\Users\akynaston\AppData\Roaming\gnupg>gpg --card-status
+Reader ...........: Yubico YubiKey OTP FIDO CCID 0
+Application ID ...: D2760001240103040006159043320000
+Application type .: OpenPGP
+Version ..........: 3.4
+Manufacturer .....: Yubico
+Serial number ....: 15904332
+Name of cardholder: [not set]
+Language prefs ...: [not set]
+Salutation .......:
+URL of public key : [not set]
+Login data .......: [not set]
+Signature PIN ....: not forced
+Key attributes ...: rsa2048 rsa2048 rsa2048
+Max. PIN lengths .: 127 127 127
+PIN retry counter : 3 0 3
+Signature counter : 0
+KDF setting ......: off
+Signature key ....: [none]
+Encryption key....: [none]
+Authentication key: [none]
+General key info..: [none]
+
+
+Did https://docs.google.com/document/d/12BeVc437mpTFZZZLUJm_Mof-ix0b5PtzFdW5eLggufQ/edit#
+ - rsa
+ - 40956
+ - 4096
+ - 0 does not expire
+ - if save key some where, can reimport same key into multiple yubikeys
+ - 0
+ (next important for git)
+ - real name: Aaron Kynaston
+ - email: akynaston@trivir.com
+ - passphrase - trivir
+
+ C:\z\gpg>gpg --expert --full-gen-key
+gpg (GnuPG) 2.2.27; Copyright (C) 2021 g10 Code GmbH
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Please select what kind of key you want:
+   (1) RSA and RSA (default)
+   (2) DSA and Elgamal
+   (3) DSA (sign only)
+   (4) RSA (sign only)
+   (7) DSA (set your own capabilities)
+   (8) RSA (set your own capabilities)
+   (9) ECC and ECC
+  (10) ECC (sign only)
+  (11) ECC (set your own capabilities)
+  (13) Existing key
+  (14) Existing key from card
+Your selection? 1
+RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (3072) 4096
+Requested keysize is 4096 bits
+RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want for the subkey? (3072) 4096
+Requested keysize is 4096 bits
+Please specify how long the key should be valid.
+         0 = key does not expire
+      <n>  = key expires in n days
+      <n>w = key expires in n weeks
+      <n>m = key expires in n months
+      <n>y = key expires in n years
+Key is valid for? (0)
+Key does not expire at all
+Is this correct? (y/N) y
+
+GnuPG needs to construct a user ID to identify your key.
+
+Real name: Aaron Kynaston
+Email address: akynaston@trivir.com
+Comment: First GPG key test
+You selected this USER-ID:
+    "Aaron Kynaston (First GPG key test) <akynaston@trivir.com>"
+
+Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? o
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: AllowSetForegroundWindow(6796) failed: Access is denied.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: key C5F19760CDF6EEC8 marked as ultimately trusted
+gpg: directory 'C:/Users/akynaston/AppData/Roaming/gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as 'C:/Users/akynaston/AppData/Roaming/gnupg/openpgp-revocs.d\7A7B56A3CC9C4F40D1C4584EC5F19760CDF6EEC8.rev'
+public and secret key created and signed.
+
+pub   rsa4096 2021-02-03 [SC]
+      7A7B56A3CC9C4F40D1C4584EC5F19760CDF6EEC8
+uid                      Aaron Kynaston (First GPG key test) <akynaston@trivir.com>
+sub   rsa4096 2021-02-03 [E]
+
+
+C:\z\gpg>
+C:\z\gpg>
+C:\z\gpg>
+
+
+ID for key: 
+C5F19760CDF6EEC8
+
+C:\>gpg --list-keys
+C:/Users/akynaston/AppData/Roaming/gnupg/pubring.kbx
+----------------------------------------------------
+pub   rsa4096 2021-02-03 [SC]
+      7A7B56A3CC9C4F40D1C4584EC5F19760CDF6EEC8
+uid           [ultimate] Aaron Kynaston (First GPG key test) <akynaston@trivir.com>
+sub   rsa4096 2021-02-03 [E]
+
+
+C:\>
+
+
+Should create backup of your key 
+	 - when moving to key to your yubiki, deletes key off yubikey.
+	 
+subkeys - things to do things with.
+
+
+gpg --exprt --edit-key C5F19760CDF6EEC8
+
+
+gpg> addkey
+Please select what kind of key you want:
+   (3) DSA (sign only)
+   (4) RSA (sign only)
+   (5) Elgamal (encrypt only)
+   (6) RSA (encrypt only)
+   (7) DSA (set your own capabilities)
+   (8) RSA (set your own capabilities)
+  (10) ECC (sign only)
+  (11) ECC (set your own capabilities)
+  (12) ECC (encrypt only)
+  (13) Existing key
+  (14) Existing key from card
+Your selection? 8
+
+Possible actions for a RSA key: Sign Encrypt Authenticate
+Current allowed actions: Sign Encrypt
+
+   (S) Toggle the sign capability
+   (E) Toggle the encrypt capability
+   (A) Toggle the authenticate capability
+   (Q) Finished
+
+Your selection? E
+
+Possible actions for a RSA key: Sign Encrypt Authenticate
+Current allowed actions: Sign
+
+   (S) Toggle the sign capability
+   (E) Toggle the encrypt capability
+   (A) Toggle the authenticate capability
+   (Q) Finished
+
+Your selection? q
+RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (3072) 4096
+Requested keysize is 4096 bits
+Please specify how long the key should be valid.
+         0 = key does not expire
+      <n>  = key expires in n days
+      <n>w = key expires in n weeks
+      <n>m = key expires in n months
+      <n>y = key expires in n years
+Key is valid for? (0) 0
+Key does not expire at all
+Is this correct? (y/N) y
+Really create? (y/N) y
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+
+sec  rsa4096/C5F19760CDF6EEC8
+     created: 2021-02-03  expires: never       usage: SC
+     trust: ultimate      validity: ultimate
+ssb  rsa4096/C774C145FDA18E1B
+     created: 2021-02-03  expires: never       usage: E
+ssb  rsa4096/83B29F3279EC83FE
+     created: 2021-02-03  expires: never       usage: S
+[ultimate] (1). Aaron Kynaston (First GPG key test) <akynaston@trivir.com>
+
+gpg>
+
+git just needs signing key
+
+ssh - can auth, jeremiah has ahd spoty success . .
+
+8 - sset own items . .
+
+signing parties done with the master key
+	 - subkeys . .
+	 - 
+
+edd25519 - Eplitical curve: yubikey supports this . .
+
+
+

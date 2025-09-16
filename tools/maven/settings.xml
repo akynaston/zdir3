@@ -1,0 +1,17 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <mirrors>
+	<mirror>
+      <id>forgerock-mirror</id>
+      <name>Internal Nexus Repository Manager 3 Instance</name>
+      <url>https://nexus.trivir.com/repository/forgerock</url>
+      <mirrorOf>forgerock-private-releases,forgerock-private-snapshots,forgerock-staging-repository,forgerock-build-dependencies</mirrorOf>
+    </mirror>
+    <mirror>
+      <id>central-mirror</id>
+      <name>Internal Nexus Repository Manager 3 Instance</name>
+      <url>https://nexus.trivir.com/repository/maven-public</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+  </mirrors>
+</settings>

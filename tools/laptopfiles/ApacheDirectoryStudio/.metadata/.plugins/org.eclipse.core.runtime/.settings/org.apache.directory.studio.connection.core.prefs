@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+modificationLogsEnable=true
+modificationLogsFileCount=10
+modificationLogsFileSize=100
+modificationLogsMaskedAttributes=
+searchLogsFileCount=10
+searchLogsFileSize=100
+searchRequestLogsEnable=true
+searchResultEntryLogsEnable=false

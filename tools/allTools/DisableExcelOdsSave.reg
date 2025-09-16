@@ -1,0 +1,1 @@
+Windows Registry Editor Version 5.00; This disables the warning in Excel if saving an ODS file:[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\Excel\Options]"DisableSaveAsLossWarningOpenDocumentSpreadsheet"=dword:00000001

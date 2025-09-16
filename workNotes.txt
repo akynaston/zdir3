@@ -1,0 +1,2012 @@
+(&(swaAvioBookRoles=avio_chiefs)(DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Flight-avio_chiefs</id><param>avio_chiefs</param></ref>))
+
+
+
+(&
+    (!(DirXML-Associations=cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#*))
+    (|
+      (DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Cabin-avio_cabin_fa</id><param>avio_cabin_fa</param></ref>)
+      (DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Cabin-avio_cabin_if_ops</id><param>avio_cabin_if_ops</param></ref>)
+      (DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Connect-avio_connect_goops</id><param>avio_connect_goops</param></ref>)
+      (DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Connect-avio_connect_goramp</id><param>avio_connect_goramp</param></ref>)
+      (DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Connect-avio_connect_gosups</id><param>avio_connect_gosups</param></ref>)
+      (DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Flight-avio_atc_specialists</id><param>avio_atc_specialists</param></ref>)
+      (DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Flight-avio_chiefs</id><param>avio_chiefs</param></ref>)
+      (DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Flight-avio_dispatch_specialists</id><param>avio_dispatch_specialists</param></ref>)
+      (DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Flight-avio_dispatchers</id><param>avio_dispatchers</param></ref>)
+      (DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Flight-avio_network_directors</id><param>avio_network_directors</param></ref>)
+      (DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Flight-avio_pilot</id><param>avio_pilot</param></ref>)
+      (DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Flight-avio_sod</id><param>avio_sod</param></ref>)
+      (swaAviobookRoles=*)
+    )
+    (!(swaStatus=S))
+    (!(swaStatus=T))
+)
+
+
+                                                                                                              cn=AvioBook-Cabin-avio_cabin_fa,cn=Entitlement Policies,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID
+                                                                                                              cn=AvioBook-Cabin-avio_cabin_if_ops,cn=Entitlement Policies,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID
+                                                                                                              cn=AvioBook-Connect-avio_connect_goops,cn=Entitlement Policies,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID
+                                                                                                              cn=AvioBook-Connect-avio_connect_goramp,cn=Entitlement Policies,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID
+                                                                                                              cn=AvioBook-Connect-avio_connect_gosups,cn=Entitlement Policies,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID
+                                                                                                              cn=AvioBook-Flight-avio_atc_specialists,cn=Entitlement Policies,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID
+                                                                                                              cn=AvioBook-Flight-avio_chiefs,cn=Entitlement Policies,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID
+                                                                                                              cn=AvioBook-Flight-avio_dispatch_specialists,cn=Entitlement Policies,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID
+                                                                                                              cn=AvioBook-Flight-avio_dispatchers,cn=Entitlement Policies,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID
+                                                                                                              cn=AvioBook-Flight-avio_network_directors,cn=Entitlement Policies,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID
+                                                                                                              cn=AvioBook-Flight-avio_pilot,cn=Entitlement Policies,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID
+                                                                                                              cn=AvioBook-Flight-avio_sod,cn=Entitlement Policies,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID
+
+
+
+
+
+
+cn=e111369,ou=Users,o=SWA-ID
+cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#
+
+
+
+9/16/2025 12:32:40 PM
+aviobook Chici
+e142850
+
+
+
+  pilot (&(swaAvioBookRoles=avio_pilot)(DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Flight-avio_pilot</id><param>avio_chiefs</param></ref>))
+chiefs (&(swaAvioBookRoles=avio_chiefs)(DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Flight-avio_chiefs</id><param>avio_chiefs</param></ref>))
+
+
+
+
+
+ - Here: I would have expected to see the user be modified in some way: but the first time the RBEAEv1 driver sees anything, is your sync at 12:21:
+[09/16/25 12:21:09.531]: - sync event is seen on RBEAEv1 driver.
+ - at THIS point - RBEAEv1 does assign avio_cabin_fa
+
+
+
+
+[09/16/25 12:21:09.531]:RBEAEv1 ST:
+<nds dtdversion="4.0" ndsversion="8.x">
+  <source>
+    <product edition="Advanced" version="4.10.0.0200">DirXML</product>
+    <contact>NetIQ Corporation</contact>
+  </source>
+  <input>
+    <sync cached-time="20250916172109.431Z" class-name="User" event-id="w11scledirsi009#20250916172109#5#1:0c8ad2a2-b651-48ee-bd84-a2d28a0c51b6" qualified-src-dn="O=SWA-ID\OU=Users\CN=e142850" src-dn="\SWACO_ID\SWA-ID\Users\e142850" src-entry-id="101164" timestamp="0#0">
+      <association state="migrate">{3D1AC244-067B-4A28-8A51-44C21A3D7B06}</association>
+    </sync>
+  </input>
+</nds>
+
+later:
+[09/16/25 12:21:09.709]:RBEAEv1 ST:     is a member of entitlement policy 'SWA-ID\Services\DirXML\Driver Set AEv1\Entitlement Policies\AvioBook-Cabin-avio_cabin_fa
+
+later - update is written to the tree:
+[09/16/25 12:21:09.730]:RBEAEv1 ST:method: updateEntry
+
+aviobook: 12:36:49 - IDtoAviobook ges
+
+
+
+
+
+https://southwest.gitlab-dedicated.com/csiam/idm/idtoapptiotargetprocess/-/merge_requests/21
+
+
+
+
+9/15/2025 3:40:10 PM
+TODO
+ done- finish documentation
+done - Apptiotargetprocess: finish sync event
+ - aviobook: see qa/prod deploy maybe?? version bump only . .cr?
+ - apptio: get both drivers ready for qa/prod deploy.
+
+
+
+
+
+
+
+9/15/2025 10:22:23 AM
+closable tasks:
+IDtoAutocrib
+IDtoCoupa
+IDtoBrowserStack
+IDtoAvaya
+Tenasi IDM driver
+
+
+
+
+
+
+    CustomField.Name.Resource eID
+    CustomField.Role.Id
+    CustomField.Value.eid
+
+    Internet EMail Address
+    Email
+
+    Login
+
+    preferredName
+    FirstName
+
+    Surname
+    LastName
+
+    swaApptioRolesMainDefault
+
+    swaApptioRolesTargetProcess
+
+    swaStatus
+    IsActive
+
+
+
+
+https://southwest.atlassian.net/browse/CSEE-5039
+https://southwest.atlassian.net/browse/CSEE-5040
+https://southwest.atlassian.net/browse/CSEE-5041
+https://southwest.atlassian.net/browse/CSEE-5031
+https://southwest.atlassian.net/browse/CSEE-5032
+Jira
+
+
+
+
+\
+Column_name	Type	Length
+SWA_ID	nvarchar	24
+  FULL_NAME	nvarchar	240
+  GIVEN_NAME	nvarchar	100
+  LAST_NAME	nvarchar	100
+  DEPARTMENT_CODE	nvarchar	40
+  DEPARTMENT_DESCRIPTION	nvarchar	100
+  LOCATION	nvarchar	40
+  EMPLOYEE_STATUS	nvarchar	80
+TERM_DATE	datetime	8
+  TITLE_CODE	nvarchar	40
+  ACTION	nvarchar	2
+CREATETIMESTAMP	datetime	8
+MODIFYTIMESTAMP	datetime	8
+  TITLE_DESCRIPTION	nvarchar	510
+
+
+
+ INSERT INTO dbo.IDM_Feed_Emp(SWA_ID, FULL_NAME, GIVEN_NAME, LAST_NAME, DEPARTMENT_CODE, DEPARTMENT_DESCRIPTION, LOCATION, EMPLOYEE_STATUS, TITLE_CODE, TITLE_DESCRIPTION, ACTION, CREATETIMESTAMP, MODIFYTIMESTAMP) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[09/12/25 14:11:00.400]:IDtoDocuWare ST:        IN  @ index  2, field 'FULL_NAME', length: 13, value = 'tHMTtestuser1'
+[09/12/25 14:11:00.402]:IDtoDocuWare ST:        IN  @ index  3, field 'GIVEN_NAME', length: 13, value = 'tHMTtestuser1'
+[09/12/25 14:11:00.405]:IDtoDocuWare ST:        IN  @ index  4, field 'LAST_NAME', length: 10, value = 'Supervisor'
+[09/12/25 14:11:00.408]:IDtoDocuWare ST:        IN  @ index  5, field 'DEPARTMENT_CODE', length: 2, value = '20'
+[09/12/25 14:11:00.410]:IDtoDocuWare ST:        IN  @ index  6, field 'DEPARTMENT_DESCRIPTION', length: 10, value = 'Technology'
+[09/12/25 14:11:00.413]:IDtoDocuWare ST:        IN  @ index  7, field 'LOCATION', length: 3, value = 'HDQ'
+[09/12/25 14:11:00.415]:IDtoDocuWare ST:        IN  @ index  8, field 'EMPLOYEE_STATUS', length: 6, value = 'Active'
+[09/12/25 14:11:00.417]:IDtoDocuWare ST:        IN  @ index  9, field 'TITLE_CODE', length: 4, value = 'BA03'
+[09/12/25 14:11:00.420]:IDtoDocuWare ST:        IN  @ index 10, field 'TITLE_DESCRIPTION', length: 33, value = 'Cargo Customer [09/12/25 14:11:00.423]:IDtoDocuWare ST:        IN  @ index 11, field 'ACTION', length: 1, value = 'A'
+[09/12/25 14:11:00.426]:IDtoDocuWare ST:        IN  @ index 12, field 'CREATETIMESTAMP', value = 2025-09-12 14:10:59.0
+[09/12/25 14:11:00.429]:IDtoDocuWare ST:        IN  @ index 13, field 'MODIFYTIMESTAMP', value = 2025-09-12 14:10:59.0
+
+
+
+
+
+ INSERT INTO dbo.IDM_Feed_Emp(SWA_ID, FULL_NAME, GIVEN_NAME, LAST_NAME, DEPARTMENT_CODE, DEPARTMENT_DESCRIPTION, LOCATION, EMPLOYEE_STATUS, TITLE_CODE, TITLE_DESCRIPTION, ACTION, CREATETIMESTAMP, MODIFYTIMESTAMP) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[09/12/25 14:11:00.388]:IDtoDocuWare ST:  BEGIN Instantiate prepared statement.
+[09/12/25 14:11:00.389]:IDtoDocuWare ST:        Allocating statement from connection 73016348.
+[09/12/25 14:11:00.389]:IDtoDocuWare ST:  CALLING Connection.prepareStatement(String)
+[09/12/25 14:11:00.390]:IDtoDocuWare ST:        WITH PARAM 1:  insert into dbo.idm_feed_emp(swa_id, full_name, given_name, last_name, department_code, department_description, location, employee_status, title_code, title_description, action, createtimestamp, modifytimestamp) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[09/12/25 14:11:00.392]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.392]:IDtoDocuWare ST:  RETURNED VALUE:  INSERT INTO dbo.IDM_Feed_Emp(SWA_ID, FULL_NAME, GIVEN_NAME, LAST_NAME, DEPARTMENT_CODE, DEPARTMENT_DESCRIPTION, LOCATION, EMPLOYEE_STATUS, TITLE_CODE, TITLE_DESCRIPTION, ACTION, CREATETIMESTAMP, MODIFYTIMESTAMP) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[09/12/25 14:11:00.394]:IDtoDocuWare ST:        Allocated  statement INSERT INTO dbo.IDM_Feed_Emp(SWA_ID, FULL_NAME, GIVEN_NAME, LAST_NAME, DEPARTMENT_CODE, DEPARTMENT_DESCRIPTION, LOCATION, EMPLOYEE_STATUS, TITLE_CODE, TITLE_DESCRIPTION, ACTION, CREATETIMESTAMP, MODIFYTIMESTAMP) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?).
+[09/12/25 14:11:00.397]:IDtoDocuWare ST:  END   Instantiate prepared statement.
+[09/12/25 14:11:00.397]:IDtoDocuWare ST:        IN  @ index  1, field 'SWA_ID', length: 13, value = 'tHMTtestuser1'
+[09/12/25 14:11:00.398]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/12/25 14:11:00.398]:IDtoDocuWare ST:        WITH PARAM 1:  1
+[09/12/25 14:11:00.399]:IDtoDocuWare ST:        WITH PARAM 2:  'tHMTtestuser1'
+[09/12/25 14:11:00.399]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.400]:IDtoDocuWare ST:        IN  @ index  2, field 'FULL_NAME', length: 13, value = 'tHMTtestuser1'
+[09/12/25 14:11:00.400]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/12/25 14:11:00.401]:IDtoDocuWare ST:        WITH PARAM 1:  2
+[09/12/25 14:11:00.401]:IDtoDocuWare ST:        WITH PARAM 2:  'tHMTtestuser1'
+[09/12/25 14:11:00.402]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.402]:IDtoDocuWare ST:        IN  @ index  3, field 'GIVEN_NAME', length: 13, value = 'tHMTtestuser1'
+[09/12/25 14:11:00.403]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/12/25 14:11:00.404]:IDtoDocuWare ST:        WITH PARAM 1:  3
+[09/12/25 14:11:00.404]:IDtoDocuWare ST:        WITH PARAM 2:  'tHMTtestuser1'
+[09/12/25 14:11:00.405]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.405]:IDtoDocuWare ST:        IN  @ index  4, field 'LAST_NAME', length: 10, value = 'Supervisor'
+[09/12/25 14:11:00.406]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/12/25 14:11:00.406]:IDtoDocuWare ST:        WITH PARAM 1:  4
+[09/12/25 14:11:00.407]:IDtoDocuWare ST:        WITH PARAM 2:  'Supervisor'
+[09/12/25 14:11:00.407]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.408]:IDtoDocuWare ST:        IN  @ index  5, field 'DEPARTMENT_CODE', length: 2, value = '20'
+[09/12/25 14:11:00.408]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/12/25 14:11:00.409]:IDtoDocuWare ST:        WITH PARAM 1:  5
+[09/12/25 14:11:00.409]:IDtoDocuWare ST:        WITH PARAM 2:  '20'
+[09/12/25 14:11:00.410]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.410]:IDtoDocuWare ST:        IN  @ index  6, field 'DEPARTMENT_DESCRIPTION', length: 10, value = 'Technology'
+[09/12/25 14:11:00.411]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/12/25 14:11:00.411]:IDtoDocuWare ST:        WITH PARAM 1:  6
+[09/12/25 14:11:00.412]:IDtoDocuWare ST:        WITH PARAM 2:  'Technology'
+[09/12/25 14:11:00.412]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.413]:IDtoDocuWare ST:        IN  @ index  7, field 'LOCATION', length: 3, value = 'HDQ'
+[09/12/25 14:11:00.413]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/12/25 14:11:00.414]:IDtoDocuWare ST:        WITH PARAM 1:  7
+[09/12/25 14:11:00.414]:IDtoDocuWare ST:        WITH PARAM 2:  'HDQ'
+[09/12/25 14:11:00.415]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.415]:IDtoDocuWare ST:        IN  @ index  8, field 'EMPLOYEE_STATUS', length: 6, value = 'Active'
+[09/12/25 14:11:00.416]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/12/25 14:11:00.416]:IDtoDocuWare ST:        WITH PARAM 1:  8
+[09/12/25 14:11:00.417]:IDtoDocuWare ST:        WITH PARAM 2:  'Active'
+[09/12/25 14:11:00.417]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.417]:IDtoDocuWare ST:        IN  @ index  9, field 'TITLE_CODE', length: 4, value = 'BA03'
+[09/12/25 14:11:00.418]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/12/25 14:11:00.419]:IDtoDocuWare ST:        WITH PARAM 1:  9
+[09/12/25 14:11:00.419]:IDtoDocuWare ST:        WITH PARAM 2:  'BA03'
+[09/12/25 14:11:00.420]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.420]:IDtoDocuWare ST:        IN  @ index 10, field 'TITLE_DESCRIPTION', length: 33, value = 'Cargo Customer Service Supervisor'
+[09/12/25 14:11:00.421]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/12/25 14:11:00.421]:IDtoDocuWare ST:        WITH PARAM 1:  10
+[09/12/25 14:11:00.422]:IDtoDocuWare ST:        WITH PARAM 2:  'Cargo Customer Service Supervisor'
+[09/12/25 14:11:00.422]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.423]:IDtoDocuWare ST:        IN  @ index 11, field 'ACTION', length: 1, value = 'A'
+[09/12/25 14:11:00.424]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/12/25 14:11:00.424]:IDtoDocuWare ST:        WITH PARAM 1:  11
+[09/12/25 14:11:00.425]:IDtoDocuWare ST:        WITH PARAM 2:  'A'
+[09/12/25 14:11:00.425]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.426]:IDtoDocuWare ST:        IN  @ index 12, field 'CREATETIMESTAMP', value = 2025-09-12 14:10:59.0
+[09/12/25 14:11:00.427]:IDtoDocuWare ST:  CALLING PreparedStatement.setTimestamp(int, Timestamp)
+[09/12/25 14:11:00.427]:IDtoDocuWare ST:        WITH PARAM 1:  12
+[09/12/25 14:11:00.428]:IDtoDocuWare ST:        WITH PARAM 2:  '2025-09-12 14:10:59.0'
+[09/12/25 14:11:00.429]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.429]:IDtoDocuWare ST:        IN  @ index 13, field 'MODIFYTIMESTAMP', value = 2025-09-12 14:10:59.0
+[09/12/25 14:11:00.430]:IDtoDocuWare ST:  CALLING PreparedStatement.setTimestamp(int, Timestamp)
+[09/12/25 14:11:00.431]:IDtoDocuWare ST:        WITH PARAM 1:  13
+[09/12/25 14:11:00.431]:IDtoDocuWare ST:        WITH PARAM 2:  '2025-09-12 14:10:59.0'
+[09/12/25 14:11:00.432]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.432]:IDtoDocuWare ST:  CALLING PreparedStatement.executeUpdate()
+[09/12/25 14:11:00.434]:IDtoDocuWare ST:  CALLING Statement.close()
+[09/12/25 14:11:00.435]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.435]:IDtoDocuWare ST:        Closed     statement insert into dbo.idm_feed_emp(swa_id, full_name, given_name, last_name, department_code, department_description, location, employee_status, title_code, title_description, action, createtimestamp, modifytimestamp) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?).
+[09/12/25 14:11:00.437]:IDtoDocuWare ST:  BEGIN Test for bad connection.
+[09/12/25 14:11:00.438]:IDtoDocuWare ST:  END   Test for bad connection.
+[09/12/25 14:11:00.438]:IDtoDocuWare ST:  Connection is bad.
+[09/12/25 14:11:00.439]:IDtoDocuWare ST:  BEGIN rollback.
+[09/12/25 14:11:00.439]:IDtoDocuWare ST:  ROLLBACK
+[09/12/25 14:11:00.440]:IDtoDocuWare ST:  CALLING Connection.rollback()
+[09/12/25 14:11:00.441]:IDtoDocuWare ST:  CALLED
+[09/12/25 14:11:00.441]:IDtoDocuWare ST:  END   rollback.
+
+
+
+TAble def: "dbo.IDM_Feed_Emp" table in DEV, QA, and prod -which we have as: DEV/QA/PROD:
+    jdbc:jtds:sqlserver://sdcdcwdocwdb001.devad.swacorp.com:1433/IDM_Feed
+    jdbc:jtds:sqlserver://sdcdcwdocwdb001.devad.swacorp.com:1433/IDM_Feed
+    jdbc:jtds:sqlserver://172.23.146.22:1433/IDM_Feed
+
+
+Column_name	Type	Length
+SWA_ID	nvarchar	24
+FULL_NAME	nvarchar	240
+GIVEN_NAME	nvarchar	100
+LAST_NAME	nvarchar	100
+DEPARTMENT_CODE	nvarchar	40
+DEPARTMENT_DESCRIPTION	nvarchar	100
+LOCATION	nvarchar	40
+EMPLOYEE_STATUS	nvarchar	80
+TERM_DATE	datetime	8
+TITLE_CODE	nvarchar	40
+ACTION	nvarchar	2
+CREATETIMESTAMP	datetime	8
+MODIFYTIMESTAMP	datetime	8
+TITLE_DESCRIPTION	nvarchar	510
+
+
+
+
+
+
+
+
+
+APPTIO DOCUMENTATION:
+ - Add Default back to 1 - Developer on termination.
+
+
+
+
+
+
+
+
+
+
+9/11/2025 9:44:27 AM
+
+DirXML: [09/11/25 10:48:19.86]: TRACE:  IDtoApptioTargetProcess: RESTSubscriptionShim.execute() :
+DirXML: [09/11/25 10:48:19.86]: TRACE:  IDtoApptioTargetProcess: addHandler
+DirXML: [09/11/25 10:48:19.86]: TRACE:  IDtoApptioTargetProcess: addHandler: class-name == 'User'
+DirXML: [09/11/25 10:48:19.86]: TRACE:  IDtoApptioTargetProcess: Add: preparing POST to https://southwestairlinespov.tpondemand.com/api/v1/users?access_token=NTUxOTo2UkZVUlZpUWlsMjkwZjRVM1FYY2FLelVJVVYvOFF5K2ZRRXRTcnd0QS9ZPQ==&format=json
+DirXML: [09/11/25 10:48:19.86]: TRACE:  IDtoApptioTargetProcess: Setting the following HTTP request properties:
+DirXML: [09/11/25 10:48:19.86]: TRACE:  IDtoApptioTargetProcess:  Content-Type:application/json
+DirXML: [09/11/25 10:48:19.86]: TRACE:  IDtoApptioTargetProcess: Did a HTTP POST with 211 bytes of data to https://southwestairlinespov.tpondemand.com/api/v1/users?access_token=NTUxOTo2UkZVUlZpUWlsMjkwZjRVM1FYY2FLelVJVVYvOFF5K2ZRRXRTcnd0QS9ZPQ==&format=json
+DirXML: [09/11/25 10:48:20.19]: TRACE:  IDtoApptioTargetProcess: Response code and message: 201 Created
+DirXML: [09/11/25 10:48:20.19]: TRACE:  Remote Loader: SubscriptionShim.execute() returned:
+DirXML: [09/11/25 10:48:20.19]: TRACE:  <nds dtdversion="3.0">
+        <source>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cool updates on the SONAR stuff . . I don't think I understand enough of it to be useful, I'll have to dig deeper later.
+
+In the mean time I have quick q
+
+Q for you:
+ -
+
+I stubmled on this
+
+Gradle tasks:
+
+editorconfigCheck
+editorconfigFormat
+
+Found nearly all my files needed to be reformated.
+
+
+Find the taget of a fixup commit on windows:
+git lg "HEAD^{/^obs: cleaning up passwords for apptio}"
+
+
+e9897121961@wncotest.com
+
+
+works:
+https://southwestairlinespov.tpondemand.com/api/v1/users?format=json&where=(email eq 'e9897119581@wncotest.com')
+
+fails:
+https://southwestairlinespov.tpondemand.com/api/v1/users?format=json&where=(email eq 'e9897121961@wncotest.com')&access_token=NTUxOTo2UkZVUlZpUWlsMjkwZjRVM1FYY2FLelVJVVYvOFF5K2ZRRXRTcnd0QS9ZPQ==
+
+
+{
+    "FirstName": "Phineas",
+    "Email": "e9897119581@wncotest.com",
+    "LastName": "Flynn",
+    "Login": "e9897119581@wncotest.com",
+    "Role": {
+        "Id": 1
+    },
+    "CustomFields": [
+        {
+            "Name": "Resource eID",
+            "Value": "e9897119581"
+        }
+    ]
+}
+
+
+
+9/10/2025 8:41:45 AM
+java malware -
+
+
+
+
+targetprocess match query:
+https://southwestairlinespov.tpondemand.com/api/v1/users?where=(Id eq 11623)&format=json
+
+\
+
+Yvonne,
+
+Nirosha completed the Aviobook here:
+https://southwest.atlassian.net/browse/CSEE-5039
+
+We should probably have her comment and close up these stories, I'll ask her:
+
+CSEE-5040
+CSEE-5041
+CSEE-5031
+CSEE-5032
+
+
+
+Pentatonix, Cold Play, TJ Rhemi . . Lots of Country . . Cledus T Judd (lol) . . .Boyz to Men :-)
+
+Hey guys!
+
+
+9/8/2025 10:54:52 AM
+TODO
+done - Check QA aws access, confirm passwords
+ - run tests in qa locally if needed . .
+
+
+
+Dhivya,
+
+We recently found an event from IDM on Sprinkler that caused an issue. We've since realized we don't want the driver to take any action on a user when their status changes from Active to On-leave, or back. Can we please request this work to be completed?
+
+
+
+
+
+apptio RL in dev:
+8097
+
+CHG0491007 - IDtoApptio* prod deploy drivers, place holder . . - 2025-10-01 15:00:00
+    Deploy/Update ----  IDM Drivers IDtoApptio for FrontDoor & TargetProcess
+
+CHG0491008 - apptio: qa deploys . .placeholder for next week (now: 9/5/2025 5:20:41 PM)
+  Deploy/Update ----  IDM Drivers IDtoApptio for FrontDoor & TargetProcess
+
+
+
+9/5/2025 12:25:15 PM
+1 - Which kinds of people would request roles like "Targetprocess Admin" and "Targetprocess Contributor?"
+   - Isn't it an option (at least in our first release to production) to show all roles to everyone, and rely on role owners & managers to avoid invalid role assignments?
+
+2 - We have at least two categories of roles in MyAccess that require the setting of other roles for various reasons. For example, we know of possibly two relationships. We need to define the role -> entitlement relationship, and see if there's any others that have a possible 1 to many mapping like this:
+
+  1 - Role: "Cloudability User Access" request requires:
+    1 - FrontDoor: "Cloudability User"
+    2 - FrontDoor: "CloudabilityPlanningRestrictedUser"
+    3 - FrontDoor: "Self-Service Reporting User"
+   (this is a 1 to 3 relationship)
+
+  2 - Role example: 'Developer - Targetprocess' user request requires:
+    1 - FrontDoor: "Targetprocess User" role
+    2 - TargetProcess:, ID: "1" (which means developer in this example . . )
+  (this is a 1 to 2 relationship)
+
+  In summary: are there any other roles that have a 1 to many relationship?
+
+3 - Which FrontDoor and Target process roles need to be requestable?
+   - I believe Mike sent an email with this question.
+   - I see at least 72 roles in Targetprocess (main production), and a few in FrontDoor (getting a count is harder here)
+
+  This is the total list of requestable roles/relationships we know about now as mentioned above:
+
+  1 - Cloudability User Access (will need three application roles)
+  2 - (ALL target process roles) (will need two roles, one FD, one TP)
+
+  So for example: role "141 - "Tech - Leader" target process role - this seems like it's kind of an administrative role . .so would we add Targetprocess Admin instead of Targetprocess User? Maybe both?
+
+4 - Is it possible for some one to just request FrontDoor "Targetprocess User" with no Targetprocess role?
+   - I think the answer is no: Every requestable target process option will of course just be the list of target process roles.
+
+
+
+
+
+
+
+
+
+
+
+we assume that if the first role auser selects is Developer form Targetprocess, can we automatically assign Targetprocess User FrontDoor role?
+
+
+ - Can you further describe what you mean between an admin and the 'rest of the world' as far as views in MyAccess?
+  - How would we know if someone is an admin?
+  - Is it your goal simply to keep edirectory updated with apptio so that we don't remove antyhing?
+ - ARe there any other roles targetprocess's deverloper role needs a frontdoor role autoamtcia user- are there any others?
+
+
+
+
+
+ - target process: 46 roles - which of these need to be reuqestable?
+   - Example: Targetprocues user, targetprocess admin,
+
+ -
+
+
+access_request_cri_arole_name
+
+Row cas6 and 9: mike did manual export of role, and manual import of role.
+
+
+Roles - applied new -> commited - automatic . .'applied' only . .bad
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Devin, this one is odd: I see an update for the user on 9/2 at 10:37, then another on 9/3 at 12:22 am. Both events ultimately failed - aka: the API reported 400, Bad Request because "CE Representative" has no corresponding partner role.
+
+If you are saying the user was indeed updated during this time, it means the 400 error DOES NOT mean that some changes were not attempted, right? It's like despite saying the request was bad, the user was still updated! . . Does this help at all?  Let me know if you have more questions - either way our default CLIENT_USER Parter role name will at least help these calls succeed . .but to hear that they are partially processing is disconcerting.
+
+Do we need to get on the phone later today to discuss?
+
+
+DETAILS:
+
+9/02 - 10:37 - user e143921 went on leave (swaStatus changes from A to L)
+   - user was not associated . .meaning it hadn't been 'connected' to a user in sprinkler.
+   - This event finds a match to user with id: 1689749 and attempts to update the user; but CE Representative did not have a corresponding role - it was blank; so we see the normal 'null' error:
+   <value message="Bad Request" status="400">{"data":[],"errors":[{"id":"68b7d0a79a0d7227d27cc1a2","code":400,"message":"Cannot invoke "com.spr.enums.UserType.toString()" because the return value of "com.spr.enums.UserType.fromUserTypeDbName(String)" is null"}]}</value>
+
+  - Then on 09/03/25 00:22:46.667 - user changed back to active
+  - The event is put together again, but fails again for the same reason.
+
+
+
+
+
+9/02 - 10:37 - user e143921 went on leave
+ - user wasn't associated, so match attempted against: Tiara.Richmond2@wnco.com
+ - added association to user at 9/02, 10:37
+ - This triggers a match and merge,
+  - users's swaSprinklerRole = CE Representative
+ - fed id:
+ partnerCustomProperties":
+ {
+"_c_65a965d0ed316372bde492f6":"CE Representative"
+},
+"productSeat":"Sprinklr Service",
+"federationId": "e143921",
+"passwordLoginDisabled": "true
+".
+ - Connecting to user 1689749:
+
+ {
+  "schemas": [
+    "urn:ietf:params:scim:schemas:core:2.0:User",
+    "urn:scim:schemas:extension:sprinklrGlobalAttributes:2.0:User",
+    "urn:scim:schemas:extension:sprinklrClientAttributes:2.0:User",
+    "urn:scim:schemas:extension:sprinklrUserAssignmentConfig:2.0:User",
+    "urn:scim:schemas:extension:sprinklrUserVoiceConfig:2.0:User"
+  ],
+  "id": "1689749",
+  "name": {
+    "givenName": "Tiara",
+    "familyName": "Richmond"
+  },
+  "photos": [
+    {
+      "value": "https://sprcdn-assets.sprinklr.com/787/profile-15ea76bd-9f28-47a3-83e7-dff01011834e-176564324.png"
+    }
+  ],
+  "locale": "EN_US",
+  "meta": {
+    "resourceType": "User",
+    "createdTime": "2024-11-06 10:17:22",
+    "lastModified": "2025-08-30 02:00:47"
+  },
+  "emails": [
+    {
+      "value": "Tiara.Richmond2@wnco.com",
+      "primary": true
+    }
+  ],
+  "userAssignmentConfig": {
+    "userId": "1689749",
+    "capacities": [],
+    "capacityConfigId": "625d78814856ff027223d937",
+    "capacityConfigName": "CE Capacity Configuration"
+  },
+  "supervisorTeamIds": [],
+  "recordingShareConfigs": [],
+  "userName": "Tiara.Richmond2@wnco.com",
+  "active": true,
+  "globalAttributes": "partnerCustomProperties\":{\"_c_65a965d0ed316372bde492f6\":\"CE Representative\"},\"productSeat\":\"Sprinklr Service\",\"federationId\": \"e143921\",\"passwordLoginDisabled\": \"true",
+  "clientAttributes": {
+    "clientId": 6164,
+    "userType": ""
+  }
+}
+
+
+ - value to update:
+ {"schemas":["urn:ietf:params:scim:schemas:core:2.0:User","urn:scim:schemas:extension:sprinklrGlobalAttributes:2.0:User","urn:scim:schemas:extension:sprinklrClientAttributes:2.0:User","urn:scim:schemas:extension:sprinklrUserAssignmentConfig:2.0:User","urn:scim:schemas:extension:sprinklrUserVoiceConfig:2.0:User"],"id":"1689749","name":{"givenName":"Tiara","familyName":"Richmond"},"photos":[{"value":"https://sprcdn-assets.sprinklr.com/787/profile-15ea76bd-9f28-47a3-83e7-dff01011834e-176564324.png"}],"locale":"EN_US","meta":{"resourceType":"User","createdTime":"2024-11-06 10:17:22","lastModified":"2025-08-30 02:00:47"},"emails":[{"value":"Tiara.Richmond2@wnco.com","primary":true}],"userAssignmentConfig":{"userId":"1689749","capacities":[],"capacityConfigId":"625d78814856ff027223d937","capacityConfigName":"CE Capacity Configuration"},"supervisorTeamIds":[],"recordingShareConfigs":[],"userName":"Tiara.Richmond2@wnco.com","active":true,"globalAttributes":{"partnerCustomProperties":{"_c_65a965d0ed316372bde492f6":"CE Representative"},"productSeat":"Sprinklr Service","federationId": "e143921","passwordLoginDisabled": "true"},"clientAttributes":[{"clientId":6164,"userType":""}]}
+
+ - event fails, usertype was blank: CE Representative did not have a matching partner role . .
+
+Then - 09/03/25 00:22:46.667]:IDtoSprinkler ST - user changed back to active
+ - again - modify failed,
+
+
+[09/04/25 18:38:40.760]:IDtoApptioTargetProcess ST:
+DirXML Log Event -------------------
+     Driver:   \DEV_SWACO_ID\swaiddev\Services\DirXML\Driver Set v3\IDtoApptioTargetProcess
+     Channel:  Subscriber
+     Object:   \DEV_SWACO_ID\swaiddev\Users\e9897113814
+     Status:   Error
+     Message:  Code(-9131) Error in vnd.nds.stream://DEV_SWACO_ID/swaiddev/Services/DirXML/Driver+Set+v3/IDtoApptioTargetProcess/otp-AddRoleAndEID#XmlData:29 : Error evaluating XPATH expression 'token-xpath("es:XDStoAdd($payloadData,$targetProcessRoleID,eid)")' : com.novell.xml.xpath.XPathEvaluationException: Java class "[Ljava.lang.reflect.Constructor;" has no public instance field or method named "toJSON". (vnd.nds.stream://DEV_SWACO_ID/swaiddev/Services/DirXML/Driver+Set+v3/IDtoApptioTargetProcess/ECMA-Format-JSON#DirXML-Data#23).
+[09/04/25 18:38:40.769]:IDtoApptioTargetProcess ST:End transaction.
+(END)
+
+
+
+swaApptioRolesTargetProcess
+
+
+
+{
+      "swaPreferredFullName": "Phineas Flynn",
+      "swaStatus": "A",
+      "FirstName": "Phineas",
+      "Internet EMail Address": "e9897119081@wncotest.com",
+    "CustomFields.Value": "e9897119081",
+    "LastName": "Flynn",
+    "Login": "e9897119081@wncotest.com"
+}
+
+{
+    "Email": "e999988887777@wncotest.com",
+    "Login": "e999988887777@wncotest.com",
+    "FirstName": "PhineasLogin",
+    "LastName": "UserFlynn",
+    "Role": {
+        "Id": 1
+    },
+    "CustomFields": [
+        {
+            "Name": "Resource eID",
+            "Value": "e999988887777"
+        }
+    ]
+}
+
+
+
+sonar {
+    properties {
+        property "sonar.projectKey", "my-project-key"
+        property "sonar.projectName", "My Project Name"
+        property "sonar.sources", "src/main/java"
+        property "sonar.tests", "src/test/java"
+        property "sonar.java.binaries", "build/classes/java/main"
+        property "sonar.host.url", "http://localhost:9000" // Replace with your SonarQube server URL
+        property "sonar.login", "your-sonar-token" // Use a token for authentication
+    }
+}
+
+
+NTUxOTo2UkZVUlZpUWlsMjkwZjRVM1FYY2FLelVJVVYvOFF5K2ZRRXRTcnd0QS9ZPQ
+NTUxOTo2UkZVUlZpUWlsMjkwZjRVM1FYY2FLelVJVVYvOFF5K2ZRRXRTcnd0QS9ZPQ==
+
+
+Andrewo: 86922
+AJ: 125110
+Mckenzie: 108177
+
+https://southwestairlinespov.tpondemand.com/api/v1/users
+
+
+Yatin: status on my updates: I made the following chnages on an AARON-0000 branch that you can pull in when ready.
+1 - .editorconfig
+   - Added file.
+2 - package com.swacorp.csiam.idm;
+   - Package has been added in a comment to help us remember to resolve this.
+3 - Don't use Base64encoder
+   - NO ACTION: We have this in IdMUnit, and for some reason is getting built differently than driver projects . .we'll have to disable javadoc, and see how driver projects ignore this.
+4 - javadoc issuer idmunit
+   - NO ACTION: as above, we need to decidew how to exclude javadoc for IdMUnit like driver projects do.
+5 - Pasing tests . .
+   - NO ACTIN: waiting on Yatin to complete tests.
+
+
+
+
+
+
+Target process:
+ - Why use access_token on url . .why can't we use basic auth . .
+
+All - I think we're going to have two more sessions:
+1 - Focused as much as possible on rebasing, with a mention to amending commits, cherry-picking, interactive rebasing . .
+2 - Ideally have a lab where you need to fix something that is broken, and can be solved by a rebase.
+
+
+
+
+
+
+
+
+TODO:
+ - targetprocess token in the URL . .
+
+
+
+
+
+2 - package com.swacorp.csiam.idm;
+
+
+
+
+
+Guys, here's the status on our todo items:
+
+1 - .editorconfig
+2 - package com.swacorp.csiam.idm;
+3 - don't use BAse64encoder
+4 - javadoc issuer idmunit
+5 - Pasing tests . .
+
+
+
+
+
+
+
+right under image in .gitlabci:
+  SONAR_SCAN_DISABLED: 'true'
+
+
+dbo.IDM_Feed_Emp ->
+Cargo Customer Service Supervisor -> TITLE_DESCRIPTION
+
+
+Insert attempted:
+ INSERT INTO dbo.IDM_Feed_Emp(SWA_ID, FULL_NAME, GIVEN_NAME, LAST_NAME, DEPARTMENT_CODE, DEPARTMENT_DESCRIPTION, LOCATION, EMPLOYEE_STATUS, TITLE_CODE, TITLE_DESCRIPTION, ACTION, CREATETIMESTAMP, MODIFYTIMESTAMP) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+
+        IN  @ index  1, field 'SWA_ID', length: 13, value = 'tHMTtestuser1'
+[09/03/25 11:51:57.172]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/03/25 11:51:57.172]:IDtoDocuWare ST:        WITH PARAM 1:  1
+[09/03/25 11:51:57.173]:IDtoDocuWare ST:        WITH PARAM 2:  'tHMTtestuser1'
+[09/03/25 11:51:57.173]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.174]:IDtoDocuWare ST:        IN  @ index  2, field 'FULL_NAME', length: 13, value = 'tHMTtestuser1'
+[09/03/25 11:51:57.174]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/03/25 11:51:57.175]:IDtoDocuWare ST:        WITH PARAM 1:  2
+[09/03/25 11:51:57.175]:IDtoDocuWare ST:        WITH PARAM 2:  'tHMTtestuser1'
+[09/03/25 11:51:57.176]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.176]:IDtoDocuWare ST:        IN  @ index  3, field 'GIVEN_NAME', length: 13, value = 'tHMTtestuser1'
+[09/03/25 11:51:57.177]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/03/25 11:51:57.178]:IDtoDocuWare ST:        WITH PARAM 1:  3
+[09/03/25 11:51:57.178]:IDtoDocuWare ST:        WITH PARAM 2:  'tHMTtestuser1'
+[09/03/25 11:51:57.179]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.179]:IDtoDocuWare ST:        IN  @ index  4, field 'LAST_NAME', length: 10, value = 'Supervisor'
+[09/03/25 11:51:57.180]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/03/25 11:51:57.180]:IDtoDocuWare ST:        WITH PARAM 1:  4
+[09/03/25 11:51:57.181]:IDtoDocuWare ST:        WITH PARAM 2:  'Supervisor'
+[09/03/25 11:51:57.181]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.182]:IDtoDocuWare ST:        IN  @ index  5, field 'DEPARTMENT_CODE', length: 2, value = '20'
+[09/03/25 11:51:57.182]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/03/25 11:51:57.183]:IDtoDocuWare ST:        WITH PARAM 1:  5
+[09/03/25 11:51:57.183]:IDtoDocuWare ST:        WITH PARAM 2:  '20'
+[09/03/25 11:51:57.184]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.184]:IDtoDocuWare ST:        IN  @ index  6, field 'DEPARTMENT_DESCRIPTION', length: 10, value = 'Technology'
+[09/03/25 11:51:57.185]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/03/25 11:51:57.186]:IDtoDocuWare ST:        WITH PARAM 1:  6
+[09/03/25 11:51:57.186]:IDtoDocuWare ST:        WITH PARAM 2:  'Technology'
+[09/03/25 11:51:57.187]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.187]:IDtoDocuWare ST:        IN  @ index  7, field 'LOCATION', length: 3, value = 'HDQ'
+[09/03/25 11:51:57.188]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/03/25 11:51:57.188]:IDtoDocuWare ST:        WITH PARAM 1:  7
+[09/03/25 11:51:57.189]:IDtoDocuWare ST:        WITH PARAM 2:  'HDQ'
+[09/03/25 11:51:57.189]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.190]:IDtoDocuWare ST:        IN  @ index  8, field 'EMPLOYEE_STATUS', length: 6, value = 'Active'
+[09/03/25 11:51:57.191]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/03/25 11:51:57.191]:IDtoDocuWare ST:        WITH PARAM 1:  8
+[09/03/25 11:51:57.192]:IDtoDocuWare ST:        WITH PARAM 2:  'Active'
+[09/03/25 11:51:57.192]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.192]:IDtoDocuWare ST:        IN  @ index  9, field 'TITLE_CODE', length: 4, value = 'BA03'
+[09/03/25 11:51:57.193]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/03/25 11:51:57.194]:IDtoDocuWare ST:        WITH PARAM 1:  9
+[09/03/25 11:51:57.194]:IDtoDocuWare ST:        WITH PARAM 2:  'BA03'
+[09/03/25 11:51:57.195]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.195]:IDtoDocuWare ST:        IN  @ index 10, field 'TITLE_DESCRIPTION', length: 33, value = 'Cargo Customer Service Supervisor'
+[09/03/25 11:51:57.196]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/03/25 11:51:57.197]:IDtoDocuWare ST:        WITH PARAM 1:  10
+[09/03/25 11:51:57.197]:IDtoDocuWare ST:        WITH PARAM 2:  'Cargo Customer Service Supervisor'
+[09/03/25 11:51:57.198]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.198]:IDtoDocuWare ST:        IN  @ index 11, field 'ACTION', length: 1, value = 'A'
+[09/03/25 11:51:57.199]:IDtoDocuWare ST:  CALLING PreparedStatement.setString(int, String)
+[09/03/25 11:51:57.199]:IDtoDocuWare ST:        WITH PARAM 1:  11
+[09/03/25 11:51:57.200]:IDtoDocuWare ST:        WITH PARAM 2:  'A'
+[09/03/25 11:51:57.200]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.201]:IDtoDocuWare ST:        IN  @ index 12, field 'CREATETIMESTAMP', value = 2025-09-03 11:51:56.0
+[09/03/25 11:51:57.201]:IDtoDocuWare ST:  CALLING PreparedStatement.setTimestamp(int, Timestamp)
+[09/03/25 11:51:57.202]:IDtoDocuWare ST:        WITH PARAM 1:  12
+[09/03/25 11:51:57.203]:IDtoDocuWare ST:        WITH PARAM 2:  '2025-09-03 11:51:56.0'
+[09/03/25 11:51:57.204]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.204]:IDtoDocuWare ST:        IN  @ index 13, field 'MODIFYTIMESTAMP', value = 2025-09-03 11:51:56.0
+[09/03/25 11:51:57.205]:IDtoDocuWare ST:  CALLING PreparedStatement.setTimestamp(int, Timestamp)
+[09/03/25 11:51:57.205]:IDtoDocuWare ST:        WITH PARAM 1:  13
+[09/03/25 11:51:57.206]:IDtoDocuWare ST:        WITH PARAM 2:  '2025-09-03 11:51:56.0'
+[09/03/25 11:51:57.206]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.207]:IDtoDocuWare ST:  CALLING PreparedStatement.executeUpdate()
+[09/03/25 11:51:57.211]:IDtoDocuWare ST:  CALLING Statement.close()
+[09/03/25 11:51:57.212]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.212]:IDtoDocuWare ST:        Closed     statement insert into dbo.idm_feed_emp(swa_id, full_name, given_name, last_name, department_code, department_description, location, employee_status, title_code, title_description, action, createtimestamp, modifytimestamp) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?).
+[09/03/25 11:51:57.214]:IDtoDocuWare ST:  BEGIN Test for bad connection.
+[09/03/25 11:51:57.215]:IDtoDocuWare ST:  END   Test for bad connection.
+[09/03/25 11:51:57.215]:IDtoDocuWare ST:  Connection is bad.
+[09/03/25 11:51:57.216]:IDtoDocuWare ST:  BEGIN rollback.
+[09/03/25 11:51:57.216]:IDtoDocuWare ST:  ROLLBACK
+[09/03/25 11:51:57.216]:IDtoDocuWare ST:  CALLING Connection.rollback()
+[09/03/25 11:51:57.217]:IDtoDocuWare ST:  CALLED
+[09/03/25 11:51:57.218]:IDtoDocuWare ST:  END   rollback.
+[09/03/25 11:51:57.218]:IDtoDocuWare ST:  Number of statements allocated on connection 'dedicated0':  0.
+[09/03/25 11:51:57.219]:IDtoDocuWare ST:Restoring operation data to output document
+[09/03/25 11:51:57.220]:IDtoDocuWare ST:SubscriptionShim.execute() returned:
+[09/03/25 11:51:57.220]:IDtoDocuWare ST:
+<nds dtdversion="2.0" ndsversion="8.x" xmlns:jdbc="urn:dirxml:jdbc">
+  <source>
+    <product build="20240417_0845" instance="IDtoDocuWare" version="4.3.0.0000">DirXML Driver for JDBC</product>
+    <contact>NetIQ Corporation</contact>
+  </source>
+  <output>
+    <status event-id="w11qcledirqi013#20250830042933#12#2:7171ae58-cce3-4e9a-8869-58ae7171e3cc" level="retry" type="app-connection">
+      <description>Unable to add object.  Unable to insert row into table/view 'dbo.IDM_Feed_Emp'.  There is a connectivity-related problem.</description>
+      <object-dn>O=swa-idsat\OU=Users\CN=tHMTtestuser1</object-dn>
+      <jdbc:exception jdbc:class="java.sql.DataTruncation" jdbc:error-code="0" jdbc:sql-state="22001">
+        <jdbc:message>Data truncation</jdbc:message>
+      </jdbc:exception>
+      <jdbc:exception jdbc:class="java.sql.SQLException" jdbc:error-code="8152" jdbc:sql-state="22001">
+        <jdbc:message>String or binary data would be truncated.</jdbc:message>
+      </jdbc:exception>
+      <operation-data DRIVER_REVISION="3.2.0" op_CN="tHMTtestuser1" op_Create="CREATE"/>
+    </status>
+  </output>
+</nds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://southwestairlines.tpondemand.com/RestUI/Board.aspx?environmentId=d675e95f-b4af-56b8-6ea6-e9ed5041eab3
+
+
+
+https://southwestairlines.tpondemand.com/RestUI/Board.aspx?environmentId=d675e95f-b4af-56b8-6ea6-e9ed5041eab3
+
+
+https://sso.fed.prod.aws.swalife.com/idp/SSO.saml2?SAMLRequest=pVLLbtswEPwVgXdRD9dxRVgGlLhBDOShWk4PvQSUuIoJUKTKpez47yvJCezk4B56W5DDmdkZzpE3qmVZ57Z6DX86QOe9NUojGy9S0lnNDEeJTPMGkLmKFdnDPYtpyFprnKmMIl6GCNZJo2%2BMxq4BW4DdyQqe1%2Fcp2TrXIguC2hrthDHW75DuwMr6QGXZ0Mo0waAWYIvjEIfYvg%2BBMq9SE2%2FZG5OaDxInQkRDaxC09yEo3yPFPVeyhpFRijYoiic68hDv1tgKxjVT4mwHxFstU3K7elj%2F%2BPlSzng4Lad%2BGCWJH4lo4iffv135IhFVWSdVNJuIHo85R5Q7SEnNFQ4MiB2sNDquXUriMO4ZEj%2BMN9GMxQmbhL%2BJl79ndC21kPr1cqDlEYTsbrPJ%2Ffyp2BDvF1gct%2B4B5Kyby0z8oxCymA9oNnq1QwwNd5ffDidS%2BPUIZaCddAey%2BJ8W58GZh6Ohlj32MqtlbpSsDl6mlNnfWODuFO%2B%2FvEY0%2Buq14VJlQlhAJMHiKPv5dy%2F%2BAg%3D%3D&RelayState=08a2552f-5d84-46fe-bc41-d5a933557b83_uuidd52629af-1f11-4cc6-9c03-df088a271680&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=VDD5uwCsUtuMU%2BqFnEdPAQcCbLU6xNyi8Gzt8d0goRflCeun3cnXeU3wU6xTSWId1GOUA7ymVVR8pIYgEW3%2F8obcJzJ69mtfnRzWMDUKSuchpd8zjtSmgQpA5I41iZ5KI9sT9njT9UyKC49dhtUxBb0bGUt%2BlgR%2BFKJUf5Rp4%2BTxmleVsZHuBLCqUiHRcgtjsVcHgbePZKeuFq%2FgjvnnYe%2BTZjqkfJwQuy7DFNqXpBS%2B%2BXNYq1hULVsHXQPkdOc93zv77TwANMvo7g5oISaFtBIHV2n%2F0NLFg1p6dqXk%2BAPABl6c5UbY82QP4F4aJJqRsqOXi6QWZzfIBCXFE5necw%3D%3D
+
+
+"FrontdoorUserId": "0d5cc5fd-7c1e-4dfe-a4c7-91ae15500448",
+"FrontdoorUserRoles": "Target Process",
+
+
+
+{
+    "Email": "e9888888888871@wncotest.com",
+    "Login": "e9888888888871@wncotest.com",
+    "Role": {
+        "Id": 1
+    },
+    "CustomFields": [
+        {
+            "Name": "Resource eID",
+            "Value": "X3313e98888888888731"
+        }
+    ],
+    "FrontdoorUserId": "0d5cc5fd-7c1e-4dfe-a4c7-91ae15500448",
+    "FrontdoorUserRoles": "Target Process"
+}
+
+
+
+
+
+
+
+
+
+{
+    "Email": "e988888888887@wncotest.com",
+    "Login": "e988888888887@wncotest.com",
+    "FirstName": "customtest",
+    "LastName": "user",
+    "Role": {
+        "Id": 1
+    },
+    "CustomFields": [
+        {
+            "Name": "Resource eID",
+            "Value": "X3313e98888888888731"
+        }
+    ]
+                "FrontdoorUserId": "0d5cc5fd-7c1e-4dfe-a4c7-91ae15500448",
+            "FrontdoorUserRoles": "Admin",
+
+}
+
+
+
+
+
+8/29/2025 3:42:28 PM
+ - Find out isIntegration=false a requirement?
+ - There are 101 roles; how many to expose?
+ -
+
+
+$.Items[*].CustomFields[3].Value
+
+
+
+
+
+
+
+
+https://southwestairlinespov.tpondemand.com/api/v1/users?where=(isIntegration eq "false")&format=json&take=1000&skip=0&include=[Id,FirstName,LastName,Login,Email,IsActive,IsIntegration,Role,FrontdoorUserId,FrontdoorUserRoles]&select={role.id,role.name}
+
+
+
+
+
+
+
+
+comparting front dor items:
+
+
+"Items": [
+        {
+            "ResourceType": "User",
+            "Id": 25,
+            "FirstName": "Andrew",
+            "LastName": null,
+            "Email": "andrew.krupit@cprime.com",
+            "Login": "andrew.krupit@cprime.com",
+            "FullName": "Andrew",
+            "CreateDate": "/Date(1725805520000+0200)/",
+            "ModifyDate": "/Date(1755083326000+0200)/",
+            "DeleteDate": null,
+            "IsActive": true,
+            "IsAdministrator": true,
+            "Locale": null,
+            "Kind": "User",
+            "GlobalId": "AF2E5A21-2702-4D63-84B7-42C80570F5B2",
+            "IsIntegration": false,
+            "AccessStartDate": null,
+            "AccessEndDate": null,
+            "FrontdoorUserId": "2efc6b81-f4fa-4156-a512-435e79e28228",
+            "FrontdoorUserRoles": "Admin",
+            "PasswordHashAlgorithm": "IdentityV3",
+            "EntityVersion": 127858849,
+            "LastLoginDate": "/Date(1744063200000+0200)/",
+            "WeeklyAvailableHours": 40.0000,
+            "CurrentAllocation": 0,
+            "CurrentAvailableHours": 40.0000,
+            "AvailableFrom": "/Date(1728770400000+0200)/",
+            "AvailableFutureAllocation": 100,
+            "AvailableFutureHours": 40.0000,
+            "IsObserver": false,
+            "IsContributor": false,
+            "LegacySkills": null,
+            "ActiveDirectoryName": null,
+            "RichEditor": "Html",
+            "Role": {
+                "ResourceType": "Role",
+                "Id": 1,
+                "Name": "Developer"
+            },
+            "Location": null,
+            "JobProfile": null,
+            "SupervisoryOrg": null,
+            "Leader": null,
+            "Department": null,
+            "Vendor": null,
+            "StatementOfWork": null,
+            "CustomFields": [
+                {
+                    "Name": "Daily Hours",
+                    "Type": "Number",
+                    "Value": 8.00
+                },
+                {
+                    "Name": "Total Active Involvement",
+                    "Type": "Money",
+                    "Value": 0.00
+                },
+                {
+                    "Name": "Resource Type",
+                    "Type": "DropDown",
+                    "Value": "Professional Services"
+                },
+                {
+                    "Name": "Resource eID",
+                    "Type": "Text",
+                    "Value": null
+                },
+                {
+                    "Name": "Active Span of control",
+                    "Type": "Money",
+                    "Value": 0.00
+                },
+                {
+                    "Name": "Start Date",
+                    "Type": "Date",
+                    "Value": null
+                },
+                {
+                    "Name": "End Date",
+                    "Type": "Date",
+                    "Value": null
+                },
+                {
+                    "Name": "Leader Lv 1 Name",
+                    "Type": "Text",
+                    "Value": null
+                },
+                {
+                    "Name": "Leader Lv 2 Name",
+                    "Type": "Text",
+                    "Value": null
+                },
+                {
+                    "Name": "CapEx Percent",
+                    "Type": "Money",
+                    "Value": 0.00
+                },
+                {
+                    "Name": "OpEx Percent",
+                    "Type": "Money",
+                    "Value": 1.00
+                },
+                {
+                    "Name": "Team Percentage",
+                    "Type": "Number",
+                    "Value": 100.00
+                },
+                {
+                    "Name": "Management Level",
+                    "Type": "DropDown",
+                    "Value": null
+                },
+                {
+                    "Name": "updated",
+                    "Type": "CheckBox",
+                    "Value": false
+                },
+                {
+                    "Name": "Planned Span of control",
+                    "Type": "Money",
+                    "Value": 0.00
+                },
+                {
+                    "Name": "Min Ideal Span Of Control",
+                    "Type": "Number",
+                    "Value": 0.00
+                },
+                {
+                    "Name": "Max Ideal Span Of Control",
+                    "Type": "Number",
+                    "Value": 0.00
+                },
+                {
+                    "Name": "Active SoC Range",
+                    "Type": "DropDown",
+                    "Value": "Ideal"
+                },
+                {
+                    "Name": "Planned SoC Range",
+                    "Type": "DropDown",
+                    "Value": "Ideal"
+                },
+                {
+                    "Name": "Validated by WFS",
+                    "Type": "CheckBox",
+                    "Value": false
+                },
+                {
+                    "Name": "WFS Role",
+                    "Type": "DropDown",
+                    "Value": null
+                },
+                {
+                    "Name": "Role Type",
+                    "Type": "DropDown",
+                    "Value": "NA"
+                },
+                {
+                    "Name": "Employee Type",
+                    "Type": "DropDown",
+                    "Value": null
+                },
+                {
+                    "Name": "Contract Type",
+                    "Type": "DropDown",
+                    "Value": null
+                },
+                {
+                    "Name": "Exception User",
+                    "Type": "CheckBox",
+                    "Value": false
+                },
+                {
+                    "Name": "Teams",
+                    "Type": "Text",
+                    "Value": null
+                }
+            ]
+        },
+
+
+Copy to all servers:
+di013
+cacerts-apptio-targetprocess
+
+
+To acquire and store the HTTPS cert for accessing target process, you must do this:
+
+Run this, and get the first big cert (it's the 'lowest' cert furthest from the CA, and has the whole chain):
+openssl s_client -connect southwestairlinespov.tpondemand.com:443 -showcerts
+
+Then store it in a file, and create the cacerts like this:
+
+keytool -v -keystore cacerts-apptio-targetprocess -file ~/certwork/apptio-target-process-cert.der -import
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+good - postman works:
+GET https://southwestairlinespov.tpondemand.com/api/v1/users?format=json&where=%28email%20eq%20%27e43964%27%29&access_token=NTUxOTo2UkZVUlZpUWlsMjkwZjRVM1FYY2FLelVJVVYvOFF5K2ZRRXRTcnd0QS9ZPQ==
+
+
+
+
+https://southwestairlinespov.tpondemand.com/api/v1/users?access_token=NTUxOTo2UkZVUlZpUWlsMjkwZjRVM1FYY2FLelVJVVYvOFF5K2ZRRXRTcnd0QS9ZPQ==%26format=json%26where=(email eq 'e999999876')
+
+
+
+https://southwestairlinespov.tpondemand.com/api/v1/users?where=(email eq 'elaine.hopkins@wnco.com')&format=json
+https://southwestairlinespov.tpondemand.com/api/v1/users?access_token=NTUxOTo2UkZVUlZpUWlsMjkwZjRVM1FYY2FLelVJVVYvOFF5K2ZRRXRTcnd0QS9ZPQ==&format=json&where=(email eq 'e180883')
+
+
+
+URISyntaxException: Illegal character in query at index 163:
+
+https://southwestairlinespov.tpondemand.com/api/v1/users?access_token=NTUxOTo2UkZVUlZpUWlsMjkwZjRVM1FYY2FLelVJVVYvOFF5K2ZRRXRTcnd0QS9ZPQ==&amp;format=json&amp;where=(email eq 'e180883')
+
+
+https://southwestairlinespov.tpondemand.com/  api/v1/users
+
+where=(email eq 'elaine.hopkins@wnco.com')
+
+format=json
+
+access_token=<accessToken>
+
+api/v1/users?access_token=<accessToken>&format=<format>&where=<where>
+
+
+
+
+
+
+
+
+
+
+
+
+bad:
+https://southwestairlinespov.tpondemand.com/'e999999876')&format=json&access_token=NTUxOTo2UkZVUlZpUWlsMjkwZjRVM1FYY2FLelVJVVYvOFF5K2ZRRXRTcnd0QS9ZPQ==
+
+                                        api/v1/users?where=(email eq '<querystring>')&format=json&access_token=<accessToken>
+
+good:
+https://southwestairlinespov.tpondemand.com/api/v1/users?where=(email eq 'elaine.hopkins@wnco.com')&format=json
+
+
+
+
+https://frontdoor.apptio.com/api/environmentuser/
+
+
+https://southwestairlines.tpondemand.com/
+
+
+
+/opt/idmfiles/idmkeystores/default/cacerts
+/opt/idmfiles/idmkeystores/default/apptioTargetProcessTest
+
+
+
+Certs returned from TP:
+
+[edir@w11dcledirdi013 IDtoApptioTargetProcess]$ openssl s_client -connect southwestairlinespov.tpondemand.com:443 -showcerts
+CONNECTED(00000003)
+depth=2 C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert Global Root G2
+verify return:1
+depth=1 C = US, O = DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1
+verify return:1
+depth=0 C = US, ST = New York, L = Armonk, O = International Business Machines Corporation, CN = *.tpondemand.com
+verify return:1
+---
+
+
+
+C = US, O = DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1
+
+
+
+
+
+
+
+
+
+bad
+
+https://southwestairlinespov.tpondemand.com/user?access_token={{TP_POV_API}}&format=json
+
+good
+https://southwestairlinespov.tpondemand.com/api/v1/users?where=(email eq 'elaine.hopkins@wnco.com')&format=json
+https://southwestairlinespov.tpondemand.com/api/v1/user?access_token={{TP_POV_API}}&format=json
+
+
+
+
+
+[08/28/25 13:34:01.153]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: Query: preparing GET to https://southwestairlines.tpondemand.com/userRole/e999999876
+[08/28/25 13:34:01.154]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: Resetting headers
+[08/28/25 13:34:01.155]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: Setting the following HTTP request properties:
+ Authorization: <content suppressed>
+[08/28/25 13:34:01.156]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess:  Content-Type:application/json
+[08/28/25 13:34:01.156]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: Did a HTTP GET with 0 bytes of data to https://southwestairlines.tpondemand.com/userRole/e999999876
+[08/28/25 13:34:01.158]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: *******************************************************
+[08/28/25 13:34:01.159]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: **********************LOGGING REQUEST******************
+[08/28/25 13:34:01.160]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: *******************************************************
+[08/28/25 13:34:01.160]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: Request URL :https://southwestairlines.tpondemand.com/userRole/e999999876
+[08/28/25 13:34:01.161]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: Http Method : GET
+[08/28/25 13:34:01.162]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: Sending http request with below headers :-
+[08/28/25 13:34:01.163]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: Authorization: <content suppressed>
+[08/28/25 13:34:01.164]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: Content-Type: application/json
+[08/28/25 13:34:01.164]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: ***************************END**************************
+[08/28/25 13:34:01.276]:IDtoApptioTargetProcess ST:        SubscriptionShim.execute() returned:
+[08/28/25 13:34:01.276]:IDtoApptioTargetProcess ST:
+<nds dtdversion="3.0">
+  <source>
+    <product build="20250530_1155" version="1.3.1.0000">Identity Manager REST Driver</product>
+    <contact>NetIQ Corporation.</contact>
+  </source>
+  <output>
+    <status event-id="0" level="error" type="app-general">IOException: End user tried to act as a CA</status>
+
+
+
+xlqmya06 - merge script here when running in QA2.
+
+
+Has any one seen this error? - "End user tried to act as a CA"? Google says it's something wrong with the CA
+[08/28/25 13:34:01.160]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: Request URL :https://southwestairlines.tpondemand.com/userRole/e999999876
+[08/28/25 13:34:01.161]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: Http Method : GET
+[08/28/25 13:34:01.162]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: Sending http request with below headers :-
+[08/28/25 13:34:01.163]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: Authorization: <content suppressed>
+[08/28/25 13:34:01.164]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: Content-Type: application/json
+[08/28/25 13:34:01.164]:IDtoApptioTargetProcess ST:        IDtoApptioTargetProcess: ***************************END**************************
+[08/28/25 13:34:01.276]:IDtoApptioTargetProcess ST:        SubscriptionShim.execute() returned:
+[08/28/25 13:34:01.276]:IDtoApptioTargetProcess ST:
+<nds dtdversion="3.0">
+  <source>
+    <product build="20250530_1155" version="1.3.1.0000">Identity Manager REST Driver</product>
+    <contact>NetIQ Corporation.</contact>
+  </source>
+  <output>
+    <status event-id="0" level="error" type="app-general">IOException: End user tried to act as a CA</status>
+  </output>
+</nds>
+
+
+
+
+https://southwestairlinespov.tpondemand.com/api/v1/users?access_token=NTUxOTpyQk9ITm5GbTNnVThiK3F1Qnl3OXp0eS9UWmpORVdKdHlnWHl0TW5pQlpJPQ==
+https://southwestairlinespov.tpondemand.com/api/v1/users?format=json&access_token={{TP_POV_API}}
+
+https://southwestairlines.tpondemand.com/api/v1/users?format=json&access_token={{TP_MAIN_API}}&take=5
+
+
+
+
+
+ - frontdoor: finis merge to master, run tests
+ - tp - learning how to set roles . .
+
+
+
+
+8/27/2025 4:24:26 PM
+IDtoApptioTarget process:
+
+Get only 5 random users as json:
+https://southwestairlines.tpondemand.com/api/v1/users?format=json&access_token={{TP_MAIN_API}}&take=5
+
+Get 1 user by email as json:
+https://southwestairlines.tpondemand.com/api/v1/users?where=(email eq 'aaron.kynaston@wnco.com')&access_token={{TP_MAIN_API}}&format=json
+
+'Stream' 680 users as json:
+https://southwestairlines.tpondemand.com/svc/tp-apiv2-streaming-service/stream/users?access_token={{TP_MAIN_API}}&where=(isIntegration == false and resourceeid != null)&select={Email,ResourceEid:resourceeID,role.id,role.name}
+
+'stream' all users, get only email
+https://southwestairlines.tpondemand.com/svc/tp-apiv2-streaming-service/stream/users?access_token={{TP_MAIN_API}}&where=(isIntegration == false and resourceeid != null)&select={Email}
+
+stream all users . .6,231 as of 8/27/2025 4:44:57 PM
+https://southwestairlines.tpondemand.com/svc/tp-apiv2-streaming-service/stream/users?access_token={{TP_MAIN_API}}
+
+
+Get 72 roles . .really simple payload
+https://southwestairlines.tpondemand.com/svc/tp-apiv2-streaming-service/stream/roles?access_token={{TP_MAIN_API}}
+
+
+NTUxOTpyQk9ITm5GbTNnVThiK3F1Qnl3OXp0eS9UWmpORVdKdHlnWHl0TW5pQlpJPQ==
+
+
+Get user:
+
+https://southwestairlines.tpondemand.com/api/v1/users?where=(email eq 'aaron.kynaston@wnco.com')&access_token={{TP_MAIN_API}}
+
+
+Get users that haven't logged in for the date spceified.
+GET /api/v1/Users?where=(IsActive eq "true") and (LastLoginDate lt "2018-01-17")&take=1000
+
+
+Maybe works to get id's . .ased of lastname . .
+https://southwestairlinespov.tpondemand.com/api/v1/users?format=json&where=(email eq 'e988888888887@wncotest.com')&include=[Id,FirstName,LastName,Login,Email,IsActive]
+
+
+
+1  I need the authentication info. URLs, JSP, and anything else for TargetProcess so I can create the entitlement collector.
+2 I need to test the Entitlement collector to see if it collects properly collects
+3 I need to add the appropriate nodes to the Workflow for the TargetProcess flow.
+4 I need to create the remove nodes in the Workflow for all 5 attributes.
+5 I need to manually create all the technical roles for all the collected entitlements (about 25 as far as I can tell)
+  1 This involves creating the roles.
+  2 Then exporting them all and making the text adjustment
+  3 Reimporting the roles.
+6 I then need to tests the whole thing to make sure everything is flowing.
+  1 Test a single Add to the 5 different attributes.
+  2 Test a single Remove to the 5 different attributes.
+  3 Test multiple role assignments in one request.
+  4 Test multiple role assignments and removals at once.
+  6 test multiple role assignments in different requests.
+7 The whole time making sure the requests close.
+
+This looks good Mike - I'll get this to you asap.
+
+I'm in the process of preparing for the front door driver code review today, and am starting on your list asap. I think we may not need a JSP this time, at least not for authentication; I'll let you know what data we have access to as I learn the API more.
+
+
+
+p:
+afib - scary!
+nafld
+   - juggle liver . .
+omeprozol,a nd pantrorozol - ben on either for a long time . .and would like to get off.
+fiber
+
+
+
+8/25/2025 5:16:46 PM
+
+
+
+8/25/2025 2:38:24 PM
+Change readme.md XSLT to add comments to README.md
+
+
+
+
+8/25/2025 12:06:28 PM
+Driver Attribute handling meeting:
+
+TODO:
+ - deactivate/reactivate isn't done . .
+ - Conversion will likely just create a new account
+
+
+There are up to three payloads for provisioning, up to 5 for a match!
+
+Postman:
+   - Assign a role - just have two fields, defaultRoles and customRoles, that are an array of string values.
+   - I first convert each of the 4 posiblilties into variables.
+
+
+When user gets one or more of these values - just CIS, multivalued attrs, with a simple string per value:
+
+This example has two default roles in Main, one custom in Main, three default in cloudability, and one custom in cloudability
+
+(5 new attrs, using 4 now)
+  Actual values to be written to eDirectory (multivalues are submitted as normal, no parsing involved)
+
+  swaApptioRolesMainDefault
+    2 role values: Business Owner, Power User
+
+  swaApptioRolesMainCustom -
+    1 role value: Custom Main role
+
+  swaApptioRolesCloudabilityDefaul:
+    3 role values: Cloudability User, CloudabilityPlanningRestrictedUser, Self-Service Reporting User
+
+  swaApptioRolesCloudabilityCustom -
+    1 role value: Custom Cloudability Role
+
+
+
+  swaApptioRolesTargetProcess (not used yet, for use in the IDtoApptioTargetProcess driver.
+
+
+
+
+We provision:
+1 - Provision the user in front door
+2 - Assign the user roles: main: create user 'environment role' . .
+3 - Assign the user roles: cloudability: create user 'environment role' . .
+
+
+
+
+1 - Create user:
+POST - https://frontdoor.apptio.com/api/user
+{
+    "full": "Phineas Flynn",
+    "email": "e9897126828@wncotest.com",
+    "domain": "southwestairlines",
+    "login": "e9897126828@wncotest.com",
+    "active": "TRUE",
+    "accountType": "STANDARD",
+    "persona": "NONE"
+}
+
+
+2 - Assign user roles - this assigns to default roles in the 'main' environment (aka: d675e95f-b4af-56b8-6ea6-e9ed5041eab3)
+POST - https://frontdoor.apptio.com/api/environmentuser
+(PUT must be used on subsequent updates if they've already had roles)
+{
+    "environment": "d675e95f-b4af-56b8-6ea6-e9ed5041eab3",
+    "user": "e9897126828@wnco.com",
+    "defaultRoles": [
+        {
+            "name": "Business Owner"
+        },
+        {
+            "name": "Power User"
+        }
+    ],
+    "customRoles": [
+        {
+            "name": "Custom Main role"
+        }
+    ]
+}
+
+3 - Assign user roles: - this assigns default roles in the 'Cloudability' environment: (5b1b8db8-86aa-4eb5-a817-65d5cc00fa82)
+POST - https://frontdoor.apptio.com/api/environmentuser
+(PUT must be used on subsequent updates if they've already had roles)
+{
+    "environment": "5b1b8db8-86aa-4eb5-a817-65d5cc00fa82",
+    "user": "e9897126828@wncotest.com",
+    "defaultRoles": [
+        {
+            "name": "CloudabilityPlanningRestrictedUser"
+        },
+        {
+            "name": "Self-Service Reporting User"
+        },
+        {
+            "name": "Cloudability User"
+        }
+    ],
+    "customRoles": [
+        {
+            "name": "Custom Cloudability Role"
+        }
+    ]
+}
+
+
+
+
+
+On a match, we agreed with the app owner that the driver needs to remove the previous main and couldability roles, and reassing new ones, so this is the flow. Rather than querying to see if they have roles, we just blindly send a delete, which solves the POST vs PUT problem.
+
+1 - Update of the matched user event.
+2 - Deletion of the users Main roles.
+3 - Deletion of the users Cloudability roles.
+4 - Assign the roles the same as above for Main.
+5 - Assign the roles the same as above for Cloudability.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8/25/2025 11:45:19 AM
+ - drive rupdate: don't try to remove roles on a delete . .
+
+
+
+[$.data.objects[0].defaultRoles], expected:
+
+
+[.+"name":"Cloudability User".+"name":"CloudabilityPlanningRestrictedUser".+"name":"Self-Service Reporting User".+]
+
+but was: [[{"id":"d6edf1c2-5b82-11f0-b998-06726f6550e7","name":"Cloudability User","applicationTypes":[]},{"id":"d6edf6b9-5b82-11f0-b998-06726f6550e7","name":"CloudabilityPlanningRestrictedUser","applicationTypes":[]},{"id":"d6ee3d76-5b82-11f0-b998-06726f6550e7","name":"Self-Service Reporting User","applicationTypes":[]}]] UC-CREATE1.1.1-Cloudability[17]
+11:43:09.347 [Test worker] INFO  org.idmunit.IdMUnitTestCase - ...delaying 4 secs
+
+
+
+
+
+
+swaApptioRolesMainDefault, swaApptioRolesMainCustom, swaApptioRolesCloudabilityDefaul, swaApptioRolesCloudabilityCustom
+
+
+Cloudability User!!CloudabilityPlanningRestrictedUser!!Self-Service Reporting User
+
+
+8/25/2025 10:06:48 AM
+Mike - weekly team meeting
+Drawing - tblet with SWA in the middle . .
+
+
+
+
+
+
+
+Apptiofrontdoor mr:
+https://southwest.gitlab-dedicated.com/csiam/idm/idtoapptio/-/merge_requests/19
+
+
+
+
+
+8/25/2025 9:47:20 AM
+--==TODO==----==TODO==----==TODO==----==TODO==----==TODO==----==TODO==----==TODO==----==TODO==--
+Personaltodo
+
+Holly todo:
+ - Deliver IEP to accessiblity services
+ - Money Success Center
+ - Email Bethany the results of survery
+ - May not need to do this: Schedule meetingsting with Bethanie.
+
+- driver review on 8/26 for apptiofrontdoor!
+   - In my case, the API was a bit goofy, and was my first driver where we had multiple attributes instead of the pipe format.
+   Goofiness:
+   1 - Authentication feels completely unique; doesn't follow any standard I know of.
+   2 - Role adding/modifying are completely separate API calls.
+   3 - Roles have to be POSTED if they're new, or PUT for updates . . not unreasonable; but is a consideration for development.
+   Two 'envronments'
+    main
+    cloudability
+   Two kinds of roles in each enviornment:
+    defaultRoles
+    customRoles
+
+   Format of an add with a user with all 4 kinds of roles:
+   1 - Payload to add the user, on one endpoint.
+   2 - Payload to create the main - default/customroles
+   3 - Paylaod to create the Coudablity
+
+Tests we talked about today, and their results:
+ - Add the 'artificial' attributes to the filter and mapping rule and see if driver still works.
+  Answer: YES! I've added 3 of my artificial attributes to the filter and mapping rule and no issue.
+
+
+done - ensure swaApptio* roles are stripped after processing
+ - sync: try not removing association value . .
+
+ - consider lib-sub-CheckConversion - at least to cover in review.
+   - read: https://southwest.atlassian.net/wiki/spaces/CYSEC/pages/492220982/lib-sub-CheckConversion
+
+ - leave status? will just leave them alone . . A|L ok . .
+
+ - test adding random attrs to mapping rule for documetnatoin purpsoes.
+
+
+ ---===TODO===---
+ - idtoemplsvc: finish eveyrhting I can . .
+ - IDtoAviobook: integrate tests from branch into master - like: testac2_1addremovemulti: has check for archived instead 404
+ - aviobook: make sure quals query is in postman
+ - IDtoDocunet: push users.
+ - IDtoemployeeSvc:
+   - create story:
+     - research LOki message markers: confirm they cna properly trigger a notification: email in QA, INC in prod
+     - add Loki message markers
+     - Fix Cannot create portal user with out a contact:
+        So far, it seems that these values are set to the contact ID needed for the user creation in these cases:
+        lvCreateContactResponseId - when the contact was created
+        Op-EmpSVC-ContactId - when the contact was found due to a match (therefore doesn't need a creation)
+   - create story to fix term - isactive = false.
+   - send story to Josh Saulson
+   - Bugfix: Allow terminations to process: chnage to T needs to disable . .
+   - feature: maybe allow sync to disable unassociated user . . .?
+   DONE - 959 users: send through
+   - empvsc: Document how to fix this: get list of users, then create this payload with the proper soap envelope.
+    <urn1:sObjects xsi:type="urn1:User"><urn1:Id>0054w00000DUhogAAD</urn1:Id><IsActive>false</IsActive></urn1:sObjects>
+ - IDtoAviobook:
+   - XORA - move from GORAMP -> connectiongooops
+   - Get unarchiving/matching fix in ASAP
+   - possible issue with new hires being archived . .
+   - new: possible new work; confirm if MyAccess is part of it . .
+ - apptio documentation: simplicstic use cases: be ready to talk with Asleigh and Jolie (sp?) to do a review of use cases!
+ - Pass IDtoapptio tests with the new swa restconenctor after merging.
+ - IDtoemployeeSvc: UAT todo: discuss 'cannot creat eportal user' - and urn1:ContactId possible solution.
+ - Count of "Cannot create a portal user without conta" in prod . .see if this is a real problem.
+WAIT - IDtoDocunet - push users: need a CR?
+ - IDtoAviobook: delete last 10 users?
+ - IDtoApptio
+  - rest connector: ensure authentication works properly
+  - one more design meeting with Ashleigh (she's out from the 18th for a week + thursday)
+ - Comment all stories.
+>- EmployeeServicesRoelMgmtDriver - Ready for QA now.
+>- IDtoEmployeeCarePicture - Ready for QA now.
+done - IDtodocunet poush users!
+WAIT - idtoempsvc - pass tests in dev, with updated password.
+WAIT - MRS: get approved
+ - IDtoApptio
+WAIT - Ashleigh: asked for a meeting before tuesday.
+   - get as far as I can for now . .so we can have something that'll work by July
+   - documnet shim versions - check dev/qa/prod - can use remote loader lib
+   - documentation use cases
+   - Test provision; learn attr set.
+   - Add RL config to git; think about qa deploy
+   - new swaApptioRole?
+   - more rigts to apptio repo?
+    https://southwest.atlassian.net/wiki/spaces/EC/pages/121327956/GitLab+Groups+and+Requesting+Access#tab-3f617220-6a0f-4fd9-9fe1-b36b99a6cf88
+ - EmployeeSvc:
+   - get MRS done . .
+   - deploy through QA again - confirm email is working
+   - doc update: add fc3 <--> empuat1 move notes to driver doc
+   - FC3 EMPUAT1 - moving envs: MyAccess? association removal & base roles already on todo list.
+   - employeeservicesrolemgmt driver: find out which retiree role is correct!
+   - delete all swasvc base roles . .though this may trigger lots of updates . .
+   - Get EmployeeSvcRoleMgmt driver updated in dev to assign new roles
+   - UAT schedule
+   - cleanup: Confirm deletion, and schedule deletion of old objects with Jack and Rob.
+      cn=SFProfile,cn=IDtoEmployeeSvc,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=swa-idsat
+      cn=SFRole,cn=IDtoEmployeeSvc,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=swa-idsat
+      cn=SFLicense,cn=IDtoEmployeeSvc,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=swa-idsat
+ - IDToaviobook:
+  - Delete/archive users with bad id/usernames
+  -  Aviobook: some eid's are supper case . .
+  - FIX PAYLOAD for nrew restrrictive API Need to stop using brackets everywhere - maybe check xds-to-json . .
+  - unarchiving and match fixes needed don't usequotes I beleive https://prod.swa.aviobook.aero/idp/users/?query=credentials.username==x313593&read-attr1=
+ - search for wncotest.com attribute.
+
+ - git training outline completion.
+
+
+LATER - empsvc: see if I can delete a user with SOAP api: e8898732691
+
+WAIT - 2 MRS - 6/10/2025 9:54:38 AM sent empsvc to Gokul
+>- Review SAML OIDC OAUTH2: update
+>- IDtoEmployeeSvc: when moving from FC3 to EMPUAT1 or back; we need to remove all associations . .and rebuild roles.
+ - update IDtoEmployeeCarePicture password in AWS . .driver, etc . .needs client/id password, asked jeff now: 6/11/2025 4:13:29 PM
+ - reenable empcare picture after fixing password from jeff.
+ - apptio: working on adding pipeline config, AWS passwords etc.
+ - Docunet: idmunit order issue: testFileArchiveJob[22] FAILED -  Expected file '1736536563511.tmp' or '1736536563511.csv' to be the oldest file
+ - IDtoAltea: remove postman secrets
+ - AlteaOfficeDBtoID: remove postman secrets
+ - IDtoAutocrib: remove pomstan secrets
+ - swa-scim- remove postman dsecrets
+ - empsvc: Delete the static role objects from the drivers in QA/Prod . .should be overnight . .
+
+Other items
+ HOLD: UNTIL KYLE DONE/FC3 - IDtoemployeeCarePicture fix tests, see run in pipeline, and IDtoemployeesvc IdMUnit:XLS - move to using substiatuions for role values - 4259
+ - idtobrwoserstack: initial match of user doesn't proerly add eid to lastname: set eid on lastname on match
+  docunet: remove group membership related code.
+ - IDtoSprinkler: test Yatins java 15.0.2 attribute swapping.
+ - Credential rotation: Document all places requiring credential rotations.
+ - bstack: find all bad characters that can't be use din lastname.
+ - BSTACK: workaround for lastname space removal.
+ - IDToBrowserstack: schedule Prod deploy.
+
+
+Team,
+
+Here's the status from our todo items:
+
+Ashleigh has completed the flow chart as a child page to the driver doc containing the flow chart info. Child page is here: https://southwest.atlassian.net/wiki/spaces/CYSEC/whiteboard/663986322?atl_f=PAGETREE
+
+Here's status on a few items, including my todo list.
+   - RITM11421774 has been completed, the IDtoApptio CI now exists.
+   - I neglected to mention IDtoApptio driver is configured as a remote loader to help isolate the shim in its own memory space.
+   - I'm on hold on #1 until we get the final list of roles; though we could plan our MyAccess approach at any point.
+   - For #2 completed: The eid has been added to the 'full' field in IDtoApptio in preparation for MyAccess collection.
+   - Found the driver doesn't use Basic auth . .it uses a cookie - Cookie=apptio-opentoken=(token value). While this isn't problem, it was completely unexpected.
+   - For #3: I'm nearly completed with the swa-rest-connector CSEE-4986 branch to add the ability to support Apptio's goofy authentication style, new test testGetTokenFromHeader, is just about complete on this branch, see wip commit 9d51d09.
+
+
+
+Seen when old version . . may be able to update by getting inew .gitlab-ci . .
+https://southwest.gitlab-dedicated.com/csiam/idm/idmunit/swa-rest-connector/-/jobs/115973702
+=============================================
+==== WARNING: Older version of           ====
+==== DevOps Pipeline Fragments detected. ====
+---------------------------------------------
+This pipeline is running on an older version
+of DevOps Pipeline Fragments. We recommend
+updating your project to use the current
+release: 4.64.2 tag.
+---------------------------------------------
+  Detected version: 4.62.1
+  Current release: 4.64.2
+---------------------------------------------
+=============================================
+
+Rest shim in dev: 4.10.0.0200
+
+
+6/30/2025 10:15:22 AM
+Jessica - give azuer driver
+
+Option A - 1 to 1
+Option B - manual RITMS - no driver - but still role file + role to user mappingfile
+Option C - 1 role name, all IDM dooing all work - single one word name . .(no guarnatee)
+
+PRB0085951 - FOR aviobook unarchving work that Nirosha is going to do . .5033 I think?
+
+
+Dhivay meeting notes
+I heard there was some confusion on the meetings to attend. So wanted to send a consolidated list of meetings for
+MyAccess SMEs
+  Monday and Thursday: 1 PM to 2 PM:
+  Working Sessions to bring up any issues and troubleshoot n learn together
+
+Wednesday 11 AM to 12 PM -
+Enablement and IGA to sync to clarify any open questions for implementations and hopefully soon for IGA to share info about SP
+
+Tues and Thurs 9:30 AM to 10 AM:
+Form Review sessions - used to review any new MyA forms and also bring in customers if needed.
+If you have any other recurring meetings on calendars, plz delete them. As we go, if you all feel any meetings can be condensed, cancelled or repurposed, plz let Yvonne or myself know.
+
+
+INC6859909 - sprinkler inc, with my mapping table fixes, CHG0487613 is the prod change it's 'holding' on . .
+
+Remote loader shim:
+  <java-module value="com.novell.nds.dirxml.remote.driver.DriverShimImpl"/>
+  <shim-auth-server value="REMOTE(hostname=w11dcledirdi013.swacorp.com port=8095)"/>
+
+6/4/2025 6:46:38 PM
+Started to store items that just need to be logged.
+
+LONG TERM LOG
+6/4/2025 4:57:57 PM - pushed cn=e112099,ou=Users,o=SWA-ID through aviobook; to confirm prod isn't broken
+
+6/4/2025 6:48:02 PM- updated as of this timestamp:
+  EmployeeServicesRoleMgmtDriver - 10.8.6
+  IDtoEmployeeCarePicture - 1.4.5
+  RBEAEv1 - 1.4.3
+
+
+swaApptioRolesMainDefault
+swaApptioRolesMainCustom
+swaApptioRolesCloudabilityDefaul
+swaApptioRolesCloudabilityCustom
+swaApptioRolesTargetProcess
+
+Cloudability roles
+Cloudability User
+CloudabilityPlanningRestrictedUser
+Self-Service Reporting
+
+POV: 0c5845ea-43ff-5481-1fce-71f58ba2ff4d (this environment is only for dev purposes)
+Main: d675e95f-b4af-56b8-6ea6-e9ed5041eab3 (ApptioOne and Target Process)
+Cloudability: 5b1b8db8-86aa-4eb5-a817-65d5cc00fa82
+
+6/17/2025 12:56:31 PM
+Driver standared use cases:
+
+1 - Provision request
+2 - Provision request, but results in matching to existing account, same end result as #1.
+3 - Modification AC: general modification tests.
+4 - Modification AC: Use cases where modifications cause actions to be taken, such as move to a new department, etc.
+5 - Deprovision: on role removal, on termiation, on delete.
+
+
+[
+  [
+    {
+      "id": "d6edf1c2-5b82-11f0-b998-06726f6550e7",
+      "name": "Cloudability User",
+      "applicationTypes": []
+    },
+    {
+      "id": "d6edf6b9-5b82-11f0-b998-06726f6550e7",
+      "name": "CloudabilityPlanningRestrictedUser",
+      "applicationTypes": []
+    },
+    {
+      "id": "d6ee3d76-5b82-11f0-b998-06726f6550e7",
+      "name": "Self-Service Reporting User",
+      "applicationTypes": []
+    }
+  ]
+]
+
+tp, main - fixed 8/25/2025 5:16:51 PM
+Mjk2ODpKOGdsU0lzRFQ2SXE4R2J1cmhZdGhBZ2x3NTR0cjQ2NXFBYVpNWXR3VnUwPQ==
+
+tp, pov
+NzIyMTpCbXRsTWVaUVU1QjVSQzY4ZlRWQWxabFI4aUZ6TTlNUVQzS1JqL3dDbVFJPQ==
+Example query:
+https://southwestairlines.tpondemand.com/api/v1/users?where=(email eq 'aaron.kynaston@wnco.com')&access_token={{TP_MAIN_API}}
+
+
+
+9/5/2025 10:48:59 AM
+firs tsuccessful create response in targetprocess
+<nds dtdversion="3.0">
+  <source>
+    <product build="20250530_1155" version="1.3.1.0000">Identity Manager REST Driver</product>
+    <contact>NetIQ Corporation.</contact>
+  </source>
+  <output>
+    <status event-id="w11dcledirdi013#20250905164623#3#1:80d607bf-f35f-46ce-96ee-bf07d6805ff3" level="success" type="driver-general">
+      <driver-operation-data class-name="User" command="add" dest-dn="\DEV_SWACO_ID\swaiddev\Users\e9897110794" event-id="w11dcledirdi013#20250905164623#3#1:80d607bf-f35f-46ce-96ee-bf07d6805ff3" src-dn="\DEV_SWACO_ID\swaiddev\Users\e9897110794">
+        <response>
+          <url-token accessToken="NTUxOTo2UkZVUlZpUWlsMjkwZjRVM1FYY2FLelVJVVYvOFF5K2ZRRXRTcnd0QS9ZPQ==" format="json" where="%28email%20eq%20''%29"/>
+          <header/>
+          <response-header Cache-Control="no-store, must-revalidate, proxy-revalidate, no-cache" Connection="keep-alive" Content-Length="2528" Content-Security-Policy="default-src 'self'; base-uri 'self'; child-src 'self' blob:; connect-src 'self' https://*.apptio.com https://*.segment.io https://*.segment.com https://*.aptrinsic.com https://*.livechatinc.com data: wss://southwestairlinespov.tpondemand.com https://webident.targetprocess.com https://tauboard.com https://solutions.tpondemand.net https://*.pendo.io https://auth-poveu.tpondemand.com https://www.targetprocess.com https://*.microsoftonline.com https://*.okta.com https://identity.lastpass.com https://accounts.google.com https://*.onelogin.com; font-src 'self' data: https://*.livechatinc.com https://cdnjs.cloudflare.com https://fonts.googleapis.com https://*.cdntpondemand.com https://fonts.gstatic.com https://solutions.tpondemand.net; form-action 'self' https://*.duosecurity.com https://*.oktapreview.com https://*.okta-emea.com https://*.onelogin.com https://login.windows.net https://login.microsoftonline.com https://*.okta.com https://identity.lastpass.com https://accounts.google.com; frame-ancestors 'self' https://auth-poveu.tpondemand.com; frame-src https:; worker-src 'self' blob:; img-src 'self' data: https: http: blob:; media-src 'self' data: https://*.livechatinc.com; object-src 'self'; script-src blob: https://*.segment.com https://*.aptrinsic.com https://solutions.tpondemand.net https://*.storage.googleapis.com https://www.gstatic.com https://secure.livechatinc.com https://*.cdntpondemand.com https://www.google.com https://*.pendo.io 'self' 'unsafe-inline' 'unsafe-eval' data:; style-src blob: https://*.aptrinsic.com https://*.storage.googleapis.com https://fonts.googleapis.com https://*.cdntpondemand.com https://*.pendo.io https://solutions.tpondemand.net 'self' 'unsafe-inline'; report-uri /svc/csp-reporting/cspreport" Content-Type="application/json" Date="Fri, 05 Sep 2025 16:46:25 GMT" Expires="Thu, 04 Sep 2025 16:46:24 GMT" Strict-Transport-Security="max-age=31536000; includeSubDomains" Via="kong/1.2.3" X-API-V1-WITHOUT-REST="true" X-Content-Type-Options="nosniff" X-CorrelationId="79155110-ca58-40a9-bc0d-f9c8591b0b96" X-Diagnostic-Tags="create-resource,get-resource" X-Frame-Options="SAMEORIGIN" X-Kong-Proxy-Latency="0" X-Kong-Upstream-Latency="164" X-LoadDbReader="29;6" X-LoadResourceDbReaderData="0;0" X-Permitted-Cross-Domain-Policies="none" X-Sql-Stopwatch="28;49" X-Stopwatch="153" X-TP-Handled-By="tp-next"/>
+          <value message="Created" status="201">{"ResourceType":"User","Id":11593,"FirstName":"Phineas","LastName":"Flynn","Email":"e9897110794@wncotest.com","Login":"e9897110794@wncotest.com","FullName":"Phineas Flynn","CreateDate":"\/Date(1757090784000+0200)\/","ModifyDate":"\/Date(1757090784000+0200)\/","DeleteDate":null,"IsActive":true,"IsAdministrator":false,"Locale":null,"Kind":"User","GlobalId":"542bfc4d-897a-4a78-bbbf-e3ce4d7dc482","IsIntegration":false,"AccessStartDate":null,"AccessEndDate":null,"FrontdoorUserId":null,"FrontdoorUserRoles":null,"PasswordHashAlgorithm":"IdentityV3","EntityVersion":135991834,"LastLoginDate":null,"WeeklyAvailableHours":40.0000,"CurrentAllocation":0,"CurrentAvailableHours":null,"AvailableFrom":null,"AvailableFutureAllocation":null,"AvailableFutureHours":null,"IsObserver":false,"IsContributor":false,"LegacySkills":null,"ActiveDirectoryName":null,"RichEditor":"Html","Role":{"ResourceType":"Role","Id":1,"Name":"Developer"},"Location":null,"JobProfile":null,"SupervisoryOrg":null,"Leader":null,"Department":null,"Vendor":null,"StatementOfWork":null,"CustomFields":[{"Name":"Daily Hours","Type":"Number","Value":null},{"Name":"Total Active Involvement","Type":"Money","Value":null},{"Name":"Resource Type","Type":"DropDown","Value":null},{"Name":"Resource eID","Type":"Text","Value":"e9897110794"},{"Name":"Active Span of control","Type":"Money","Value":null},{"Name":"Start Date","Type":"Date","Value":null},{"Name":"End Date","Type":"Date","Value":null},{"Name":"Leader Lv 1 Name","Type":"Text","Value":null},{"Name":"Leader Lv 2 Name","Type":"Text","Value":null},{"Name":"CapEx Percent","Type":"Money","Value":null},{"Name":"OpEx Percent","Type":"Money","Value":null},{"Name":"Team Percentage","Type":"Number","Value":null},{"Name":"Management Level","Type":"DropDown","Value":null},{"Name":"updated","Type":"CheckBox","Value":false},{"Name":"Planned Span of control","Type":"Money","Value":null},{"Name":"Min Ideal Span Of Control","Type":"Number","Value":null},{"Name":"Max Ideal Span Of Control","Type":"Number","Value":null},{"Name":"Active SoC Range","Type":"DropDown","Value":null},{"Name":"Planned SoC Range","Type":"DropDown","Value":null},{"Name":"Validated by WFS","Type":"CheckBox","Value":false},{"Name":"WFS Role","Type":"DropDown","Value":null},{"Name":"Role Type","Type":"DropDown","Value":null},{"Name":"Employee Type","Type":"DropDown","Value":null},{"Name":"Contract Type","Type":"DropDown","Value":null},{"Name":"Exception User","Type":"CheckBox","Value":false},{"Name":"Teams","Type":"Text","Value":null}]}</value>
+        </response>
+      </driver-operation-data>
+      <operation-data DRIVER_REVISION="1-CSEE-3711-e156432"/>
+    </status>
+  </output>
+</nds>
+
+
+9/10/2025 10:19:34 AM
+was: this session is being recorded
+now: This session is being recorded by w11dclcarkpp001
+
+test dependency: not sure why it's not exposed from the sailpoint connector:
+com.swacorp.csiam.idm.SailPointConnector
+implementation("com.swacorp.csiam.idm:sailpoint-connector:0.0.1-CSIGA-8014-5e7e4e3")
+

@@ -1,0 +1,5 @@
+Application ID,LDAP/AD Group,Application Role,Application Entitlement,Role Owner,Role Business Description,Risk Level,Risk Description,Requestable Item,Role Status,Personnel Type,Assignment Threshold
+XXXX,,ApptioOneRole1 Human Friendly Name,main|||ApptioOneRole1|||,Referral Program Team Member,,,,,ES Operations,
+XXXX,,Targetprocess - Business User,main|||Target process(Business User)|||,Referral Program Team Member,,,,,ES Operations,
+XXXX,,CustomRole1,main||||||CustomRole1,Referral Program Team Member,,,,,ES Operations,
+XXXX,,Cloudability Human Friendly,main|||Cloudability User:::CloudabilityPlanningRestrictedUser:::Self- Service Reporting User|||,Referral Program Team Member,,,,,ES Operations,

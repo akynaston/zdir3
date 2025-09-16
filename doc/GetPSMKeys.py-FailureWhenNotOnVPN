@@ -1,0 +1,65 @@
+C:\z>GetPSMKeys.py
+Password for x266698 (Hidden):
+NOTE: Set a passphrase for your keys. It must contain at least 8 characters, one 1 upper and lower and lowercase letter, and a digit.
+SSH Key Passphrase (Hidden):
+
+NOTE: Passphrase will be set to ******** throughout the duration of this script run.
+
+Type 'settings' to adjust settings, or 'exit' to quit.
+
+Type Dev, QA, or Prod to download keys: dev
+6-Digit PingID One Time Passcode:
+dev key downloaded 1080 minutes ago. Fetching new keys.
+Deleted C:\Users\x266698\.ssh\DEV\key.pem
+Deleted C:\Users\x266698\.ssh\DEV\key.ppk
+Deleted C:\Users\x266698\.ssh\DEV\key.openssh
+Initializing...
+
+DevTools listening on ws://127.0.0.1:50214/devtools/browser/a25a79cb-8c1a-40d8-8cd3-30e2f4ce1da9
+Traceback (most recent call last):
+  File "C:\z\GetPSMKeys.py", line 486, in <module>
+    main()
+  File "C:\z\GetPSMKeys.py", line 481, in main
+    getKeys(settings, username, password, Ping, keypass, url, envSelection)
+  File "C:\z\GetPSMKeys.py", line 366, in getKeys
+    driver.get(url)
+  File "C:\Users\x266698\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 483, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\x266698\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\x266698\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.128)
+Stacktrace:
+        GetHandleVerifier [0x0x7ff607196b25+79621]
+        GetHandleVerifier [0x0x7ff607196b80+79712]
+        (No symbol) [0x0x7ff606f2c0ea]
+        (No symbol) [0x0x7ff606f28e90]
+        (No symbol) [0x0x7ff606f19cb9]
+        (No symbol) [0x0x7ff606f1ba71]
+        (No symbol) [0x0x7ff606f19fd6]
+        (No symbol) [0x0x7ff606f19a36]
+        (No symbol) [0x0x7ff606f196fa]
+        (No symbol) [0x0x7ff606f172c8]
+        (No symbol) [0x0x7ff606f17b4c]
+        (No symbol) [0x0x7ff606f3009a]
+        (No symbol) [0x0x7ff606fd416e]
+        (No symbol) [0x0x7ff606fab13a]
+        (No symbol) [0x0x7ff606fd33d0]
+        (No symbol) [0x0x7ff606faaf13]
+        (No symbol) [0x0x7ff606f74151]
+        (No symbol) [0x0x7ff606f74ee3]
+        GetHandleVerifier [0x0x7ff60745683d+2962461]
+        GetHandleVerifier [0x0x7ff607450b5d+2938685]
+        GetHandleVerifier [0x0x7ff60746f71d+3064573]
+        GetHandleVerifier [0x0x7ff6071b0c6e+186446]
+        GetHandleVerifier [0x0x7ff6071b8a3f+218655]
+        GetHandleVerifier [0x0x7ff60719f914+115956]
+        GetHandleVerifier [0x0x7ff60719fac9+116393]
+        GetHandleVerifier [0x0x7ff607185ef8+10968]
+        BaseThreadInitThunk [0x0x7ffd9b9d259d+29]
+        RtlUserThreadStart [0x0x7ffd9bf6af78+40]
+
+
+C:\z>

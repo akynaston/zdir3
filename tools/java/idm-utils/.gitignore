@@ -1,0 +1,15 @@
+build/
+*.iml
+test/*.xml
+test/*.properties
+test/testResults
+*.cer
+*.bak
+idm-common
+build-example.xml
+driver-xml-output-config-example.xsl
+.gitlab-ci-example.yml
+Dockerfile.local
+StandardsReadme-TODO.txt
+docker-compose.yml
+.DS_Store

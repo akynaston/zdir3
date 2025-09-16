@@ -1,0 +1,1 @@
+ssh -i C:/Users/x266698/.ssh/QA/key.openssh x266698@EDIRengQA#diracvsps.cis.prod.swacorp.com@w11qcledirqi013@psmp.cis.qa.swacorp.com

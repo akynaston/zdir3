@@ -1,0 +1,1 @@
+@ssh -i C:\Users\x266698\.ssh\id_ed25519.pub x266698@w11pcledirpi008.swacorp.com

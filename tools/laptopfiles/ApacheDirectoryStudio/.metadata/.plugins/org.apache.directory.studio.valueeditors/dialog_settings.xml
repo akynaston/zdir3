@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="org.apache.directory.studio.valueeditors.password.PasswordDialog.hashMethod" value="NO-HASH-METHOD"/>
+	<item key="org.apache.directory.studio.valueeditors.password.PasswordDialog.tab" value="0"/>
+	<item key="dateEditorDiscardFraction" value="true"/>
+	<item key="org.apache.directory.studio.valueeditors.image.ImageDialog.tab" value="0"/>
+</section>

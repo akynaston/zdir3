@@ -1,0 +1,1 @@
+grep -Ri driverrevision --exclude-dir=adminrepo --exclude-dir=novell-idm --exclude-dir final --exclude-dir build --exclude=build.xml --include=*.xml * -A17 | grep rule -A17

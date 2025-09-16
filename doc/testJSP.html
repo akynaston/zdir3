@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSP with Authorization Header</title>
+<script>
+    function sendAuthenticatedRequest() {
+        var username = "your_username"; // Replace with actual username
+        var password = "your_password"; // Replace with actual password
+        var targetUrl = "C:\z\testJSP.html"; // Replace with your target URL
+
+        // Encode username:password to Base64
+        var credentials = btoa(username + ":" + password);
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", targetUrl, true);
+        xhr.setRequestHeader("Authorization", "Basic " + credentials);
+
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                document.getElementById("responseDiv").innerHTML = "Request successful: " + xhr.responseText;
+            } else {
+                document.getElementById("responseDiv").innerHTML = "Request failed: " + xhr.status + " " + xhr.statusText;
+            }
+        };
+        xhr.onerror = function() {
+            document.getElementById("responseDiv").innerHTML = "Network error occurred.";
+        };
+
+        xhr.send();
+    }
+	function turtles() {
+		var headerValue = request.getHeader("Sec-Ch-Ua");
+
+		document.getElementById("responseDiv").innerHTML = "header: " + headerValue;
+		document.getElementById("responseDiv2").innerHTML = "test: "// + headerValue;
+	}
+</script>
+</head>
+<body>
+    <h1>Sending Authenticated Request from JSP1</h1>
+    <button onclick="sendAuthenticatedRequest()">Send Request with Auth Header6</button>
+    <div id="responseDiv"></div>
+    <div id="responseDiv2"></div>
+</body>
+</html>
