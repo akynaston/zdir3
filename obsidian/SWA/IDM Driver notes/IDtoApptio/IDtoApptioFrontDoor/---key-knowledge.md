@@ -1,0 +1,2 @@
+ - Authentication is done with 'keyAccess'/'keySecret' as a username/password style JSON body authentcation instead of the normal headers . .
+ -
