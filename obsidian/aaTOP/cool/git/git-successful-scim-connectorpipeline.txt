@@ -1,0 +1,179 @@
+https://gitlab-tools.swacorp.com/csiam/idm/idmunit/swa-scim-connector/-/jobs/111645230
+
+
+New to GitLab? Please read the SWA GitLab User Guide.Skip to content
+GitLab
+
+Menu
+ 
+Search GitLab
+2
+13
+Help
+Aaron Kynaston
+S
+SWA SCIM Connector
+Project information
+Repository
+Jira
+Merge requests0
+CI/CD
+Security & Compliance
+Deployments
+Packages & Registries
+Infrastructure
+Monitor
+Analytics
+Snippets
+CSIAM
+
+IDMUnit
+SWA SCIM Connector
+Jobs
+#111645230
+ passed Job gradle_publish_to_prod triggered 3 minutes ago by 
+
+Aaron Kynaston
+Running with gitlab-runner 14.10.1 (f761588f)
+  on prod0-ci-gitlab-csiam-build-runner-654f4bb44f-fthhd CuaNf7-y
+Resolving secrets
+00:00
+Preparing the "kubernetes" executor
+00:00
+Using Kubernetes namespace: prod0-csiam-build
+Using Kubernetes executor with image 290503755741.dkr.ecr.us-east-1.amazonaws.com/swa-common/general/docker-images/docker-java8-build ...
+Using attach strategy to execute scripts...
+Preparing environment
+00:10
+Waiting for pod prod0-csiam-build/runner-cuanf7-y-project-138259-concurrent-0dgw2t to be running, status is Pending
+Waiting for pod prod0-csiam-build/runner-cuanf7-y-project-138259-concurrent-0dgw2t to be running, status is Pending
+	ContainersNotInitialized: "containers with incomplete status: [init-permissions]"
+	ContainersNotReady: "containers with unready status: [build helper]"
+	ContainersNotReady: "containers with unready status: [build helper]"
+Waiting for pod prod0-csiam-build/runner-cuanf7-y-project-138259-concurrent-0dgw2t to be running, status is Pending
+	ContainersNotReady: "containers with unready status: [build helper]"
+	ContainersNotReady: "containers with unready status: [build helper]"
+Running on runner-cuanf7-y-project-138259-concurrent-0dgw2t via prod0-ci-gitlab-csiam-build-runner-654f4bb44f-fthhd...
+Getting source from Git repository
+00:02
+Fetching changes with git depth set to 20...
+Initialized empty Git repository in /builds/csiam/idm/idmunit/swa-scim-connector/.git/
+Created fresh repository.
+Checking out eb99792a as master...
+Skipping Git submodules setup
+Restoring cache
+00:06
+Checking cache for master-protected...
+Downloading cache.zip from https://tools-us-east-1-prod0-gitlab-runner-cache.s3.dualstack.us-east-1.amazonaws.com/gitlab-runner/project/138259/master-protected 
+Successfully extracted cache
+Downloading artifacts
+00:13
+Downloading artifacts for build-gradle (111645219)...
+Downloading artifacts from coordinator... ok        id=111645219 responseStatus=200 OK token=XFVbtyJi
+Downloading artifacts for get-next-version (111645212)...
+Downloading artifacts from coordinator... ok        id=111645212 responseStatus=200 OK token=XFVbtyJi
+Executing "step_script" stage of the job script
+00:27
+$ files=$(find . | grep -E "build.gradle*" )
+$ if [[ "${PROJECT_PATH}" != "swa-common/templates/project-templates/gradle-template" ]]; then
+$ for file in "${files}"; do
+$ nexusPushTestGID=$(cat "${file}" | grep -q "com.swacorp.nexus_push_test";  echo "$?")
+$ gradleTemplateAID=$(cat "${file}" | grep artifactId | grep -q "gradle-template";  echo "$?")
+$ if [[ "${nexusPushTestGID}" == "0" ]]; then
+$ done
+$ fi
+$ if [[ "$(./gradlew tasks --all | grep updateVersion)" != "" ]]; then
+$ ./${GRADLE_COMMAND} updateVersion --warning-mode all
+> Task :updateVersion
+BUILD SUCCESSFUL in 733ms
+1 actionable task: 1 executed
+$ fi
+$ if [[ "${CI_COMMIT_REF_PROTECTED}" == "true" ]]; then
+$ GRADLE_ARGS="${GRADLE_ARGS} -Drepo=${REPO}"
+$ else
+$ GRADLE_ARGS="${GRADLE_ARGS} -DnexusUser=${NEXUS_USER} -DnexusPassword=${NEXUS_SECRET}"
+$ cd ${GRADLE_DIR}
+$ if [[ "${SWAUTODEVOPS_DEBUG}" == "true" ]]; then
+$ pwd
+/builds/csiam/idm/idmunit/swa-scim-connector
+$ ls -lrt
+total 52
+-rw-r--r--  1 root root    6 Sep  8 10:33 version.txt
+-rw-r--r--  1 root root    6 Sep  8 10:33 nextversion.txt
+drwxr-xr-x 10 root root  126 Sep  8 10:36 build
+-rw-rw-rw-  1 root root   41 Sep 11 15:14 settings.gradle
+-rw-rw-rw-  1 root root 2838 Sep 11 15:14 gradlew.bat
+-rwxrwxrwx  1 root root 8188 Sep 11 15:14 gradlew
+drwxrwxrwx  3 root root   21 Sep 11 15:14 gradle
+drwxrwxrwx  2 root root   24 Sep 11 15:14 doc
+-rw-rw-rw-  1 root root 5337 Sep 11 15:14 checkstyle.xml
+-rw-rw-rw-  1 root root  121 Sep 11 15:14 README.md
+-rwxrwxrwx  1 root root  219 Sep 11 15:14 update_version.sh
+-rw-rw-rw-  1 root root 1013 Sep 11 15:14 trivir-header.txt
+-rw-rw-rw-  1 root root    0 Sep 11 15:14 todo-fixlog4jconfig.txt
+drwxrwxrwx  4 root root   30 Sep 11 15:14 src
+-rw-rw-rw-  1 root root 3664 Sep 11 15:15 build.gradle.bak
+-rw-rw-rw-  1 root root 3664 Sep 11 15:15 build.gradle
+$ echo "Commands to run"
+Commands to run
+$ echo "chmod 755 ${GRADLE_COMMAND}"
+chmod 755 gradlew
+$ echo "./${GRADLE_COMMAND} ${GRADLE_TARGET} --build-cache ${GRADLE_ARGS} --warning-mode all"
+./gradlew publish --build-cache  -Drepo=prod -DnexusUser=csiam-deploy-user -DnexusPassword=hw99 --warning-mode all
+$ fi
+$ chmod 755 ${GRADLE_COMMAND} || true
+$ ./${GRADLE_COMMAND} ${GRADLE_TARGET} --build-cache ${GRADLE_ARGS} --warning-mode all
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :javadoc UP-TO-DATE
+> Task :javadocJar UP-TO-DATE
+> Task :sourcesJar UP-TO-DATE
+> Task :generateMetadataFileForMavenJavaPublication
+> Task :generatePomFileForMavenJavaPublication
+> Task :publishMavenJavaPublicationToMavenRepository
+* Publishing *  [com.swa.idmunit.connector:scim-connector:1.0.0] to https://nexus-tools.swacorp.com/repository/releases/
+* Published *  [com.swa.idmunit.connector:scim-connector:1.0.0] to https://nexus-tools.swacorp.com/repository/releases/
+> Task :publish
+BUILD SUCCESSFUL in 20s
+9 actionable tasks: 3 executed, 6 up-to-date
+Running after_script
+00:01
+Running after script...
+$ if [[ "${PIPELINE_TESTING_FRAMEWORK_EXECUTION}" == "true" ]]; then
+Saving cache for successful job
+00:10
+Creating cache master-protected...
+.gradle/wrapper: found 251 matching files and directories 
+.gradle/caches: found 1113 matching files and directories 
+Uploading cache.zip to https://tools-us-east-1-prod0-gitlab-runner-cache.s3.dualstack.us-east-1.amazonaws.com/gitlab-runner/project/138259/master-protected 
+Created cache
+Uploading artifacts for successful job
+00:16
+Uploading artifacts...
+**/build: found 85 matching files and directories  
+**/.gradle: found 1425 matching files and directories 
+Uploading artifacts as "archive" to coordinator... 201 Created  id=111645230 responseStatus=201 Created token=XFVbtyJi
+Cleaning up project directory and file based variables
+00:00
+Job succeeded
+gradle_publish_to_prod
+Duration: 1 minute 28 seconds
+Finished: 2 minutes ago
+Timeout: 1h (from project)
+
+Runner: #27158 (CuaNf7-y) prod0-ci-gitlab-csiam-build-runner-654f4bb44f-fthhd
+Tags: build-runner
+
+Job artifacts
+These artifacts are the latest. They will not be deleted (even if expired) until newer artifacts are available.
+
+Commit eb99792a 
+Merge branch 'CSEE-2945' into 'master'
+
+ Pipeline #9248819 for master
+gradle_publish_to_itest
+gradle_publish_to_qa
+tag-stable
+gradle_publish_to_prod

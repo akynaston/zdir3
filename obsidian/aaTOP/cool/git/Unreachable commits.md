@@ -1,0 +1,1 @@
+git show $(git fsck --unreachable | git cat-file --batch-check | awk '/commit/ { print $3 }')

@@ -1,0 +1,2 @@
+Also, confirm this isn't an issue - looks like it couldn't 'get-next-version' which may not be a problem; but would be good to have.
+https://gitlab-tools.swacorp.com/csiam/idm/templates/newconnector/-/pipelines/11911156

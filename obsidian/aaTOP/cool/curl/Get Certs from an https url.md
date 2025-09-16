@@ -1,0 +1,1 @@
+ openssl s_client -connect https://southwestairlinespov.tpondemand.com/api/v1/users -showcert

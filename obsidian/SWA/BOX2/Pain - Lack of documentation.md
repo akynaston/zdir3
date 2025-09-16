@@ -1,0 +1,2 @@
+ - Severe lack of documentation; both for existing stuff, and for regular new updates to the build.
+ - - Example: a few days ago the JSON dumper was added to the release, and people don't know what to do with the creation of the additinoal files (just add them; and use them to diff test changes, along with fixing issues in the JSONConverter.log file as time allows).

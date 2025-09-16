@@ -1,0 +1,1 @@
+https://www.oracle.com/database/sqldeveloper/technologies/download/

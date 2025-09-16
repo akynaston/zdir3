@@ -1,0 +1,3 @@
+# xpsp2 home cd key: B294T-B3CP4-XQ2CX-2PW33-HHHFT
+
+xpsp2 home cd key:  B294T-B3CP4-XQ2CX-2PW33-HHHFT

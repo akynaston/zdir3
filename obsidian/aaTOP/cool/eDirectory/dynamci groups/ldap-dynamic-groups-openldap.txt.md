@@ -1,0 +1,1 @@
+https://git.openldap.org/openldap/openldap/-/blob/master/doc/drafts/draft-haripriya-dynamicgroup-xx.txt

@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "67759a1fc022997e",
+    "type": "split",
+    "children": [
+      {
+        "id": "b511adaa172a7bae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b0c0fc22b967f6fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Main/SortMe/Screen clip.41.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e89c105d4338e795",
+    "type": "split",
+    "children": [
+      {
+        "id": "79a515c9c3ff6b33",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9c38a0fae8520c29",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f93588d14e882a9b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "45e0a8018bc576b7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8fbcb357e67e88c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a547f54ffd96a2f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8577ff5e9aaea799",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Main/SortMe/Screen clip.41.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d470c2ccd75b8a15",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Main/SortMe/Screen clip.41.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "31619fb03f0f7727",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "96eebca35a6f8a8d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Main/SortMe/Screen clip.41.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-importer:Open Importer": false
+    }
+  },
+  "active": "b0c0fc22b967f6fc",
+  "lastOpenFiles": [
+    "Main/SortMe/_resources/Screen_clip.41.resources/ScreenClip.png",
+    "Main/SortMe/Screen clip.42.md",
+    "Main/SortMe/Screen clip.41.md",
+    "Main/SortMe/_resources/Screen_clip.41.resources/disabledScreenClip.png",
+    "Main/SortMe/Screen clip.44.md",
+    "Main/SortMe/Screen clip.47.md",
+    "Main/SortMe/Awesome Aaron 2024.md",
+    "Main/SortMe/_resources/XPATH_Examples_-_CoolSolutionsWiki.resources/novell_logo_redonblack.png",
+    "Main/SortMe/_resources/XPATH_Examples_-_CoolSolutionsWiki.resources",
+    "Main/SortMe/_resources/Written_a_Book_Imagine_Holding_the_First_Copy._Request_a_Free_Publishing_Guide.resources/header-lp-freepubguide.gif",
+    "Main/SortMe/_resources/Written_a_Book_Imagine_Holding_the_First_Copy._Request_a_Free_Publishing_Guide.resources",
+    "Main/SortMe/_resources/Windows_Server_2008_Install_Windows_PowerShell__Windows__Tech-Recipes.resources/winsrv2k8_powershll4.png",
+    "Main/SortMe/_resources/Windows_Server_2008_Install_Windows_PowerShell__Windows__Tech-Recipes.resources/winsrv2k8_powershll2.png",
+    "Main/SortMe/_resources/Windows_Server_2008_Install_Windows_PowerShell__Windows__Tech-Recipes.resources/winsrv2k8_powershll3.png",
+    "Main/SortMe/_resources/Windows_Server_2008_Install_Windows_PowerShell__Windows__Tech-Recipes.resources/ws2008_startservermgr2.png",
+    "Main/SortMe/_resources/Windows_Server_2008_Install_Windows_PowerShell__Windows__Tech-Recipes.resources/winsrv2k8_powershll1.png",
+    "Main/SortMe/_resources/Windows_Server_2008_Install_Windows_PowerShell__Windows__Tech-Recipes.resources/winsrv2k8_features.png",
+    "Main/SortMe/_resources/Windows_Server_2008_Install_Windows_PowerShell__Windows__Tech-Recipes.resources/tech-recipes-logo.gif",
+    "Main/SortMe/_resources/Windows_Server_2008_Install_Windows_PowerShell__Windows__Tech-Recipes.resources",
+    "Main/SortMe/_resources/Windows_PowerShell_1.0_English_Language_Installation_Packages_for_Windows_Server_2003_and_for_Windows_XP.resources/trans_pixel.com%252Fkb%252F926139%26ei%3di7VXSs36J4GiswP0iOXWBg%26rct%3dj%26q%3ddownload%2bpowershell%2bfor%2bwindows%2b2003%26usg%3dAFQjCNHG3W383yZ_Ur1pJaJAcgGb7rITww%26sig2%3dnZ5AtLB79jYxIOpozLMiSQ&msid=a24f01c72d3e4b9ea27fd32572075c08",
+    "Main/SortMe/_resources/Windows_PowerShell_1.0_English_Language_Installation_Packages_for_Windows_Server_2003_and_for_Windows_XP.resources/nojavascript&WT.js=No",
+    "Main/SortMe/_resources/Windows_PowerShell_1.0_English_Language_Installation_Packages_for_Windows_Server_2003_and_for_Windows_XP.resources/default.1%7c9%3dkbAudITPRO%20%20%20%7c",
+    "Main/SortMe/_resources/Windows_PowerShell_1.0_English_Language_Installation_Packages_for_Windows_Server_2003_and_for_Windows_XP.resources",
+    "Main/SortMe/_resources/Windows_could_not_start_the_DIRXML_Loader.resources",
+    "Main/SortMe/_resources/Welcome_to_JustLinux_Wanna_learn_Linux.resources",
+    "Main/SortMe/_resources/VMware_Self-Service-_Host_Power_Management_Causes_Problems_with_Guest_Timekeeping_(Windows_Hosts).resources",
+    "Main/SortMe/Awesome Aaron - 2023.md",
+    "Welcome.md",
+    "Main/SortMe/LDIF Clean up a file using a quick java program.md",
+    "Main/SortMe/Removing a Linux server from the tree.md",
+    "Main/SortMe/CREATE AN SR.md",
+    "Main/SortMe/Multiple tree install files.md",
+    "Main/SortMe/FCPS NA202SP6 INSTALL NOTES.md",
+    "Main/SortMe/All about Linux swap space.md",
+    "Main/SortMe/The iManager configure page is missing features.md",
+    "Main/SortMe/PHP ldap_get_values_len - Manual.md",
+    "Main/SortMe/Priesthood notes.md",
+    "Main/SortMe/WORK TRIGGERS.md",
+    "Main/SortMe/Thor Brickman.md",
+    "Main/SortMe/Oracle database Security FAQ - Oracle FAQ.md",
+    "Main/SortMe/Module_09-AD_Password_filter_troubleshooting_1.pdf.md",
+    "Main/SortMe/Unrestricted access in imanager.md",
+    "Main/SortMe/How to Fix svchost.exe using 100% CPU  Memory Leak  Technibble.md",
+    "Main/SortMe/HTML Codes.md",
+    "Main/SortMe/Registry Settings for SecureLogin in LDAP mode www.novell.com.md",
+    "Main/SortMe/Replacing default certificates in iManager 2.7 (non-OES install) www.novell.com.md"
+  ]
+}

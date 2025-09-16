@@ -1,0 +1,1 @@
+ - read https://southwest.atlassian.net/wiki/spaces/CYSEC/pages/74634288/Secrets+Manager+-+Onboarding+new+passwords

@@ -1,0 +1,1 @@
+ TODO: document use of  !S|T instead of A|I|L|P . .

@@ -1,0 +1,7 @@
+ - General employee/contractor todo items: such as how to share PTO noticies . .
+	 - Note: should include:
+		 - Yvonne
+		 - Stephanie
+		 - FArhan
+		 - Ben Cundy
+		 - Dhivya 

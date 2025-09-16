@@ -1,0 +1,2 @@
+2/27/2024 5:32:30 PM
+We've found that CR's are heavy on random bits of information. It's super useful to have the previous CR information in front of you when you start . .you could even clone the existing CR, then update just the few fields!

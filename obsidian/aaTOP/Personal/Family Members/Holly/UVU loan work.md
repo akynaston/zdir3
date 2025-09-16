@@ -1,0 +1,35 @@
+12/19/2024 2:32:09 PM
+uvu my pass phrase -i'm back
+ - expected date will roll indefinately . .
+ - otp now . .12/19/2024 2:41:48 PM
+ - 12/19/2024 2:44:54 PM- back
+ - January 2 - may happen
+ - He can keep an eye on it, once the processes started on 2/3 started
+ - call back on the 3rd to see what is happening
+ - will eventually take care of itself.
+ - wont' be until a few weeks into spring semester
+ - unfortuantely - last minute - outstadning balance
+ - if we can get things rolling early - maybe first week of spring semester
+ - 3253.50
+ - private loans offer lookback loans - payments due from past semesters.
+ - can't recomend loan servicer
+ - 'lookback' - some goes through financial aid . .
+ - almost all private loans - right to cancel - 6 -10
+ - deferment conversation . .
+ - group to help go back to enrolemnetn verification . .-
+ - holly - don't sign . .
+ - 6 credit hours . .
+ - Dana -
+ - private loan
+ - what if we pay it off; then what happens?
+ - if we do mayke the payment, then the loan disburses
+   - 1 of 2:
+   - 1 fall portion: just be a refund
+   - 2 if anything left over in spring . .
+ - busars office
+ -
+ - 801 863 7200
+   - I've goofed up timing on getting a disbursment of my loan.
+   - #5 - refunds
+   - 3501.50
+

@@ -1,0 +1,13 @@
+2/7/2024 10:25:16 AM
+
+
+FYI: this is refering to the old school DXCMD connector, the one just before the updated dirxml-ldap-connector.
+
+Trying to document all return codes:
+
+
+32 - may be DN issue: was using the dotted format, and realized it was ldap./
+50 - probably rights issue - trying to start job with service account.
+
+
+dxcmd -host w11dcledirdi013.swacorp.com -port 1636 -user 'cn=p502053,ou=ServiceAccounts,o=swaiddev' -startjob 'cn=Check Passport Expiration,cn=MCL,cn=Driver Set v3,ou=DirXML,ou=Services,o=swaiddev'

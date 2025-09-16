@@ -1,0 +1,4 @@
+- document when and how to do an MR, and how to review one.
+- Use of the 'gold' tag during rebaseing.
+- use of 'next' branch
+- Maybe checkng in QA/Prod CR files?
