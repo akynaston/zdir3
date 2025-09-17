@@ -23,18 +23,22 @@
 		* If you think of something you'd like to see, please let me know, and we'll set something up.
 
 
-
 GIT SESSION 5 - Rebasing with a conflict
 
+I've reset our repo again - do a:
 
-I've reset our repo - please delete or archive your copy, then clone again. It's not strictly necessary to clone again, it's not hard to cleanup a local clone; but I want to get to rebasing:
+git fetch --prune --prune-tags
+git checkout master
+git rebase
+
+or delete & reclone:
 
 git clone ssh://git@git.trivir.com:7999/~akynaston/gitlabs.git
 
-Create small conflict
+ - Create small conflict for a rebase, and talk about how to resolve it.
  
 
-ISquashing commits.
+Squashing commits.
 Time for fixup commits and autosquash?
  - surprising finding: it appears fixup commits only use the commit message to determine which commit it's there to fix!! This is a good reason to have really good, consise commit messages, and to do autosquash interactive rebases only across the commits you want to consider.
 
