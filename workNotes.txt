@@ -1,3 +1,75 @@
+9/17/2025 2:22:45 PM
+to chici: these users need pushing:
+e123884
+e14559
+e161896
+e195129
+e196378 (done)
+ - monitoring:
+   - missing aviobook association; only acivtes: 55
+   - missing aviobook association: only prehires: 7
+
+
+
+
+
+
+
+cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#4#
+
+
+
+cn=e101115,ou=Users,o=SWA-ID
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dhivya,
+
+We've recently found we need to onboard about 5 batches of about a dozen users into BrowserStack over the next month. Could we have Aaron help to push these accounts through the IDtoBrowserStack driver?
+
+
+
+
 9/17/2025 10:46:23 AM
 d-mood - 801 369 8989 2 - existing client - 5 - springville - 2 - medication . .maybe?
 Numinus:
