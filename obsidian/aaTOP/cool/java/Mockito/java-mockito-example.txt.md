@@ -122,7 +122,6 @@ class MCLConnectorTest {
 
     @Test
     void testValidate() throws IdMUnitException {
-        //LOGGER.info("Don't forget to log into AWS to pass this test! (hint: awssaml select-active)");
         Map<String, Collection<String>> basicUser = new HashMap<>();
 
         String userID = "e123456";
