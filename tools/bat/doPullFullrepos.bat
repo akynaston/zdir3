@@ -1,15 +1,15 @@
 @echo off
 xcopy *.bat C:\z\tools\bat /d/y
-rem echo zdirFULLREPO
-rem git -C zdirFULLREPO fetch
-echo zdirFullREpo2
+rem echo zdirFULLREPO3
+rem git -C zdirFULLREPO3 fetch
+echo zdirFullREpo3
 echo fetching . .
-git -C zdirFULLREPO2 fetch
-echo fastforward master . .
-git -C zdirFULLREPO2 fetch origin master:master
-echo resetting master 
-git -C zdirFULLREPO2 branch -f master origin/master
+git -C zdirFULLREPO3 fetch
+echo fastforward main. .
+git -C zdirFULLREPO3 fetch origin main:main
+echo resetting main 
+git -C zdirFULLREPO3 branch -f main origin/main
 echo.
 echo.
-git -C zdirfullREPO2 lg --all -5
+git -C zdirfullREPO3 lg --all -5
 pause

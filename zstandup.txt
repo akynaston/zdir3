@@ -12,16 +12,16 @@
 (git training)
 (IGA training)
 
-Sep 16
-Apptio target process documetnation  is complete.
- - driver is code complete too.
- - Working on the intial migratoin tool, an code revies with the team and ops.
- - then the QA deploy
+Sep 17
+southwest
+Completed the initlal migration code for the apptio target process driver
+	 - looks like I'm moving back to some employeeservices work
+	 - apptio team has a blocker for the time being.
+	 - I will deploy the drivers into QA for testing, but then move back to Employee services today.
 
- - The Aviobook driver had a deploy fix to do, so I'll be doing that as well.
-
-
-
+Git training - rebasing with a conflict.
+ - autosquashing if we have time.
+ 
 
 
 

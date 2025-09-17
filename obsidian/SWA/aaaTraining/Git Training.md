@@ -24,40 +24,17 @@
 
 
 
-
-
-
 GIT SESSION 5 - Rebasing with a conflict
+
 
 I've reset our repo - please delete or archive your copy, then clone again. It's not strictly necessary to clone again, it's not hard to cleanup a local clone; but I want to get to rebasing:
 
 git clone ssh://git@git.trivir.com:7999/~akynaston/gitlabs.git
 
+Create small conflict
  
 
-I missed three super useful commands. There are pages of documentation on how to make diffs more useful. The three that I've liked the most and in this order are:
-
-git diff --word-diff-regex=.  (alias: git diffr )
-git diff -I - ignore a portion of the diff to help focus on the stuff you are targeting, Parameter can be repeated!
-git diff -R (reverse diff; can help resolve whitespace issues if they're introduced)
-git diff --color-moved! show driver example . .
-
-
-
-
-REBASING: Rebuilding/replaying commits . .with desired changes.
- - when you execute an interactive rebase, it simply means you are given a chance to make further decisions on how the commits will be replayed.
-
-Note that all of these operations change history in git. For things that you haven't pushed yet, this is not a problem at all. You are able to re-write the history of your entire repo - there's no technical limitation to the commits you can change. w
-
-1 - Amending a commit - this most simple path is just making a fix typically to the most recent commit.
-	1a - see the commit ID and all later commits change
-2 - Rebasing "Interactively" to fix a comment in a commit that's before the most recent.
-3 - Rebasing to replay commits somewhere else - aka 'Move'.
-	3A - Rebasing to show code combined between two branches.
-5 - Rebasing with a conflict.
-
-Squashing commits.
+ISquashing commits.
 Time for fixup commits and autosquash?
  - surprising finding: it appears fixup commits only use the commit message to determine which commit it's there to fix!! This is a good reason to have really good, consise commit messages, and to do autosquash interactive rebases only across the commits you want to consider.
 
