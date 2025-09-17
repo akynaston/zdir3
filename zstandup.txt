@@ -12,6 +12,11 @@
 (git training)
 (IGA training)
 
+Sep 18
+ (-) Heads up next wednesday; they have a 4 hour training on Wednesay from 8 to 12 - I'm going to plan on attending the whole thing; so would be late to next week's L&L
+
+
+
 Sep 17
 southwest
 Completed the initlal migration code for the apptio target process driver
@@ -21,7 +26,7 @@ Completed the initlal migration code for the apptio target process driver
 
 Git training - rebasing with a conflict.
  - autosquashing if we have time.
- 
+
 
 
 

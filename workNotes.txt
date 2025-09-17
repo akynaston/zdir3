@@ -1,3 +1,26 @@
+9/17/2025 10:46:23 AM
+d-mood - 801 369 8989 2 - existing client - 5 - springville - 2 - medication . .maybe?
+Numinus:
+   -
+
+sent: 9/17/2025 11:13:23 AM
+Can I have someone review this CR for QA?
+https://southwest.service-now.com/nav_to.do?uri=change_request.do?sys_id=aae7a1e93380fe94ea2124373e5c7bdd%26sysparm_view=Standard
+
+
+
+
+
+CHG0491007 - IDtoApptio* prod deploy drivers, place holder . . - 2025-10-01 15:00:00
+    Deploy/Update ----  IDM Drivers IDtoApptio for FrontDoor & TargetProcess
+
+CHG0491008 - apptio: qa deploys . .placeholder for next week (now: 9/17/2025 11:19:23 AM)
+  Deploy/Update ----  IDM Drivers IDtoApptio for FrontDoor & TargetProcess
+
+
+
+
+
 (&(swaAvioBookRoles=avio_chiefs)(DirXML-EntitlementRef=cn=SWA AvioBook Role,cn=IDtoAvioBook,cn=Driver Set AEv1,ou=DirXML,ou=Services,o=SWA-ID#1#<ref><src>RBE</src><id>SWA-ID\5cServices\5cDirXML\5cDriver Set AEv1\5cEntitlement Policies\5cAvioBook-Flight-avio_chiefs</id><param>avio_chiefs</param></ref>))
 
 
@@ -486,11 +509,6 @@ We recently found an event from IDM on Sprinkler that caused an issue. We've sin
 apptio RL in dev:
 8097
 
-CHG0491007 - IDtoApptio* prod deploy drivers, place holder . . - 2025-10-01 15:00:00
-    Deploy/Update ----  IDM Drivers IDtoApptio for FrontDoor & TargetProcess
-
-CHG0491008 - apptio: qa deploys . .placeholder for next week (now: 9/5/2025 5:20:41 PM)
-  Deploy/Update ----  IDM Drivers IDtoApptio for FrontDoor & TargetProcess
 
 
 
