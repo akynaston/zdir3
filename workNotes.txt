@@ -1,3 +1,10 @@
+
+Needs 2 - Moves to the 'LGull' retiree 'mistaken role'; IDMDEV1 requires it still:
+https://southwest.gitlab-dedicated.com/csiam/idm/EmployeeServicesRoleMgmtDriver/-/merge_requests/40
+
+
+
+
 Jeff,
 
 Can you confirm that we are still using the LGull retiree role in IDMDEV1
