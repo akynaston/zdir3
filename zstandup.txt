@@ -12,8 +12,20 @@
 (git training)
 (IGA training)
 
+sep 18
+deployed both apptio drivers in QA, back on employee services. working on a fix for retiree portal users
+
+
+
+
+
+
+
+
 Sep 18
  (-) Heads up next wednesday; they have a 4 hour training on Wednesay from 8 to 12 - I'm going to plan on attending the whole thing; so would be late to next week's L&L
+
+deployed both apptio drives 
 
 
 
