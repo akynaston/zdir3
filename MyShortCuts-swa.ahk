@@ -617,7 +617,8 @@ return
 
 ;====================================================================
 ^!+i::
-Run cmd.exe /K "cd C:\work\adminrepo && git s"
+MsgBox , , , zz loading . ., .25
+Run cmd.exe /K "C:\work\adminrepo\tools\bat\zz.bat"
 return
 
 ;====================================================================

@@ -1,3 +1,23 @@
+Jeff,
+
+Can you confirm that we are still using the LGull retiree role in IDMDEV1
+
+
+9/18/2025 12:30:50 PM
+myaccess meeting
+ - select * from swa_applications where app_id = 9145 - looking that REMEDY_TICKET was N . .not sure what it should be.
+ - now looking at T_AV_ROLES
+ - select * taroles - where cas6 = sprinklr
+   - cas3 seems to be the target column for the case they are discussing
+
+
+
+
+ - *** Delete this test . .testUserFurloughedTC1Emp
+ - IDtoEmployeeCarePicture - two associations!
+
+
+
 9/17/2025 2:22:45 PM
 to chici: these users need pushing:
 e123884
@@ -10,7 +30,8 @@ e196378 (done)
    - missing aviobook association: only prehires: 7
 
 
-
+pass three rules . .
+ - test.wnco.com
 
 
 
