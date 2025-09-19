@@ -14,7 +14,7 @@
 
 
 sep 19
-employee services drivers, fixed a portal users issue, got a baseline for all tests. bow working on some grafana output tags to trigger inc generation
+employee services drivers, fixed a portal users issue, got a baseline for all tests. now I'll be working on some grafana tags to trigger inc generation, there's like 12 errors so this will take a few days after completing the research on how it works.
 
 
 sep 18
