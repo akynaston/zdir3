@@ -19,6 +19,19 @@ I'll be time shifting a bit today, woke up feeling crappy. text/I'm l me if you 
 employee services drivers, fixed a portal users issue, got a baseline for all tests. now I'll be working on some grafana tags to trigger inc generation, there's like 12 errors so this will take a few days after completing the research on how it works.
 
 
+monkelban
+Thomas
+Gary
+J
+ishan
+bill
+holderness.
+Aaron
+Preston
+
+
+
+
 sep 18
 deployed both apptio drivers in QA, back on employee services. working on a fix for retiree portal users
 
