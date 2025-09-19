@@ -5,6 +5,7 @@ Jack & Rob inc
 https://em-grafana.ris.qa.swacorp.com/d/hqrdOl0Il/edir-centralized-dashboard-qa?orgId=12
 Akami edit . .
 
+
  - Register driver in Loki!
 
 sum by (driver, description, hostname)(count_over_time({job="Security_Driver_Log_Monitor_QA_1"} | pattern "<_>]:<driver> ST:msgStart <description> msgEnd" |= "has been deprovisioned from Akamai Group on IDM, Please remove access for"[1m])) or vector(0

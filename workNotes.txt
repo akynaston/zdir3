@@ -1,3 +1,52 @@
+9/19/2025 10:10:12 AM
+Call with Varshith:
+token:
+dckr_scim_5ppZpzBVMGEB4LD4GQVxsjfkaeE
+
+
+
+
+
+
+
+
+
+
+
+	GitLab	csiam-developer-1355 	technical-role
+	GitLab	csiam-idm-dev-deploy-1391 	technical-role
+	GitLab	csiam-idm-developer-1391 	technical-role
+	GitLab	csiam-idm-prod-deploy-1391 	technical-role
+	GitLab	csiam-idm-qa-deploy-1391
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Needs 2 - Moves to the 'LGull' retiree 'mistaken role'; IDMDEV1 requires it still:
 https://southwest.gitlab-dedicated.com/csiam/idm/EmployeeServicesRoleMgmtDriver/-/merge_requests/40
