@@ -12,6 +12,11 @@
 (git training)
 (IGA training)
 
+
+sep 19
+employee services drivers, fixed a portal users issue, got a baseline for all tests. bow working on some grafana output tags to trigger inc generation
+
+
 sep 18
 deployed both apptio drivers in QA, back on employee services. working on a fix for retiree portal users
 
