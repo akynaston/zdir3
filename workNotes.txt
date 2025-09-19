@@ -2177,3 +2177,6 @@ test dependency: not sure why it's not exposed from the sailpoint connector:
 com.swacorp.csiam.idm.SailPointConnector
 implementation("com.swacorp.csiam.idm:sailpoint-connector:0.0.1-CSIGA-8014-5e7e4e3")
 
+from kyle: 9/19/2025 1:10:26 PM
+service idm account passwords rotated
+Passwords for: p502052, p502053, p502099 have all been rotated in dev / qa / prod.  These are the accounts related to project deployment and IDMUnit testing.  Please let me know if there are any issues with IDM projects related to these passwords.  This is the first time these have been automatically rotated through cyberark.  Thanks!

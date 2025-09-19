@@ -8,7 +8,7 @@ Akami edit . .
 
  - Register driver in Loki!
 
-sum by (driver, description, hostname)(count_over_time({job="Security_Driver_Log_Monitor_QA_1"} | pattern "<_>]:<driver> ST:msgStart <description> msgEnd" |= "has been deprovisioned from Akamai Group on IDM, Please remove access for"[1m])) or vector(0
+sum by (driver, description, hostname)(count_over_time({job="Security_Driver_Log_Monitor_QA_1"} | pattern "<_>]:<driver> ST:msgStart <description> msgEnd" |= "has been deprovisioned from Akamai Group on IDM, Please remove access for"[1m])) or vector(0)
 
 doesn't pick it up with in 5 mins . .
 
@@ -34,3 +34,14 @@ if have problems mucked up in Loki - Gerald Dunn . .can help . .
 
 
 ```
+
+Aaron's driver alert test originally:
+sum by (driver, hostname)(count_over_time({job="Security_Driver_Log_Monitor_QA_1"} | pattern "<_>]:<driver> <_> <description>" |= "500 Internal Server Error"[1m])) or vector(0)
+
+changed to this:
+sum by (driver, description, hostname)(count_over_time({job="Security_Driver_Log_Monitor_QA_1"} | pattern "<_>]:<driver> ST:msgStart <description> msgEnd" |= "has been deprovisioned from Akamai Group on IDM, Please remove access for"[1m])) or vector(0)
+
+
+## IDM Driver DEV - Aaron's Alert test
+now this to trigger anything
+sum by (driver, description, hostname)(count_over_time({job="Security_Driver_Log_Monitor_QA_1"} | pattern "<_>]:<driver> ST:Start trasnaction" |= "Event has started - variable here"[1m])) or vector(0)

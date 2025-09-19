@@ -1,0 +1,156 @@
+{
+  "id": 40,
+  "gridPos": {
+    "h": 4,
+    "w": 24,
+    "x": 0,
+    "y": 9
+  },
+  "type": "timeseries",
+  "title": "IDM Driver DEV - Aaron's Alert test",
+  "alert": {
+    "alertRuleTags": {},
+    "conditions": [
+      {
+        "evaluator": {
+          "params": [
+            1
+          ],
+          "type": "gt"
+        },
+        "operator": {
+          "type": "and"
+        },
+        "query": {
+          "params": [
+            "A",
+            "5m",
+            "now"
+          ]
+        },
+        "reducer": {
+          "params": [],
+          "type": "avg"
+        },
+        "type": "query"
+      }
+    ],
+    "executionErrorState": "keep_state",
+    "for": "5m",
+    "frequency": "1m",
+    "handler": 1,
+    "message": "Alert sending from aaron's aler t. .",
+    "name": "IDM Driver DEV - Aaron's Alert test alert",
+    "noDataState": "keep_state",
+    "notifications": [
+      {
+        "uid": "H-hC1BjNz"
+      }
+    ]
+  },
+  "datasource": "Loki",
+  "thresholds": [
+    {
+      "value": 1,
+      "op": "gt",
+      "visible": true,
+      "colorMode": "critical"
+    }
+  ],
+  "fieldConfig": {
+    "defaults": {
+      "custom": {
+        "drawStyle": "bars",
+        "lineInterpolation": "stepBefore",
+        "barAlignment": 0,
+        "lineWidth": 1,
+        "fillOpacity": 25,
+        "gradientMode": "none",
+        "spanNulls": false,
+        "showPoints": "auto",
+        "pointSize": 5,
+        "stacking": {
+          "mode": "none",
+          "group": "A"
+        },
+        "axisPlacement": "auto",
+        "axisLabel": "",
+        "scaleDistribution": {
+          "type": "linear"
+        },
+        "hideFrom": {
+          "tooltip": false,
+          "viz": false,
+          "legend": false
+        },
+        "thresholdsStyle": {
+          "mode": "off"
+        }
+      },
+      "color": {
+        "mode": "palette-classic"
+      },
+      "thresholds": {
+        "mode": "absolute",
+        "steps": [
+          {
+            "color": "green",
+            "value": null
+          },
+          {
+            "color": "red",
+            "value": 80
+          }
+        ]
+      },
+      "mappings": [],
+      "unit": "errors"
+    },
+    "overrides": [
+      {
+        "__systemRef": "hideSeriesFrom",
+        "matcher": {
+          "id": "byNames",
+          "options": {
+            "mode": "exclude",
+            "names": [
+              "500 Error on w11dcledirdi019"
+            ],
+            "prefix": "All except:",
+            "readOnly": true
+          }
+        },
+        "properties": [
+          {
+            "id": "custom.hideFrom",
+            "value": {
+              "legend": false,
+              "tooltip": false,
+              "viz": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "tooltip": {
+      "mode": "single"
+    },
+    "legend": {
+      "displayMode": "table",
+      "placement": "right",
+      "calcs": [
+        "last"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "expr": "sum by (driver, description, hostname)(count_over_time({job=\"Security_Driver_Log_Monitor_QA_1\"} | pattern \"<_>]:<driver> ST:Start trasnaction\" |= \"Event has started - variable test here\"[1m])) or vector(0)",
+      "hide": false,
+      "legendFormat": "500 Error on {{hostname}}",
+      "refId": "A"
+    }
+  ]
+}
